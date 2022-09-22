@@ -1,0 +1,47 @@
+@charset  "utf-8";
+@import url('./reset.css');
+@import url('./common.css');
+
+/*
+font-family: 'Pretendard-Regular';
+font-family: 'SEBANG_Gothic_Bold';
+*/
+
+
+.section1{max-width:1440px; margin:0 auto; text-align:center;}
+.section1>h1{
+    font-weight:900;
+    font-size:2vw;
+    color:rgb(97, 97, 97);
+    margin:2% 0;
+}
+.section1>div{
+    width:20%;
+    margin:0 auto;
+}
+input{
+    border:none;
+    background:#d3d3d3;
+    margin-bottom:1%;
+}
+
+
+
+
+.check{
+    text-align:left;
+    max-width:100%;
+}
+.check>div{
+    padding:2%;
+}
+.check>div:nth-child(2){
+    border:1px solid rgb(175, 175, 175);
+}
+.check>div:nth-child(3){
+    border-right:1px solid rgb(175, 175, 175);
+    border-left:1px solid rgb(175, 175, 175);
+    border-bottom:1px solid rgb(175, 175, 175);
+}
+
+

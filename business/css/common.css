@@ -65,6 +65,7 @@ footer{background:#36594c; padding:30px 0;}
     #gnb>li:nth-child(5){
         display:none;
     }
+    #gnb{margin:0;}
 
 
 
