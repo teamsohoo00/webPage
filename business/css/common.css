@@ -1,0 +1,79 @@
+@charset  "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+font-family: 'SEBANG_Gothic_Bold';
+font-family: 'Pretendard-Regular';
+*/
+
+
+*{margin:0; padding:0; list-style:none;}
+a:hover, a:active, a:link, a:visited{text-decoration:none; color:#333;}
+html{ font-family: 'Pretendard-Regular'; }
+
+/* 공통 */
+.flex{display:flex; flex-flow:row wrap}
+header>div,footer>div{max-width:1440px; margin:0 auto;}
+/* 헤더 */
+header{border-bottom:1px solid #dedede;}
+#util,#footer_sns>ul{justify-content:flex-end;}
+#util a{font-size:0.9vw;}
+#util>li{margin:15px 0 0 10px;}
+#util>li::after{
+    content:'|';
+    margin-left:10px;
+}
+#util>li:nth-child(3)::after{
+    content:'';
+    margin: 0;
+}
+#gnb{justify-content: space-between; align-items: center; margin-top:20px;}
+#gnb>li>a{font-size:1.5vw; font-weight:500;}
+#gnb>li:first-child>a>img{width:80%;}
+#gnb>li:last-child>a:first-child>img{margin-right:30px;}
+#gnb>li:last-child img{width:20%;}
+
+
+
+
+
+/* 푸터 */
+footer{background:#36594c; padding:30px 0;}
+#footer_sns li{width:50px;}
+#footer_sns img{width:100%;}
+#footer_under img{width:70%;}
+#footer_under{justify-content: space-between; align-items: center;}
+#footer_under li,#footer_under li a{color:#fff;}
+#footer_under p,#footer_under li{font-size:0.8vw;}
+
+@media all and (max-width:1024px){ /* 모바일 */
+    /* 헤더영역 */
+    #util,
+    #gnb>li:nth-child(2),
+    #gnb>li:nth-child(3),
+    #gnb>li:nth-child(4),
+    #gnb>li:nth-child(5){
+        display:none;
+    }
+
+
+
+    /* 푸터영역 */
+    #footer_sns>ul,#footer_under{justify-content:center;}
+    #footer_under{flex-flow:column wrap;}
+    #footer_under img{margin:0 auto; display:block;}
+    #footer_under>ul:nth-child(2){margin:2% 0;}
+    #footer_under>ul:last-child{text-align:center;}
+
+
+}

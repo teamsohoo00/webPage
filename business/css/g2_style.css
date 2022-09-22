@@ -1,0 +1,182 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+/*font-family: 'Pretendard';*/
+
+
+/*PC 버전*/
+*{margin:0; padding:0; box-sizing:border-box; text-decoration: none; list-style: none;}
+
+/*공통 사용*/
+.wrap{width:1440px; margin:0 auto;}
+section h2{
+    display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+img{vertical-align:top;}
+
+
+/*section1*/
+.section1{
+    margin:100px 0 200px 0;
+    display: flex;
+}
+
+
+/*제품 사진 슬라이드 영역*/
+.product{width:40%;}
+.product > ul {width:435px;}
+.product_img{position:relative;height:420px; margin-top:100px;}
+.product_img .img {position:absolute;left:0;bottom:0;width:295px;padding-bottom:30px;text-align:center;}
+.product_img .img:before{content:"";display:block;position:absolute;bottom:0;left:0;width:295px;height:295px;border-radius:295px;background-color:#37594b;z-index:0;}
+.product_img .img img {position:relative;z-index:1;}
+.product_img .info {position:absolute;bottom:303px;right:0;}
+.product_img .info:before {content:"";display:block;position:absolute;bottom:-23px;left:-54px;width:1px;height:86px;background-color:#9f9f9f;transform:rotate(30deg);}
+.product_img .info:after {content:"";display:block;position:absolute;bottom:57px;left:-32px;width:32px;height:1px;background-color:#9f9f9f;}
+.product_img .info li {width:161px;padding:7px 5px;background-color:#b0bf30;color:#fff;font-size:13px;text-align:center;}
+.product_img .info li + li {margin-top:16px}
+.product_img .next-button {display:block;position:absolute;bottom:0;right:0;}
+.product .text {margin-top:55px;color:#404040;font-size:23px;text-align:center;}
+.product .text strong {font-size:30px;}
+
+
+.product-1{position: absolute;}
+.product_img p{font-size:20px; color: #404040;}
+.product_img strong{font-size:25px;}
+.product_info p{ 
+    background: #b0bf30;
+    display: inline-block;
+    color:#fff;
+    padding:10px;
+}
+
+
+/*제품 특징 영역*/
+.character{width:60%;}
+.character h3{font-size: 35px; color:#595959; text-align: center;}
+.character strong{color:#37594b; font-weight: 900; font-size:40px;}
+.character>ul{
+    border-top:3px solid #37594b;
+    border-bottom:3px solid #37594b;
+    margin-top:50px;
+}
+.character>ul>li{ border-bottom: 1px solid #37594b;}
+.character li:last-child{border-bottom: 0;}
+.character dl{display: flex; padding:30px 20px;}
+.character dt{ 
+    width:20%;
+    font-size:20px; 
+    color:#37594b; 
+    font-weight:400;
+}
+.character dd{width:80%;}
+.character p{margin-bottom: 15px;}
+.textbox{display: flex; justify-content: space-between;}
+.txt{line-height: 30px;}
+.element{
+    display: flex; 
+    justify-content: space-between; 
+    width: 80%;
+    line-height: 30px;
+}
+.element>li{width:50%;}
+
+/*section2*/
+.section2{margin-bottom:70px;}
+.section2 h3{font-size:45px; font-weight: 900; padding-left:250px;}
+.section2 span{color:#37594b}
+
+
+/*FAQ 영역*/
+.faq{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 250px;
+ }
+ .line{
+    display: block;
+    height:5px; background: #b0bf30; width:350px;
+    margin:30px 0 0 125px;
+}
+#ac{width: 100%;}
+
+.question{border-bottom:1px solid #eee;}
+
+#ac .question > a {
+    display:block;
+    width: 100%;
+    background:url('../img/g2_img/plus.png') no-repeat;
+    background-position: 100px 20px;
+    height:80px;
+    color:#595959;
+    text-align: center;
+    line-height: 80px;
+    text-align: left;
+    padding-left: 250px;
+    font-size: 30px;
+    font-weight: bold;
+    margin:20px 0;
+  }
+#ac .answer {display:none;}
+
+#ac .question.active > a {
+    background:url('../img/g2_img/minus.png') no-repeat;
+    background-position: 100px 20px;
+}
+   
+.answer li{
+    position:relative;
+    padding-left:300px;
+    color:#969696;
+    font-size:20px;
+    margin-bottom:30px;
+    line-height:40px;
+}
+.answer li::before{
+    content:'';
+    height:100%;
+    position:absolute;
+    background: #b0bf30;
+    top:0; left:250px;
+    width:3px;
+}
+.answer strong{color:#666; font-weight: bold;}
+
+
+/* 모바일 버전 (1024px) */
+@media all and (max-width:1024px){
+    
+    /*공통 사용*/
+    .wrap{width:100%; margin:0 auto;}
+    
+    /*section1*/
+    .section1{display: block; flex-direction: column;}
+
+    /*제품 사진 슬라이드 영역*/
+    .product{width:100%;}
+    .product > ul {width:100%;}
+    .info{display: none;}
+    .product .text{margin-top:30px;font-size:15px;margin-bottom: 50px; }
+
+    /*제품 특징 영역*/
+    .character{width:100%;}
+    .character h3{font-size:25px;}
+    .character strong{font-size:35px;}
+
+    /*section2*/
+    
+
+    /*FAQ 영역*/
+    .faq{padding:0;}
+
+}
+ 
+
+ 
+
+

@@ -1,0 +1,76 @@
+@charset  "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+font-family: 'SEBANG_Gothic_Bold';
+font-family: 'Pretendard-Regular';
+*/
+
+
+*{margin:0; padding:0; list-style:none;}
+a:hover, a:active, a:link, a:visited{text-decoration:none; color:#333;}
+html{ font-family: 'Pretendard-Regular'; }
+
+/* 공통 */
+.flex{display:flex; flex-flow:row wrap}
+/* 헤더 */
+header{border-bottom:1px solid #d2d2d2;}
+header>div,footer>div{width:100%; max-width:1920px; margin:0 auto;}
+#util,#footer_sns>ul{justify-content:flex-end;}
+#util{margin:10px 0 10px 0;}
+#util>li{margin-left:10px;}
+#util>li::after{
+    content:'|';
+    margin-left:10px;
+}
+#util>li:nth-child(3)::after{
+    content:'';
+    margin: 0;
+}
+#util>li>a{font-size:0.9vw;}
+
+header>div>h1{display:inline-block;}/*수정 로고 수정*/
+
+#gnb{justify-content: space-between; align-items: center;}
+#gnb>li>a{font-size:2vw; font-weight:500;}
+#gnb>li:last-child>a:first-child>img{margin-right:30px;}
+#gnb>li:last-child>a>img{
+    max-width:20%;
+}
+#gnb>li:first-child>a>img{
+    width:60%; height:auto;
+    display:block;
+}
+
+
+
+
+
+/* 푸터 */
+footer{background:#d2d2d2; padding:30px 0;}
+#footer_sns li{width:50px;}
+#footer_sns img{width:100%;}
+#footer_under img{width:70%;}
+#footer_under{justify-content: space-between; align-items: center;}
+#footer_under li,#footer_under li a{color:#fff;}
+
+@media all and (max-width:1024px){ /* 모바일 */
+    /* 헤더영역 */
+    #util,
+    #gnb>li:nth-child(2),
+    #gnb>li:nth-child(3),
+    #gnb>li:nth-child(4),
+    #gnb>li:nth-child(5){
+        display:none;
+    }
+}

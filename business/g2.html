@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>new</title>
+    <link href="./css/g2_style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <script src="./js/jQueryUI/js/jquery.js"></script>
+    <script src="./js/jQueryUI/js/jquery-ui.js"></script>
+    <script src="./js/jQueryUI/js/jquery-ui.min.js"></script>
+    <script src="./js/g2.js"></script>
+</head>
+<body>
+<section>
+    <header>
+        <div>
+            <ul class="flex" id="util">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">제품판매약국 찾기</a></li>
+            </ul>
+            <ul class="flex" id="gnb">
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">브랜드 스토리</a>
+                </li>
+                <li>
+                    <a href="#">제품정보</a>
+                </li>
+                <li>
+                    <a href="#">상품구매</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                    <a href="#"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+<div class="wrap">
+    <div class="section1"> 
+    <h2>제품 사진 슬라이드 영역</h2>
+       <div class="product">
+		  <ul>
+			 <li>
+				<div class="product_img">
+				   <div class="img">
+					  <img src="./img/g2_img/product-1.png" alt="product-1"/>
+				   </div>
+				   <ul class="info">
+					  <li>유소아 복용가능(만 1세이상)</li>
+					  <li>10가지 생약성분</li>
+					  <li>보존제 무첨가</li>
+				   </ul>
+				   <a href="#" class="next-button"><img class="circle02" src="./img/g2_img/circle02.png" alt="circle02"/></a>
+				</div>
+				<p class="text"><strong>까스 활명수</strong>큐액</p>
+			 </li>
+		  </ul>
+	   </div>
+        <h2>제품 특징 영역</h2>
+        <div class="character">
+            <h3><strong>증상</strong>에 따른 <strong>활명수</strong>를 확인 하고
+                <strong>제품 특징</strong>을 알아보세요.</h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>제품분류</dt>
+                            <dd>일반의약품>소화기관용약(건위소화제)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>효능・효과</dt>
+                            <dd>소화불량, 과식, 체함, 위부팽만감, 구역, 구토, 식욕감퇴 (식욕부진)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>용법・용량</dt>
+                            <dd>
+                                <p><img src="./img/g2_img/squre.png" alt="squre"/>&nbsp; &nbsp;1일 3회 식후 복용 ,  복용 간격은 4시간 이상으로 한다.</p>
+                                <div class="textbox">
+                                   <div class="txt">
+                                      만1세 이상-만3세미만:1회1/5병(15ml)<br/>
+                                      만3세 이상-만5세미만:1회1/4병(18.75ml)<br/>
+                                      만5세 이상-만8세미만:1회1/3병(25ml)
+                                   </div>
+                                   <div class="txt">
+                                      만8세 이상-만11세미만:1회1/2병(37.5ml)<br/>
+                                      만11세 이상-만15세미만:1회2/3병(50ml)<br/>
+                                      만15세 이상: 1회1병(75mL)
+                                   </div>
+                                </div>
+                             </dd>
+                         </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>포장단위</dt>
+                            <dd>75 ml</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>유효성분<br/>
+                                (1병 75ml 중)</dt>
+                            <ul class="element">
+                                <li class="element_left">
+                                    육계	30 mg	<br/>
+                                    현호색	180 mg	<br/>
+                                    정향	12 mg	<br/>
+                                    육두구	6 mg	<br/>
+                                    L-멘톨	16 mg
+                                </li>	
+                                <li class="element_right">
+                                    진피	250 mg <br/>
+                                    건강	12 mg <br/>
+                                    후박	50 mg <br/>
+                                    창출	3 mg <br/>
+                                    아선약	100 mg <br/>
+                                    고추틴크	0.06 mL
+                                </li>
+                            </ul>
+                        </dl>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    
+    <div class="section2"> 
+        <h2>FAQ영역</h2>
+        <h3>까스활명수큐액<span> FAQ</span></h3>
+        <span class="line"></span>
+        <div class="faq">
+            <ul id="ac">
+                <li class="question">
+                   <a class="plus" href="#">까스활명수큐액은 어떻게 복용하나요?</a>
+                    <ul class="answer">
+                            <li>만 15세 이상 기준 1회 1병(75ml), 1일 3회 식후에 복용하시면 됩니다.<br/>
+                                 반드시 정해진 용법, 용량을 지켜주시기 바랍니다.
+                            </li>
+                    </ul>
+                </li>
+                <li class="question">
+                    <a class="plus" href="#">까스활명수큐액의 사용기한은 어떻게 되나요?</a>
+                     <ul class="answer">
+                             <li>사용기한은 복용 가능한 날짜를 의미하며, 병라벨/박스에서 확인 하실 수 있습니다.<br/>
+                                  1. 병라벨 사용기한(연. 월. 일) 순으로 표기되어 있습니다.<br/>
+                                  2. 박스 측면에 사용기한(연. 월. 일) 순으로 표기되어 있습니다.
+                             </li>
+                     </ul>
+                 </li>
+                 <li class="question">
+                    <a class="plus" href="#">까스활명수큐액을 어린이가 복용해도 되나요?</a>
+                     <ul class="answer">
+                             <li>만15세 미만도 연령별 복용 용량을 준수하여 1일 3회 식후에 복용하시면 됩니다.<br/>
+                                 연령별 복용 용량을 반드시 확인 후 복용하십시오.<br/>
+                                 ※ 만 3개월 미만의 소아에게 투여하지 않습니다. 또 만3개월 이상이라도 만 1세 미만의 소아는
+                                     의사의 진료를 받는 것을 우선으로 하여, 부득이한 경우를 제외하고 복용시키지 않는 것이 
+                                     바람직합니다.   
+                             </li>
+                     </ul>
+                 </li>
+                 <li class="question">
+                    <a class="plus" href="#">까스활명수큐액은 어디서 구입할 수 있나요?</a>
+                     <ul class="answer">
+                             <li>까스활명스큐액은 일반의약품이므로 처방전 없이 약국에서 구입이 가능합니다.<br/>
+                                 가까운 약국에서 구입하시기 바라며, 
+                                 <strong>구입처 확인은 소비자상담실<br/> (080-023-1897)</strong> 로
+                                 전화 주시면 친절히 안내해 드리겠습니다.
+                             </li>
+                     </ul>
+                 </li>
+               
+             </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <footer>
+        <div>
+       <div id="footer_sns">
+             <ul class="flex">
+                 <li>
+                     <a href="#">
+                         <img src="./img/icon/f.png" alt="facebook" />
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#">
+                         <img src="./img/icon/u.png" alt="youtube" />
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#">
+                         <img src="./img/icon/in.png" alt="instagram" />
+                     </a>
+                 </li>
+             </ul>
+         </div>
+         <div class="flex" id="footer_under">
+             <ul>
+                 <li>
+                     <a href="#">
+                         <img src="./img/icon/ft_logo.png" alt="logo" />
+                     </a>
+                 </li>
+             </ul>
+             <ul>
+                 <li>
+                 <p>04552 서울특별시 중구 남대문로 9길 24 패스트파이브 타워 6~8층 &nbsp;&nbsp; 대표이사 : 유준하, 한종현</p>
+                 <p>Tel : 02-2021-9300 &nbsp;&nbsp; Mail : dogwha@dong-wha.co.kr &nbsp;&nbsp; 사업자등록번호 : 110-81-00102</p>
+                 </li>
+             </ul>
+             <ul>
+                 <li><a href="#">개인정보 취급 방침</a></li>
+                 <li>Copyright (c) DONG WHA PHARM. CO., LTD ALL Rights Reserved. </li>
+             </ul>
+         </div>
+     </div>
+</footer>
+</section>
+
+</body>
+</html>
