@@ -9,3 +9,15 @@ h2{
     overflow: hidden;
     text-indent: -9999px;
 }
+.wrap>ul>li{
+    float:left;
+    width:10%;
+    height:50%;
+}
+.wrap>ul::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
