@@ -31,13 +31,28 @@ img{vertical-align:top;}
 .product{width:40%;}
 .product > ul {width:435px;}
 .product_img{position:relative;height:420px; margin-top:100px;}
-.product_img .img {position:absolute;left:0;bottom:0;width:295px;padding-bottom:30px;text-align:center;}
-.product_img .img:before{content:"";display:block;position:absolute;bottom:0;left:0;width:295px;height:295px;border-radius:295px;background-color:#37594b;z-index:0;}
+.product_img .img {
+    position:absolute;left:0;bottom:0;width:295px;
+    padding-bottom:30px;text-align:center;
+}
+.product_img .img:before{
+    content:"";display:block;position:absolute;bottom:0;left:0;
+    width:295px;height:295px;border-radius:295px;background-color:#37594b;z-index:0;
+}
 .product_img .img img {position:relative;z-index:1;}
 .product_img .info {position:absolute;bottom:303px;right:0;}
-.product_img .info:before {content:"";display:block;position:absolute;bottom:-23px;left:-54px;width:1px;height:86px;background-color:#9f9f9f;transform:rotate(30deg);}
-.product_img .info:after {content:"";display:block;position:absolute;bottom:57px;left:-32px;width:32px;height:1px;background-color:#9f9f9f;}
-.product_img .info li {width:161px;padding:7px 5px;background-color:#b0bf30;color:#fff;font-size:13px;text-align:center;}
+.product_img .info:before {
+    content:"";display:block;position:absolute;bottom:-23px;left:-54px;
+    width:1px;height:86px;background-color:#9f9f9f;transform:rotate(30deg);
+}
+.product_img .info:after {
+    content:"";display:block;position:absolute;bottom:57px;left:-32px;
+    width:32px;height:1px;background-color:#9f9f9f;
+}
+.product_img .info li {
+    width:161px;padding:7px 5px;background-color:#b0bf30;
+    color:#fff;font-size:13px;text-align:center;
+}
 .product_img .info li + li {margin-top:16px}
 .product_img .next-button {display:block;position:absolute;bottom:0;right:0;}
 .product .text {margin-top:55px;color:#404040;font-size:23px;text-align:center;}
@@ -86,7 +101,7 @@ img{vertical-align:top;}
 .element>li{width:50%;}
 
 /*section2*/
-.section2{margin-bottom:70px;}
+.section2{margin-bottom:100px;}
 .section2 h3{font-size:45px; font-weight: 900; padding-left:250px;}
 .section2 span{color:#37594b}
 
@@ -148,32 +163,71 @@ img{vertical-align:top;}
 .answer strong{color:#666; font-weight: bold;}
 
 
+
+
+
+
+
+
 /* 모바일 버전 (1024px) */
 @media all and (max-width:1024px){
     
     /*공통 사용*/
-    .wrap{width:100%; margin:0 auto;}
+    .wrap{width:100%; margin:0 auto; }
     
     /*section1*/
-    .section1{display: block; flex-direction: column;}
+    .section1{
+        display: block; margin-bottom:100px; margin-top:70px;}
 
     /*제품 사진 슬라이드 영역*/
-    .product{width:100%;}
+    .product{width:100%; margin-bottom:100px;}
     .product > ul {width:100%;}
-    .info{display: none;}
+    .product_img{margin-top:0;}
+    .product_img .img {bottom:0;}
     .product .text{margin-top:30px;font-size:15px;margin-bottom: 50px; }
+    .product_img .next-button,
+    .product_img .info{display:none;}
 
     /*제품 특징 영역*/
-    .character{width:100%;}
-    .character h3{font-size:25px;}
-    .character strong{font-size:35px;}
+    .character{width:100%;padding:0 50px;}
+    .character h3{font-size:3.25555vw;;}
+    .character strong{font-size:4.25555vw;;}
+    .character dt{width:30%;}
+    .character dd{width:70%;}
+    .textbox{display: block;}
+    .txt{margin-top:20px;}
 
     /*section2*/
-    
+    .section2{padding:0 50px;}
+    .section2 h3{font-size:35px; font-weight: 900; padding-left:50px;}
 
     /*FAQ 영역*/
-    .faq{padding:0;}
-    .faq{color:#37594b;}
+    .faq{padding:0px;}
+    .line{
+        display: block;
+        height:4px; background: #b0bf30; width:350px;
+        margin:30px 0;
+    }
+    #ac .question > a{
+        font-size: 3.16667vw;
+        padding-left:150px;
+        background-size: 25px 25px;
+        height:60px;
+        background-position: 60px 27px;
+    }
+    #ac .question.active > a{
+        background-size: 25px 6px;
+        background-position: 60px 37px;
+    }
+    .answer li{font-size: 2.06667vw; line-height:20px; padding-left:200px;}
+    .answer li::before{
+        content:'';
+        height:100%;
+        position:absolute;
+        background: #b0bf30;
+        top:0; left:170px;
+        width:3px;
+    }
 
 }
  
