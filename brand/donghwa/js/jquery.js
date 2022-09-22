@@ -13,6 +13,26 @@
     });
 })*/
 
+
+
+
+
+
+
+
+
+
+
+/*비주얼 배너*/
+
+
+
+
+
+
+
+
+/*product 캐러셀*/
 var n =0;
 $("#carousel a").eq(n).children("img").attr("src","./images/btn_banner_ov.png");
 
@@ -47,4 +67,46 @@ $("#container").hover(function(){
 $("#carousel a").click(function(){
     n=$(this).attr("data-i");
     slideView(n);
+})
+
+
+
+
+/*brand site hover 효과*/ 
+$(document).ready(function(){
+    $(".brand > #it > a > img").mouseover(function(){
+        $(this).attr("src","./images/hover_brand01.png");
+    }).mouseout(function(){
+        $(this).attr("src","./images/brand01.png");
+    });
+});
+
+$(document).ready(function(){
+    $(".brand > #hwal > a > img").mouseover(function(){
+        $(this).attr("src","./images/hover_brand02.png");
+    }).mouseout(function(){
+        $(this).attr("src","./images/brand02.png");
+    });
+});
+
+$(document).ready(function(){
+    $(".brand > #mall > a > img").mouseover(function(){
+        $(this).attr("src","./images/hover_brand03.png");
+    }).mouseout(function(){
+        $(this).attr("src","./images/brand03.png");
+    });
+});
+
+$(document).ready(function(){
+    $(".brand > #pharm > a > img").mouseover(function(){
+        $(this).attr("src","./images/hover_brand04.png");
+    }).mouseout(function(){
+        $(this).attr("src","./images/brand04.png");
+    });
+});
+
+
+/*게시판 영역*/
+$("#news>ul>.donghwa_news").click(function(){
+    $("#news>ul>.donghwa_news").hide();
 })

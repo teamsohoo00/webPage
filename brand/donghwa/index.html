@@ -125,20 +125,20 @@
     <div class="visual">
         <div id="slideImg">
             <img src="./images/visual01.png" alt="slide1" class="topImg"/>
-            <!--<img src="./images/visual02.png" alt="slide2"/>
+            <img src="./images/visual02.png" alt="slide2"/>
             <img src="./images/visual03.png" alt="slide3"/>
-            <img src="./images/visual04.png" alt="slide4"/>-->
+            <img src="./images/visual04.png" alt="slide4"/>
         </div>
-        <!--<div id="btn">
-            <li><img src="./images/left_arrow.svg" alt="before"></li>
-            <li><img src="./images/right_arrow.svg" alt="next"></li>
+        <div id="btn">
+            <li class="before"><img src="./images/left_arrow.svg" alt="before"></li>
+            <li class="next"><img src="./images/right_arrow.svg" alt="next"></li>
         </div>
-        <div id="carousel">
+        <div id="carousel1">
             <a href="#" data-i="0"><img src="./images/btn_banner.png" alt="01"/></a>
             <a href="#" data-i="1"><img src="./images/btn_banner.png" alt="01"/></a>
             <a href="#" data-i="2"><img src="./images/btn_banner.png" alt="01"/></a>
             <a href="#" data-i="3"><img src="./images/btn_banner.png" alt="01"/></a>
-        </div>-->
+        </div>
     </div><!--비주얼 영역 끝-->
 </header>
 
@@ -211,14 +211,15 @@
            <a href="#" data-i="2" onclick="return false"><img src="./images/btn_banner.png" alt="01" /></a>
         </div><!--캐러셀 영역 끝-->
     </div>    
+</div>
 </div><!--section3 끝-->
 
 <div class="section4">
 <div id="news" class="wrap">
 <h3>DONGHWA NEWS <br/>& CONTENTS</h3>
 <ul>
-    <li><a href="#">동화뉴스</a></li>
-    <li><a href="#">디지털콘텐츠</a></li>
+    <li class="donghwa_news"><a href="#" onclick="return false">동화뉴스</a></li>
+    <li class="disital"><a href="#" onclick="return false">디지털콘텐츠</a></li>
 </ul>
 <img src="./images/news.png" alt="news" />
 </div><!--뉴스영역 끝-->
@@ -246,8 +247,8 @@
 </div><!--게시판 영역 끝-->
 </div><!--section4 끝-->
 
-<div class="section5 wrap">
-    <div class="flex">
+<div class="section5">
+    <div class="flex wrap">
         <div id="investment">            
             <div id="commt">
             <p><strong>Investment <br/></strong>
@@ -269,31 +270,31 @@
             </div><!--recruitment 끝-->
     </div><!--flex 끝-->
 
-    <h3>Brand site</h3>
-    <div class="brand">
-        <div>
+
+    <h3 class="wrap">Brand site</h3>
+    <div class="brand wrap">
+        <div id="it">
             <a href="#"><img src="./images/brand01.png" alt="잇치"></a>
         </div>
-        <div>
-            <img src="./images/brand02.png" alt="활명수">
+        <div id="hwal">
+            <a href="#"><img src="./images/brand02.png" alt="활명수"></a>
         </div>
-        <div>
-            <img src="./images/brand03.png" alt="동화emall">
+        <div id="mall">
+        <a href="#"><img src="./images/brand03.png" alt="동화emall"></a>
         </div>
-        <div>
-            <img src="./images/brand04.png" alt="PHARM">
+        <div id="pharm">
+            <a href="#"><img src="./images/brand04.png" alt="PHARM"></a>
         </div>
-
     </div>
 </div> <!--section5 끝-->
 
 
 <footer>
-    <div class="flex">
+    <div class="wrap">
         <div class="logo">
         <img src="./images/foot_logo.png" alt="foot_logo">
     </div>
-    <div clss="info">
+    <div id="info">
         <ul>
             <li><a href="#">개인정보 처리방침</a></li>
             <li>04552 서울특별시 중구 남대문로 9길 24 패스트파이브 타워 6~8층 &nbsp;&nbsp; 대표이사 : 유준하, 한종현<br/>
@@ -303,7 +304,7 @@
         </ul>
     </div> <!--info 끝-->
     <div class="sns">
-        <ul class="icon">
+        <ul id="icon">
             <li>
                 <a href="#">
                     <img src="./images/icon_f.png" alt="facebook"/>

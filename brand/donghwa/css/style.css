@@ -6,7 +6,7 @@
     width:1240px;
     margin: 0 auto;
 }
-
+li{list-style-type :none }
 nav{width:1240px;}
 
 
@@ -52,6 +52,7 @@ header{
     width:100%;
     left: 0; right: 0; top:0;
     position: fixed;
+    z-index: 9999999;
     
 }
 
@@ -115,6 +116,29 @@ header nav{position:absolute;}
     color: black;
 }
 
+#slideImg{position: relative;}
+
+#carousel1{
+    position: absolute;
+    top:80%;
+    right: 50%;
+}
+
+#carousel1>a>img{width:20%;}
+
+#btn>.before>img{
+    width: 2%;
+    position: absolute;
+    top:40%;
+    left: 10%;
+    
+}
+#btn>.next>img{
+    width: 2%;
+    position: absolute;
+    top:40%;
+    right: 10%;
+}
 
 /*section2*/
 
@@ -124,7 +148,6 @@ header nav{position:absolute;}
 .section2{
     width: 100%;
     height: 1080px;
-    background: pink;
 }
 
 h3{
@@ -145,7 +168,7 @@ h3{
 
 #vision{
     background: #f1f2f1;
-    width: 330px;
+    width: 27%;
     height: 220px;
     position: relative;
 
@@ -173,7 +196,7 @@ h3{
 
 #business{
     background: #20274d;
-    width: 330px; height: 220px;
+    width: 27%; height: 220px;
     position: relative;
     color: #fff;
     margin-top:50px;
@@ -207,8 +230,9 @@ h3{
 }
 
 #esg{
-    width:333px; height:490px;
+    width:25%; height:490px;
     background: url("../images/esg.jpg") center/cover;
+    background-position: center;
     position: relative;
     position: absolute;
     top:0;
@@ -246,7 +270,8 @@ h3{
 }
 
 .section3{
-    background: url("../images/product_bg.jpg") center/cover;
+    width: 100%;
+    background: url("../images/product_bg.jpg") center center / cover no-repeat;
     height: 1080px;
 }
 
@@ -262,6 +287,9 @@ h3{
 
 .section3>.wrap>p strong{color: #e20c19;}
 
+#container>#slideImg2>img{
+    width: 20%;
+}
 
 hr{
     background:#666;
@@ -276,6 +304,7 @@ hr{
 #carousel>a>img{
     position: relative;
     z-index: 9999999;
+    width: 2%;
 }
 
 /*section4*/
@@ -303,7 +332,7 @@ hr{
     left:50%;
     top:25%;
     font-size: 1.3rem;
-    width: 50%;
+    width: 32%;
 }
 
 .view>span>a{
@@ -317,7 +346,7 @@ hr{
 }
 #board>.view{
     position: absolute;
-    right: 45%;
+    right: 0;
     top:0;
 }
 #board>ul{margin: 65px 0;}
@@ -334,18 +363,24 @@ hr{
     font-size: 0.8rem;
 }
 
-.board_line{width: 55%;}
+.board_line{width: 100%;}
 .mid_line{width: 100%; background: #666;}
 
 /*section5*/
+.section5{
+    width: 100%;
+    height: 1080px;
+}
 .flex{
     display: flex;
     justify-content: space-between;
+    padding-top: 250px;
 }
 
 #investment,#recruitment{
     width: 49%; height:240px;
     background: #20274d;
+
 }
 #commt{padding:80px 20px;}
 #commt>p strong{
@@ -358,14 +393,95 @@ hr{
     line-height: 1.5;
 }
 
-#line_bnr1{
-    overflow: hidden;
-    width:400px;
-    height: 240px;
+
+#investment{
+    position: relative;
 }
 #line_bnr1>a{
+    position: absolute;
+    top:0;
+    right: 0;
     display: inline-block;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background: url("../images/investment.jpg") no-repeat center/cover;
 }
+
+#recruitment{
+    position: relative; 
+}
+#line_bnr2>a{
+    position: absolute;
+    top:0;
+    right: 0;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background: url("../images/recruitment.jpg") no-repeat center/cover;
+}
+.brand{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.brand>div{
+    border: 1px solid #ddd;
+    width: 15%;
+    height: 180px;
+    position: relative;
+}
+
+.brand div a img{
+    display: block;
+    margin: 55px auto;
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    background: #20274d;
+}
+
+footer>.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>.wrap>.logo{
+    margin: 60px 0;
+}
+
+#info{
+    margin:40px 0 ;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+#info>ul>li>a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer>.wrap>.sns>#icon{
+    margin: 60px;
+
+}
+
+footer>.wrap>.sns>#icon>li>a{
+    padding-left: 30px;
+}
+
+
+
+
+/*모바일*/
+@media all and(max-width:1024px){
+   
+    .wrap{width:100%}
+    nav>#util{display: none;}
+
+
+
+}/*모바일 끝*/
