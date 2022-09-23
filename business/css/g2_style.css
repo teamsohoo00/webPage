@@ -127,12 +127,11 @@ img{vertical-align:top;}
     width: 100%;
     background:url('../img/g2_img/plus.png') no-repeat;
     background-position: 100px 20px;
-    height:80px;
     color:#595959;
     text-align: center;
-    line-height: 80px;
+    line-height: 20px;
+    padding:30px 0 30px 250px;
     text-align: left;
-    padding-left: 250px;
     font-size: 30px;
     font-weight: bold;
     margin:20px 0;
@@ -141,7 +140,7 @@ img{vertical-align:top;}
 
 #ac .question.active > a {
     background:url('../img/g2_img/minus.png') no-repeat;
-    background-position: 100px 20px;
+    background-position: 100px 35px;
 }
    
 .answer li{
@@ -192,41 +191,43 @@ img{vertical-align:top;}
     .character{width:100%;padding:0 50px;}
     .character h3{font-size:3.25555vw;;}
     .character strong{font-size:4.25555vw;;}
-    .character dt{width:30%;}
-    .character dd{width:70%;}
+    .character dt{width:30%;font-size:2.0vh;}
+    .character dd{width:70%;font-size:1.6vh;}
     .textbox{display: block;}
-    .txt{margin-top:20px;}
+    .txt{margin-top:20px; font-size:1.4444vh;}
+    .element{font-size:1.6vh; width:70%}
 
     /*section2*/
     .section2{padding:0 50px;}
-    .section2 h3{font-size:35px; font-weight: 900; padding-left:50px;}
+    .section2 h3{font-size:5.1vw; font-weight: 900; padding-left:50px;}
 
     /*FAQ 영역*/
     .faq{padding:0px;}
     .line{
         display: block;
-        height:4px; background: #b0bf30; width:350px;
+        height:4px; background: #b0bf30; width:50%;
         margin:30px 0;
     }
     #ac .question > a{
-        font-size: 3.16667vw;
+        font-size: 3.06667vw;
         padding-left:150px;
         background-size: 25px 25px;
         height:60px;
-        background-position: 60px 27px;
+        background-position: 50px 27px;
+
     }
     #ac .question.active > a{
         background-size: 25px 6px;
-        background-position: 60px 37px;
+        background-position: 50px 37px;
     }
-    .answer li{font-size: 2.06667vw; line-height:20px; padding-left:200px;}
+    .answer li{font-size: 2.00vw; line-height:20px; padding-left:200px;}
     .answer li::before{
         content:'';
         height:100%;
         position:absolute;
         background: #b0bf30;
         top:0; left:170px;
-        width:3px;
+        width:2px;
     }
 
 }
