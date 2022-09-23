@@ -37,12 +37,16 @@ header{border-bottom:1px solid #dedede;}
     content:'';
     margin: 0;
 }
-#gnb{justify-content: space-between; align-items: center; margin-top:20px;}
+#gnb{justify-content:space-between; align-items:center; margin-top:20px;}
+#gnb>li{height:8vh; line-height:2.8; box-sizing: border-box;}
 #gnb>li>a{font-size:1.5vw; font-weight:500;}
 #gnb>li:first-child>a>img{width:80%;}
 #gnb>li:last-child>a:first-child>img{margin-right:30px;}
 #gnb>li:last-child img{width:20%;}
-
+#gnb>li:hover{border-bottom:3px solid #36594c;}
+#gnb>li:hover>a{color:#36594c; font-weight: 900;}
+#gnb>li:first-child:hover,
+#gnb>li:last-child:hover{border-bottom:0;}
 
 
 

@@ -16,10 +16,6 @@ input{
     margin-bottom:2%;
 }
 
-
-
-
-
 /* section1 */
 .section1{
     max-width:1440px;
@@ -36,8 +32,6 @@ input{
 
 /* h6 */
 .section1 h6{margin:3% 0 2% 0;}
-
-
 
 /* Tel */
 input[type=tel], input[type=number]{width:70%;}
@@ -56,34 +50,23 @@ input[type=tel], input[type=number]{width:70%;}
     color:#fff;
 }
 
-
-
-
-
-
 /* 약관동의 */
 .check{text-align:left; max-width:100%;}
-.check>div{padding:2%;}
-.check>div:nth-child(2){
-    border:1px solid rgb(175, 175, 175);
-}
+.check>div{padding:3%;}
+.check p{font-size:0.8vw; margin-bottom:3%;}
+.check>div:nth-child(2)>p{margin:0;}
+.check>div:nth-child(2){border:1px solid rgb(175, 175, 175);}
 .check>div:nth-child(3){
     border-right:1px solid rgb(175, 175, 175);
     border-left:1px solid rgb(175, 175, 175);
     border-bottom:1px solid rgb(175, 175, 175);
 }
 .check p{font-size:0.8vw; margin-bottom:3%;}
-input[type=checkbox]{
-    width:1vw; height:1.5vh;
-    margin:0 1% 0 0;
-}
+input[type=checkbox]{width:1vw; height:1.5vh; margin:0 1% 0 0;}
+.margin{margin-right:15%;}
+
 .check .color{color:#37594B; font-weight:700;}
-
-
-
-
-
-
+.check>div:nth-child(3)>p:last-child{margin:0;}
 
 /* 가입완료, 돌아가기 버튼 */
 .check>.clear, .check>.reset{padding:0; margin-top:5%;}
@@ -93,7 +76,6 @@ input[type=checkbox]{
     font-weight:900;
     font-size:1vw;
 }
-
 .clear>button{
     background:#37594B;
     border:none;
@@ -111,3 +93,18 @@ input[type=checkbox]{
     border:1px solid #37594B;
 }
 
+
+@media all and (max-width:1024px){ /* 모바일 */
+    .section1>h1{font-size:3vw;}
+    .section1>div{width:50%;}
+
+    /* 약관동의 */
+    .check p{font-size:2vw;}
+    input[type=checkbox]{width:2vw; height:2vh;}
+    .margin{margin-right:3%;}
+
+    /* 가입완료,돌아가기 버튼 */
+    .clear>button,.reset>button{
+        font-size:2vw;
+    }
+}
