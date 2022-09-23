@@ -6,178 +6,179 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>동화약품</title>
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <script src="./js/jquery.bxslider.js"></script>
     <script src="./js/jquery.js"></script>
-</head>
+    <script>
+        $(document).ready(function(){
+	    $('.slider').bxSlider({
+		auto: true,
+		speed: 500,
+		pause: 4000,
+		mode:'fade',
+		autoControls: true,
+		pager:true,
+	});
+});
+    </script>
+      
+
 <body>
-<div class="section">
-<div class="section1">
-    
-<header>
-    <div class="wrap">
-        <nav>
-        <div id="util" class="clear"> 
-            <ul>
-                <li><a href="#">고객지원</a></li>
-                <li><a href="#">SITE MAP</a></li>
-                <li><a href="#">WHOLESALE</a></li>
-                <li><a href="#">ENG</a></li>
-                <li class="quick"><a href="#">QUICK MENU</a></li>
-            </ul>
-        </div><!--유틸영역 끝-->
-
-    <div id="gnb">
-        <h1 id="logo"><a href="#"></a></h1>
-        <ul class="gnb">
-            <li><a href="#">회사소개</a>
-                <ul class="submenu">
-                    <li><a href="#">인사말</a>
-                    <li><a href="#">C.I</a>
-                    <li><a href="#">연혁</a>
-                    <li><a href="#">시가</a>
-                    <li><a href="#">동화브로슈어</a>
-                    <li><a href="#">연구소/공장</a>
-                    <li><a href="#">가족친화우수</a>
-                    <li><a href="#">오시는 길</a>
-                    <li><a href="#">가족회사</a>
-                    <li><a href="#">고객지원</a>
+<div id="main" class="scroll-container">
+    <section class="section1">
+        <header>
+            <nav>
+            <div class="wrap">
+                
+                <div id="util" class="clear"> 
+                    <ul>
+                        <li><a href="#">고객지원</a></li>
+                        <li><a href="#">SITE MAP</a></li>
+                        <li><a href="#">WHOLESALE</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li class="quick"><a href="#">QUICK MENU</a></li>
+                    </ul>
+                </div><!--유틸영역 끝-->
+        
+            <div id="gnb">
+                <h1 id="logo"><a href="#"></a></h1>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="gnb">
+                    <li><a href="#">회사소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">인사말</a>
+                            <li><a href="#">C.I</a>
+                            <li><a href="#">연혁</a>
+                            <li><a href="#">시가</a>
+                            <li><a href="#">동화브로슈어</a>
+                            <li><a href="#">연구소/공장</a>
+                            <li><a href="#">가족친화우수</a>
+                            <li><a href="#">오시는 길</a>
+                            <li><a href="#">가족회사</a>
+                            <li><a href="#">고객지원</a>
+                        </ul>
+                    </li>
+        
+                    <li><a href="#">연구개발</a>
+                        <ul class="submenu">
+                            <li><a href="#">R&D 소개</a>
+                            <li><a href="#">연구성과</a>
+                            <li><a href="#">조직및업무</a>
+                            <li><a href="#">중점연구분야</a>
+                            <li><a href="#">주요연구과제</a>
+                            <li><a href="#">기술혁신네트워크</a>
+                            <li><a href="#">글로벌동화</a>
+                        </ul>
+                    </li>
+        
+                    <li><a href="#">제품정보</a>
+                        <ul class="submenu">
+                            <li><a href="#">제품공지사항</a>
+                            <li><a href="#">신제품</a>
+                            <li><a href="#">전문의약품</a>
+                            <li><a href="#">일반의약품</a>
+                            <li><a href="#">의약외품 기타</a>
+                            <li><a href="#">건강기능식품</a>
+                            <li><a href="#">식품음료</a>
+                            <li><a href="#">화장품</a>
+                        </ul>
+                    </li>
+        
+                    <li><a href="#">채용정보</a>
+                        <ul class="submenu">
+                            <li><a href="#">공지사항</a>
+                            <li><a href="#">인재상</a>
+                            <li><a href="#">인사제도</a>
+                            <li><a href="#">복리후생</a>
+                            <li><a href="#">채용안내</a>
+                            <li><a href="#">상시채용</a>
+                            <li><a href="#">지원결과확인</a>
+                            <li><a href="#">자주하는 질문</a>
+                            <li><a href="#">채용 Q&A</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">미디어센터</a>
+                        <ul class="submenu">
+                            <li><a href="#">동화뉴스</a>
+                            <li><a href="#">광고갤러리</a>
+                            <li><a href="#">뉴스레터</a>
+                            <li><a href="#">동화캐릭터</a>
+                        </ul>
+                    </li>
+        
+                    <li><a href="#">IR자료실</a>
+                        <ul class="submenu">
+                            <li><a href="#">공시</a>
+                            <li><a href="#">사업보고서</a>
+                            <li><a href="#">전자공고</a>
+                        </ul>
+                    </li>
+        
+                    <li><a href="#">사회공헌</a>
+                        <ul class="submenu">
+                            <li><a href="#">바람캠페인</a>
+                            <li><a href="#">건강캠페인</a>
+                            <li><a href="#">기업PR</a>
+                            <li><a href="#">마을 만들기</a>
+                        </ul>
+                    </li>
+        
+                    <li id="last"><a href="#">윤리경영</a>
+                        <ul class="submenu">
+                            <li><a href="#">대표이사메시지</a>
+                            <li><a href="#">윤리강령</a>
+                            <li><a href="#">자율준수(CP)</a>
+                            <li><a href="#">부패방지방침</a>
+                            <li><a href="#">관련사이트</a>
+                            <li><a href="#">사이버 제보센터 </a>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
+            </nav>
 
-            <li><a href="#">연구개발</a>
-                <ul class="submenu">
-                    <li><a href="#">R&D 소개</a>
-                    <li><a href="#">연구성과</a>
-                    <li><a href="#">조직및업무</a>
-                    <li><a href="#">중점연구분야</a>
-                    <li><a href="#">주요연구과제</a>
-                    <li><a href="#">기술혁신네트워크</a>
-                    <li><a href="#">글로벌동화</a>
-                </ul>
-            </li>
+    </header>
+            <div class="visual">
+                <div class="slider">
+                    <img src="./images/visual01.png" alt="slide01" class="top_Img"/>
+                    <img src="./images/visual02.png" alt="slide02"/>
+                    <img src="./images/visual03.png" alt="slide03"/>
+                    <img src="./images/visual04.png" alt="slide04"/>
+                </div>
 
-            <li><a href="#">제품정보</a>
-                <ul class="submenu">
-                    <li><a href="#">제품공지사항</a>
-                    <li><a href="#">신제품</a>
-                    <li><a href="#">전문의약품</a>
-                    <li><a href="#">일반의약품</a>
-                    <li><a href="#">의약외품 기타</a>
-                    <li><a href="#">건강기능식품</a>
-                    <li><a href="#">식품음료</a>
-                    <li><a href="#">화장품</a>
-                </ul>
-            </li>
+            </div><!--비주얼 영역 끝-->
+    </section>
 
-            <li><a href="#">채용정보</a>
-                <ul class="submenu">
-                    <li><a href="#">공지사항</a>
-                    <li><a href="#">인재상</a>
-                    <li><a href="#">인사제도</a>
-                    <li><a href="#">복리후생</a>
-                    <li><a href="#">채용안내</a>
-                    <li><a href="#">상시채용</a>
-                    <li><a href="#">지원결과확인</a>
-                    <li><a href="#">자주하는 질문</a>
-                    <li><a href="#">채용 Q&A</a>
-                </ul>
-            </li>
-            <li><a href="#">미디어센터</a>
-                <ul class="submenu">
-                    <li><a href="#">동화뉴스</a>
-                    <li><a href="#">광고갤러리</a>
-                    <li><a href="#">뉴스레터</a>
-                    <li><a href="#">동화캐릭터</a>
-                </ul>
-            </li>
-
-            <li><a href="#">IR자료실</a>
-                <ul class="submenu">
-                    <li><a href="#">공시</a>
-                    <li><a href="#">사업보고서</a>
-                    <li><a href="#">전자공고</a>
-                </ul>
-            </li>
-
-            <li><a href="#">사회공헌</a>
-                <ul class="submenu">
-                    <li><a href="#">바람캠페인</a>
-                    <li><a href="#">건강캠페인</a>
-                    <li><a href="#">기업PR</a>
-                    <li><a href="#">마을 만들기</a>
-                </ul>
-            </li>
-
-            <li id="last"><a href="#">윤리경영</a>
-                <ul class="submenu">
-                    <li><a href="#">대표이사메시지</a>
-                    <li><a href="#">윤리강령</a>
-                    <li><a href="#">자율준수(CP)</a>
-                    <li><a href="#">부패방지방침</a>
-                    <li><a href="#">관련사이트</a>
-                    <li><a href="#">사이버 제보센터 </a>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    </div>
-    </div>
-    <div class="visual">
-        <div id="slideImg">
-            <img src="./images/visual01.png" alt="slide1" class="topImg"/>
-            <img src="./images/visual02.png" alt="slide2"/>
-            <img src="./images/visual03.png" alt="slide3"/>
-            <img src="./images/visual04.png" alt="slide4"/>
-        </div>
-        <div id="btn">
-            <li class="before"><img src="./images/left_arrow.svg" alt="before"></li>
-            <li class="next"><img src="./images/right_arrow.svg" alt="next"></li>
-        </div>
-        <div id="carousel1">
-            <a href="#" data-i="0"><img src="./images/btn_banner.png" alt="01"/></a>
-            <a href="#" data-i="1"><img src="./images/btn_banner.png" alt="01"/></a>
-            <a href="#" data-i="2"><img src="./images/btn_banner.png" alt="01"/></a>
-            <a href="#" data-i="3"><img src="./images/btn_banner.png" alt="01"/></a>
-        </div>
-    </div><!--비주얼 영역 끝-->
-</header>
-
-
-
-
-
-</div><!--섹션1 끝-->
-
-<div class="section2">
+    <section class="section2">
     <div class="wrap">
         <h3>DONGHWA</h3>
         <p>좋은 약을 만들어 소비자에게 봉사하고<br/>
         그 효험을 본 정당한 대가로 경영되는 회사</p>
         <div class="box">
-            <div id="vision">
+            <a href="#"><div id="vision">
                 <h4>VISION</h4>
                 <P>우리가 연 제약보국,<br/>
                 우리가 펼 인류 건강</P>
                 <img src="./images/vision.png" alt="vision" />
-            </div><!--vision-->
-            <div id="business">
+            </div></a><!--vision-->
+            <a href="#"><div id="business">
                 <img src="./images/person.png" alt="person" />
                 <h4>인간행복 경영</h4>
                 <p><strong>회장 윤도준<br/></strong>
                 전문의 의학박사<br/>Dream Motivator
                 </p>
-            </div> <!--business-->
+            </div> </a><!--business-->
 
-            <div id="esg">
+            <a href="#"><div id="esg">
                 <span></span>
                 <p>ESG <br/> 환경경영</p>
-            </div>
+            </div></a>
 
-            <div id="family">
+            <a href="#"><div id="family">
                     <div id="shadow"></div>
                     <img src="./images/family.png" alt="family" />
 
-            </div><!--family 끝-->
+            </div><!--family 끝--></a>
             <div id="family_txt"><p>Best Family Friendly Management</p>
             직원들의 가정생활과 직장생활을<br/>
             조화롭게 병행할 수 있도록 노력하겠습니다.
@@ -186,9 +187,9 @@
 
 
     </div><!--wrap 끝-->
+    </section>
 
-</div><!--section2 끝-->
-<div class="section3">
+<section class="section3">
     <div class="wrap">
     <h3>Product</h3>
     <p><strong>좋은 약이 아니면 만들지마라.<br/></strong>
@@ -212,9 +213,11 @@
         </div><!--캐러셀 영역 끝-->
     </div>    
 </div>
-</div><!--section3 끝-->
+</section><!--section3 끝-->
 
-<div class="section4">
+
+
+<section class="section4">
 <div id="news" class="wrap">
 <h3>DONGHWA NEWS <br/>& CONTENTS</h3>
 <ul>
@@ -244,10 +247,15 @@
         <li class="month">2022-09-20</li>
         <hr class="board_line"/>
     </ul>
+    <div class="icon">
+    <a href="#"><p class="icon_facebook"></p></a>
+    <a href="#"><p class="icon_insta"></p></a>
+</div>
 </div><!--게시판 영역 끝-->
-</div><!--section4 끝-->
+</section><!--section4 끝-->
 
-<div class="section5">
+
+<section class="section5">
     <div class="flex wrap">
         <div id="investment">            
             <div id="commt">
@@ -286,9 +294,9 @@
             <a href="#"><img src="./images/brand04.png" alt="PHARM"></a>
         </div>
     </div>
-</div> <!--section5 끝-->
+</section> <!--section5 끝-->
 
-
+<section class="section6">
 <footer>
     <div class="wrap">
         <div class="logo">
@@ -316,7 +324,15 @@
     </div><!--sns 끝-->
     </div><!--flex-->
 </footer>
-</div> <!--section 끝!!!!!!-->
-
+</section>
+</div> <!--fullpage 끝!!!!!!-->
+<script src="./js/full-page-scroll.js"></script>
+<script>
+    new fullScroll({
+	displayDots:true,
+	dotsPosition:'right',
+	animateTime:0.3
+	});
+</script>
 </body>
 </html>

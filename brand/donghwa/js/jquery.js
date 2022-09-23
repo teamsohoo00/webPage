@@ -1,35 +1,42 @@
-/*$(function(){
-    var depth1 = $(".gnb > li"),
-        header = $("header");
+/*풀페이지*/
 
-    //depth1 마우스 올리면 header 길이 540px;
-    //떠나면 140px
-    depth1.mouseenter(function(){
-        header.stop().animate({height:"540px"});
 
-        $("#logo>a").attr("src","../images/hover_logo1.png");
-    }).mouseleave(function(){
-        header.stop().animate({height:"140px"});
+/*헤더*/
+
+$(document).ready(function(){
+    var $header = $("header");
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 0){
+            $header.addClass("sticky");
+            $("header nav").css("height","140px");
+            $(".gnb,#util").mouseover(function(){
+                $header.addClass("sticky");
+                $("header nav").css("height","520px");
+            });
+            $(".gnb,#util").mouseleave(function(){
+                $header.removeClass("sticky");
+            });
+            
+        
+            $(".gnb,#util").mouseover(function(){
+                var a =$(this).attr("id");
+                $(".submenu").show();
+                $header.addClass("sticky");
+            });
+        
+            $(".gnb,#util").mouseleave(function(){
+                $(".submenu").hide();
+                $header.addClass("sticky");
+                $("header nav").css("height","140px");
+            });
+        }else{
+            $header.removeClass("sticky");
+            $(".gnb,#util").mouseleave(function(){
+                $header.removeClass("sticky");
+            });
+        }
     });
-})*/
-
-
-
-
-
-
-
-
-
-
-
-/*비주얼 배너*/
-
-
-
-
-
-
+});
 
 
 /*product 캐러셀*/
@@ -63,11 +70,6 @@ $("#container").hover(function(){
     slideStart = setInterval("count()",time);
 }
 )
-
-$("#carousel a").click(function(){
-    n=$(this).attr("data-i");
-    slideView(n);
-})
 
 
 
