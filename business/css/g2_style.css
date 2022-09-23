@@ -172,7 +172,10 @@ img{vertical-align:top;}
 @media all and (max-width:1024px){
     
     /*공통 사용*/
-    .wrap{width:100%; margin:0 auto; }
+
+    .wrap{width:100%; margin:0 auto;}
+  
+   
     
     /*section1*/
     .section1{
