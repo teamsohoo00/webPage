@@ -7,9 +7,6 @@
     <title>new</title>
     <link href="./css/G1_style.css" rel="stylesheet" type="text/css" />
     <link href="./css/animate.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css">
-    <link rel="stylesheet" href="./css/common.min.css">
     <script>
         $(function(){
             $(".sec1_t01").fadeIn(2000)
@@ -303,31 +300,21 @@
             </p>
         </div>
     </div>
-    <div class="section4 jd-slider slider3"><!--section4 (광고 영상)-->
+    <div class="section4"><!--section4 (광고 영상)-->
         <h3>
             오늘도 잘 <span>소화</span>하세요
         </h3>
         <h4>
             소화엔 역시 활명수, 영상으로 확인하세요!
         </h4>
-        <div id="container" class="slide-inner">
-            <video id="slideImg" class="slide-area" controls poster="./img/g1_img/logo.png" width="580" height="330">
+        <div id="container">
+            <video class="slide-area" controls poster="./img/g1_img/logo.png" width="580" height="330">
                 <source src="./img/video/01.mp4" type="video/mp4">
                 <source src="./img/video/02.mp4" type="video/mp4">
                 <source src="./img/video/03.mp4" type="video/mp4">
                 <source src="./img/video/04.mp4" type="video/mp4">
                 <source src="./img/video/05.mp4" type="video/mp4">
             </video>
-            <a class="prev" href="#">
-                <i class="fas fa-angle-left fa-2x"></i>
-            </a>
-            <a class="next" href="#">
-                <i class="fas fa-angle-right fa-2x"></i>
-            </a>
-        </div>
-        <div class="controller">
-            <div class="indicate-area"></div>
-        </div>
     </div>
 </section>
 <footer>
@@ -380,9 +367,6 @@
     </div>
 </div>
 <script src="./js/wow.js"></script>
-<script src="./slick.js"></script>
-<script src="./js/jquery.js"></script>
-<script src="./js/jquery.jdSlider-latest.min.js"></script>
 <script>
     wow = new WOW(
        {
@@ -392,17 +376,6 @@
        }
     );
     wow.init();
-</script>
-<script>
-    window.onload = function () {
-    $(".slider3").jdSlider({
-            wrap:'.slide-inner',
-            isAuto: true,
-            isLoop:true,
-            speed:1000,
-            interval:1000
-        });
-    }
 </script>
 </footer>
 </body>
