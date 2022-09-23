@@ -7,16 +7,17 @@
     <title>new</title>
     <link href="./css/G1_style.css" rel="stylesheet" type="text/css" />
     <link href="./css/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/common.min.css">
     <script>
-        $(function(){
-            $(".sec1_t01").fadeIn(2000)
-            },);
-        $(function(){
-            $(".sec1_t02").fadeIn(4000)
-            },);
-        $(function(){
-            $(".sec1_t03").fadeIn(6000)
-            },);
+        var timer = setTimeout(function(){
+            $(".sec1_t01").fadeIn(2000);
+            },1000);
+        var timer = setTimeout(function(){
+            $(".sec1_t02").fadeIn(2000);
+            },2000);
+        var timer = setTimeout(function(){
+            $(".sec1_t03").fadeIn(2000);
+            },3000);
     </script>
 <body>
     <header>
@@ -84,7 +85,7 @@
                 </div>
                 <div>
                     <p class="m_name">이선약</p>
-                    <a href="#" class="m_img">
+                    <a href="#" class="m_img01">
                         <img src="./img/g1_img/medicine01.png" alt="이선약" />
                     </a>
                 </div>
@@ -92,7 +93,7 @@
             <div class="m_02">
                 <div>
                     <p class="m_name">고추틴크</p>
-                    <a href="#" class="m_img">
+                    <a href="#" class="m_img02">
                         <img src="./img/g1_img/medicine10.png" alt="고추틴크" />
                     </a>
                 </div>
@@ -112,7 +113,7 @@
                 </div>
                 <div>
                     <p class="m_name">현호색</p>
-                    <a href="#" class="m_img">
+                    <a href="#" class="m_img03">
                         <img src="./img/g1_img/medicine02.png" alt="현호색" />
                     </a>
                 </div>
@@ -120,7 +121,7 @@
             <div class="m_04">
                 <div>
                     <p class="m_name">건강</p>
-                    <a href="#" class="m_img">
+                    <a href="#" class="m_img04">
                         <img src="./img/g1_img/medicine09.png" alt="건강" />
                     </a>
                 </div>
@@ -140,7 +141,7 @@
                 </div>
                 <div>
                     <p class="m_name">진피</p>
-                    <a href="#" class="m_img">
+                    <a href="#" class="m_img05">
                         <img src="./img/g1_img/medicine03.png" alt="진피" />
                     </a>
                 </div>
@@ -148,7 +149,7 @@
             <div class="m_06">
                 <div>    
                     <p class="m_name">육두구</p>
-                    <a href="#" class="m_img">
+                    <a href="#" class="m_img06">
                         <img src="./img/g1_img/medicine08.png" alt="육두구" />
                     </a>
                 </div>
@@ -168,7 +169,7 @@
                 </div>
                 <div>   
                     <p class="m_name">육계</p>
-                    <a href="#" class="m_img">
+                    <a href="#" class="m_img07">
                         <img src="./img/g1_img/medicine04.png" alt="육계" />
                     </a>
                 </div> 
@@ -176,7 +177,7 @@
             <div class="m_08">
                 <div>    
                     <p class="m_name">후박</p>
-                    <a href="#" class="m_img">
+                    <a href="#" class="m_img08">
                         <img src="./img/g1_img/medicine07.png" alt="후박" />
                     </a>
                 </div>
@@ -196,7 +197,7 @@
                 </div>
                 <div>
                     <p class="m_name">정향</p>
-                    <a href="#" class="m_img">
+                    <a href="#" class="m_img09">
                         <img src="./img/g1_img/medicine05.png" alt="정향" />
                     </a>
                 </div>
@@ -204,7 +205,7 @@
             <div class="m_10">
                 <div>
                     <p class="m_name">창출</p>
-                    <a href="#" class="m_img">
+                    <a href="#" class="m_img10">
                         <img src="./img/g1_img/medicine06.png" alt="창출" />
                     </a>
                 </div>
@@ -215,8 +216,146 @@
                     <img src="./img/g1_img/medicine06_line.png" alt="창출_라인" />
                 </div>
             </div>
+            <div id="m_01">
+                <div>
+                    <p class="m_name">이선약</p>
+                    <a href="#" class="m_img">
+                        <img src="./img/g1_img/medicine01.png" alt="이선약" />
+                    </a>
+                </div>
+                <div>
+                    <p class="m_effect">
+                        진경, 진통, 식욕부진 개선,<br/>가슴과 몸의 답답함 완화.
+                    </p>
+                </div>
+            </div>
+            <div id="m_02">
+                <div>
+                    <p class="m_name">고추틴크</p>
+                    <a href="#" class="m_img">
+                        <img src="./img/g1_img/medicine10.png" alt="고추틴크" />
+                    </a>
+                </div>
+                <div>
+                    <p class="m_effect">
+                        속을 따뜻하게 하고 식욕 촉진.<br/>복통/구토/설사에 효과적.<br/>위산분비 억제, 경련 완화
+                    </p>
+                </div>
+            </div>
+            <div id="m_03">
+                <div>
+                    <p class="m_name">현호색</p>
+                    <a href="#" class="m_img">
+                        <img src="./img/g1_img/medicine02.png" alt="현호색" />
+                    </a>
+                </div>
+                <div>
+                    <p class="m_effect">
+                        혈액순환을 좋게하여 시운을 다스림.<br/>강한 진통효과, 구토/설사에 효과적.
+                    </p>
+                </div>
+            </div>
+            <div id="m_04">
+                <div>
+                    <p class="m_name">건강</p>
+                    <a href="#" class="m_img">
+                        <img src="./img/g1_img/medicine09.png" alt="건강" />
+                    </a>
+                </div>
+                <div>
+                    <p class="m_effect">
+                        혈액순환을 좋게함. 소화액 분비 촉진.<br/>식욕부진, 구역, 구토, 설사, 가스참, 위염<br/>등의 증상 개선.
+                    </p>
+                </div>
+            </div>
+            <div id="m_05">
+                <div>
+                    <p class="m_name">진피</p>
+                    <a href="#" class="m_img">
+                        <img src="./img/g1_img/medicine03.png" alt="진피" />
+                    </a>
+                </div>
+                <div>
+                    <p class="m_effect">
+                        소화관 운동 강화. 복부 팽만감 완화.<br/>음식물과 가스 배설 촉진. 통증 완화.<br/>구토와 식욕부진에 효과적.
+                    </p>
+                </div>
+            </div>
+            <div id="m_06">
+                <div>
+                    <p class="m_name">육두구</p>
+                    <a href="#" class="m_img">
+                        <img src="./img/g1_img/medicine08.png" alt="육두구" />
+                    </a>
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 따뜻하게 하며 구토와 설사,<br/>통증을 멈춤. 신경 안정을 도움.
+                    </p>
+                </div>
+            </div>
+            <div id="m_07">
+                <div>
+                    <p class="m_name">육계</p>
+                    <a href="#" class="m_img">
+                        <img src="./img/g1_img/medicine04.png" alt="육계" />
+                    </a>
+                </div>
+                <div>
+                    <p class="m_effect">
+                        속을 따뜻하게 하고 위액 분비 촉진.<br/>소화기능 향상. 복통과 설사 치료.<br/>구토, 식욕부진 개선.
+                    </p>
+                </div>
+            </div>
+            <div id="m_08">
+                <div>
+                    <p class="m_name">후박</p>
+                    <a href="#" class="m_img">
+                        <img src="./img/g1_img/medicine07.png" alt="후박" />
+                    </a>
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 튼튼하게 함. 체내 기를 순환시켜<br/>더부룩함과 통증 완화.<br/>신경 안정을 도움.
+                    </p>
+                </div>
+            </div>
+            <div id="m_09">
+                <div>
+                    <p class="m_name">정향</p>
+                    <a href="#" class="m_img">
+                        <img src="./img/g1_img/medicine05.png" alt="정향" />
+                    </a>
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 따뜻하게 하여 구역, 구토<br/>위의 통주으 복통을 치료.
+                    </p>
+                </div>
+            </div>
+            <div id="m_10">
+                <div>
+                    <p class="m_name">창출</p>
+                    <a href="#" class="m_img">
+                        <img src="./img/g1_img/medicine06.png" alt="창출" />
+                    </a>
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 튼튼하게 함. 식욕부진, 구토, 설사 치료.<br/>스트레스로 인한 기능성 소화장애에 효과적.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        $(".m_img01").click(function(){ // 아이디가 btn01인 요소를 클릭했을 때!
+            $("#m_01").css("display","block");
+        });
+        $(".m_img").click(function(){
+            $("#m_01").css("display","none");
+        });
+        </script>
     <div class="section3"><!--section3 (History)-->
         <h3>125년 당신 곁에,<br/>국민 소화제 <span class="color2">활명수</span>의 역사를 만나보세요.</h3>
         <div class="h_01 wow fadeInLeft">
@@ -300,21 +439,51 @@
             </p>
         </div>
     </div>
-    <div class="section4"><!--section4 (광고 영상)-->
+    <div class="section4 jd-slider slider3"><!--section4 (광고 영상)-->
         <h3>
             오늘도 잘 <span>소화</span>하세요
         </h3>
         <h4>
             소화엔 역시 활명수, 영상으로 확인하세요!
         </h4>
-        <div id="container">
-            <video class="slide-area" controls poster="./img/g1_img/logo.png" width="580" height="330">
-                <source src="./img/video/01.mp4" type="video/mp4">
-                <source src="./img/video/02.mp4" type="video/mp4">
-                <source src="./img/video/03.mp4" type="video/mp4">
-                <source src="./img/video/04.mp4" type="video/mp4">
-                <source src="./img/video/05.mp4" type="video/mp4">
-            </video>
+        <div id="#container" class="slide-inner">
+            <ul class="slide-area">
+                <li>
+                    <video controls poster="./img/g1_img/logo.png" width="580" height="330">
+                        <source src="./img/video/01.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <video controls poster="./img/g1_img/logo.png" width="580" height="330">
+                        <source src="./img/video/02.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <video controls poster="./img/g1_img/logo.png" width="580" height="330">
+                        <source src="./img/video/03.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <video controls poster="./img/g1_img/logo.png" width="580" height="330">
+                        <source src="./img/video/04.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <video controls poster="./img/g1_img/logo.png" width="580" height="330">
+                        <source src="./img/video/05.mp4" type="video/mp4">
+                    </video>
+                </li>
+            </ul>
+            <a class="prev" href="#">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+            <a class="next" href="#">
+                <i class="fas fa-angle-right fa-2x"></i>
+            </a>
+        </div>
+        <div class="controller">
+            <div class="indicate-area"></div>
+        </div>
     </div>
 </section>
 <footer>
@@ -367,6 +536,8 @@
     </div>
 </div>
 <script src="./js/wow.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery.jdSlider-latest.min.js"></script>
 <script>
     wow = new WOW(
        {
@@ -376,6 +547,24 @@
        }
     );
     wow.init();
+</script>
+<script>
+    window.onload = function () {
+        $(".slider3").jdSlider({
+            wrap:'.slide-inner',
+            isAuto: true,
+            isLoop:true,
+            speed:1000,
+            interval:1000,
+            responsive:[{
+                viewSize:768,
+                settings:{
+                    slideShow: 3,
+                    slideToscroll:2
+                }
+            }]
+        });
+    };
 </script>
 </footer>
 </body>

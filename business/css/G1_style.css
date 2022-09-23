@@ -24,12 +24,12 @@ html{ font-family: 'Pretendard'; }
     background:#f3f3f3;
     width:100%;
     height:900px;
+    position:relative;
 }
 .section1>div{
     background:url('../img/g1_img/bg.png') no-repeat center;
     width:100%;
     height:900px;
-    position:relative;
 }
 .section1>div>h3{
     font-size:2.5rem;
@@ -51,6 +51,7 @@ html{ font-family: 'Pretendard'; }
     color:#fff;
 }
 .section1>div>img.bottle{
+    transform:scale(90%);
     position:absolute;
     top:15%; right:23%;
 }
@@ -64,7 +65,7 @@ html{ font-family: 'Pretendard'; }
 }
 .section1>div>.line01{
     position:absolute;
-    top:55%; left:32%;
+    top:53%; left:31%;
 }
 
 /*첨가 생약 효능 영역*/
@@ -83,7 +84,8 @@ html{ font-family: 'Pretendard'; }
     font-weight:900;
     color:#402000;
     line-height:1.2;
-    transform:translateY(230%);
+    position:absolute;
+    top:40%; left:44.1%;
 }
 .section2 .m_name{
     text-align:center;
@@ -94,8 +96,35 @@ html{ font-family: 'Pretendard'; }
     font-size:1.1rem;
     font-weight:600;
 }
-.m_img>img:hover{transform:scale(1.1);}
-
+.m_img01>img:hover{transform:scale(1.1);}
+.m_img02>img:hover{transform:scale(1.1);}
+.m_img03>img:hover{transform:scale(1.1);}
+.m_img04>img:hover{transform:scale(1.1);}
+.m_img05>img:hover{transform:scale(1.1);}
+.m_img06>img:hover{transform:scale(1.1);}
+.m_img07>img:hover{transform:scale(1.1);}
+.m_img08>img:hover{transform:scale(1.1);}
+.m_img09>img:hover{transform:scale(1.1);}
+.m_img10>img:hover{transform:scale(1.1);}
+{transform:scale(1.1);}
+#m_01, #m_02, #m_03, #m_04, #m_05,
+#m_06, #m_07, #m_08, #m_09, #m_10{
+    display:none;
+    text-align:center;
+    width:60%; height:40%;
+    background:rgba(0, 0, 0, 0.8);
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    color:#fff;
+    line-height:30px;
+}
+#m_01>div:first-child, #m_02>div:first-child,
+#m_03>div:first-child, #m_04>div:first-child,
+#m_05>div:first-child, #m_06>div:first-child,
+#m_07>div:first-child, #m_08>div:first-child,
+#m_09>div:first-child, #m_10>div:first-child
+{margin-top:30px;}
 .section2>div>.m_01{
     display:flex;
     flex-flow:row wrap;
@@ -371,6 +400,73 @@ html{ font-family: 'Pretendard'; }
 
 /*모바일*/
 @media all and (max-width:1024px){
+
+.section1{height:500px; overflow:hidden;}
+.section1>div{
+    background-size:100%;
+    background-position:0 120px;
+}
+.section1>div>h3.sec1_t01{top:21%; left:15%;}
+.section1>div>h3.sec1_t02{top:32%; left:22%;}
+.section1>div>h3.sec1_t03{top:43%; left:18%;}
+.section1>div>img.bottle{
+    transform:scale(70%);
+    top:8%; right:22%;
+}
+.section1>div>p{display:none;}
+.section1>div>.line01{
+    transform:scale(60%);
+    top:52%; left:29%;
+    display:none;
+}
+
+.section2{height:650px;}
+.section2>div>h3{top:38%; left:39%;}
+.section2>div>.m_01{top:10%; left:37%;}
+.section2>div>.m_02{top:10%; right:37%;}
+.section2>div>.m_03{top:31%; left:28%;}
+.section2>div>.m_04{top:31%; right:28%;}
+.section2>div>.m_05{top:47%; left:21%;}
+.section2>div>.m_06{top:47%; right:21%;}
+.section2>div>.m_07{top:58%; left:27%;}
+.section2>div>.m_08{top:61%; right:28%;}
+.section2>div>.m_09{top:72%; left:37%;}
+.section2>div>.m_10{top:72%; right:37%;}
+
+.section2>div>.m_01>div:first-child{display:none;}
+.section2>div>.m_02>div:last-child{display:none;}
+.section2>div>.m_03>div:first-child{display:none;}
+.section2>div>.m_04>div:last-child{display:none;}
+.section2>div>.m_05>div:first-child{display:none;}
+.section2>div>.m_06>div:last-child{display:none;}
+.section2>div>.m_07>div:first-child{display:none;}
+.section2>div>.m_08>div:last-child{display:none;}
+.section2>div>.m_09>div:first-child{display:none;}
+.section2>div>.m_10>div:last-child{display:none;}
+
+#m_02, #m_03, #m_04, #m_05,
+#m_06, #m_07, #m_08, #m_09, #m_10{display:none;}
+
+#m_01{
+    display:none;
+    text-align:center;
+    width:60%; height:40%;
+    background:rgba(0, 0, 0, 0.8);
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    color:#fff;
+    line-height:30px;
+}
+#m_01>div:first-child, #m_02>div:first-child,
+#m_03>div:first-child, #m_04>div:first-child,
+#m_05>div:first-child, #m_06>div:first-child,
+#m_07>div:first-child, #m_08>div:first-child,
+#m_09>div:first-child, #m_10>div:first-child
+{margin-top:30px;}
+
+
+
 
 
 
