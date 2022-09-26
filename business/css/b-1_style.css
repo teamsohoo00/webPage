@@ -63,7 +63,7 @@ h2{
 	visibility:hidden;
 }
 .check>li{float:left;  color:#333;}
-#check_box01,#check_box02,#check_box03{
+.check_box{
     border:1px solid #888;
     width:20px;
     height:20px;
