@@ -91,7 +91,7 @@ h2{
 .product01>li,.product02>li{position:absolute;}
 .product01>li:nth-child(2),.product02>li:nth-child(2){left:3%;}
 .product01>li:nth-child(2)>img{width:40%;}
-.product02>li:nth-child(2)>img{width:73%;}
+.product02>li:nth-child(2)>img{width:70%;}
 .product01>li:nth-child(3),.product02>li:nth-child(3){
     left:35%;
     font-size:1.8rem;
@@ -202,4 +202,24 @@ h2{
 
 @media all and (max-width:1024px){
     .wrap{width:100%;}
+    .wrap>ul{
+        width:100%; 
+        padding-left:25%; 
+        margin:0;
+        box-sizing:border-box;
+    }
+    #section{display:block;}
+    .section01,.section02{
+        width:100%; 
+        padding:0 15%;
+        box-sizing:border-box;
+    }
+    .product01>li:nth-child(3),
+    .product02>li:nth-child(3),
+    .product01>li:nth-child(4),
+    .product02>li:nth-child(4),
+    .product01>li:nth-child(5),
+    .product02>li:nth-child(5){
+        left:40%;
+    }
 }
