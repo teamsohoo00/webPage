@@ -63,19 +63,26 @@ h2{
 	visibility:hidden;
 }
 .check>li{float:left;  color:#333;}
-.check_box{
+.checkBox{
+    display:block;
     border:1px solid #888;
     width:20px;
     height:20px;
     box-sizing:border-box;
     cursor:pointer;
 }
+input.checkBox[type="checkbox"]:checked{
+    background-color:#36594c;
+    color:#fff;
+}
 .check>li:nth-child(2),
 .check>li:nth-child(3),
 .check>li:nth-child(4){padding-top:2px;}
-.check>li:nth-child(2){
-    margin-left:1%;
+.check>li:nth-child(2){margin-left:1%;}
+.check>li:nth-child(2)>label{
+    width:100%;
     cursor:pointer;
+    color:#333;
 }
 .check>li:nth-child(3){margin:0 4%; color:#ddd;}
 .check>li:nth-child(4){cursor:pointer;}
@@ -98,7 +105,7 @@ h2{
     padding-top:15px;
 }
 .product01>li:nth-child(4),
-.product02>li:nth-child(4){left:35%; bottom:40%;}
+.product02>li:nth-child(4){left:35%; bottom:45%;}
 .product01>li:nth-child(4)>ul::after,
 .product02>li:nth-child(4)>ul::after{
 	content:'';
@@ -121,11 +128,16 @@ h2{
     border:1px solid #333;
     padding:5px 0;
 }
-.product01>li:nth-child(5)>span:nth-of-type(odd),
-.product02>li:nth-child(5)>span:nth-of-type(odd){
-    padding:0 10px;
-    cursor:pointer;
+.product01>li:nth-child(5)>span>#mi01,
+.product01>li:nth-child(5)>span>#plus01,
+.product02>li:nth-child(5)>span>#mi02,
+.product02>li:nth-child(5)>span>#plus02{
+    border:0;
+    background:#fff;
     color:#333;
+    cursor:pointer;
+    font-size:1.1rem;
+    padding:0 10px;
 }
 .product01>li:nth-child(5)>span:nth-of-type(2),
 .product02>li:nth-child(5)>span:nth-of-type(2){

@@ -6,7 +6,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>new</title>
     <link href="./css/b-1_style.css" rel="stylesheet" type="text/css" />
-    <script src="./js/b-1.js"></script>
 </head>
 <body>
 <header>
@@ -51,14 +50,14 @@
         <section class="section01">
             <h2>왼쪽영역</h2>
             <ul class="check">
-                <li><input type="checkbox" class="check_box" /></li>
-                <li>전체선택</li>
+                <li><input type="checkbox" class="checkBox" id="allChk" /></li>
+                <li><label for="allChk">전체선택</label></li>
                 <li>|</li>
-                <li>선택삭제</li>
+                <li id="del">선택삭제</li>
             </ul>
             <p>&nbsp;</p>
             <ul class="product01">
-                <li><input type="checkbox" class="check_box" /></li>
+                <li><input type="checkbox" class="checkBox" /></li>
                 <li><img src="./img/b_img/img01.jpg" alt="img01" /></li>
                 <li>활명수 10병</li>
                 <li>
@@ -69,15 +68,15 @@
                     </ul>
                 </li>
                 <li>
-                    <span id="mi01">-</span>
+                    <span><input type="button" value="-" id="mi01" /></span>
                     <span id="num01">1</span>
-                    <span id="plus01">+</span>
+                    <span><input type="button" value="+" id="plus01" /></span>
                 </li>
                 <li><span  id="cash01">12,000</span>원</li>
                 <li id="cancel01"><img src="./img/b_img/icon02.gif" alt="icon02" /></li>
             </ul>
             <ul class="product02">
-                <li><input type="checkbox" class="check_box" /></li>
+                <li><input type="checkbox" class="checkBox" /></li>
                 <li><img src="./img/b_img/img02.jpg" alt="img02" /></li>
                 <li>미인활 10병</li>
                 <li>
@@ -88,9 +87,9 @@
                     </ul>
                 </li>
                 <li>
-                    <span id="mi02">-</span>
+                    <span><input type="button" value="-" id="mi02" /></span>
                     <span id="num02">1</span>
-                    <span id="plus02">+</span>
+                    <span><input type="button" value="+" id="plus02" /></span>
                 </li>
                 <li><span id="cash02">12,000</span>원</li>
                 <li id="cancel02"><img src="./img/b_img/icon02.gif" alt="icon02" /></li>
@@ -152,4 +151,5 @@
     </div>
 </footer>
 </body>
+<script src="./js/b-1.js"></script>
 </html>
