@@ -1,11 +1,11 @@
 @charset "utf-8";
 @import "reset.css";
-@import "full-page-scroll.css";
-
+@import "fullpage.min.css";
 *{margin: 0; padding: 0;}
 .wrap{
     width:1240px;
     margin: 0 auto;
+    position: relative;
 }
 li{list-style-type :none }
 nav{width:1240px;}
@@ -51,8 +51,10 @@ header #util ul .quick{
 header{
     width:100%;
     /*left: 0; right: 0; top:0;*/
-    position: fixed;
+    position: absolute;
     z-index: 9999999;
+    top:0;
+    height: 140px;
 }
 header.sticky #util ul li a{color: #666;}
 header.sticky .wrap #gnb ul li a{color: #000;}
@@ -73,12 +75,97 @@ header nav{
     width: 100%;
 
 }
-.section1{
+#section1{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
-.slider>img{ width:100%; height: 969px;}
+.slider{
+    position: relative;
+    width: 100%;
+}
+.myslide{
+    height: 1080px;
+    overflow: hidden;
+    display: none;
+}
+.prev, .next{
+    position: absolute;
+    top:51%;
+    transform: translate(0,-50%);
+    font-size:50px;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s;
+    user-select: none;
+}
+.prev{
+    left: 10%;
+}
+.next{
+    right: 10%;
+}
+
+.dotsbox{
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20%;
+    cursor: pointer;
+}
+
+.active, 
+.dot:hover{
+    background: #fff;
+}
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.txt{
+    position: absolute;
+    color: #fff;
+    top:50%;
+    left: 35%;
+    font-size: 3vh;
+    font-weight: 700;
+    z-index: 99999999;
+}
+
+.fade{
+    -webkit-animation-name:fade ;
+    -webkit-animation-duration:1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: 0.8}
+    to {opacity: 1}
+}
+@keyframes fade{
+    from {opacity: 0.8}
+    to {opacity: 1}
+}
+
+.slider img{
+    transform: scale(1.3, 1.3);
+    -webkit-animation-name:zoomin ;
+    -webkit-animation-duration:40s ;
+    animation-name: zoomin;
+    animation-duration: 40s;
+}
+@keyframes zoomin {
+    from{transform: scale(1,1);}
+    to{transform: scale(1.3,1.3);}
+}
+/*.slider>img{ width:100%; height: 969px;}*/
 
 #logo{
     width:179px; height: 54px;
@@ -136,53 +223,24 @@ header #gnb>.gnb>li{
     font-weight: 400;
 }
 
-#slideImg{position: relative;}
 
-#carousel1{
-    position: absolute;
-    top:80%;
-    right:49%;
-}
-#carousel1>a>img{
-    margin: 0 5px;
-}
-
-
-#btn>.before>img{
-    width: 2%;
-    position: absolute;
-    top:40%;
-    left: 10%;
-    
-}
-#btn>.next>img{
-    width: 2%;
-    position: absolute;
-    top:40%;
-    right: 10%;
-}
-
-.visual>.slider{
-    height: 1080px;
-}
 /*section2*/
 .box{
     position: relative;
 }
-.section2{
+#section2{
     width: 100%;
-    height: 1080px;
+    height: 100%;
 }
 
 h3{
     font-size: 2.8rem;
     font-weight: bold;
     color:#20274d;
-    padding-top: 220px;
+    padding-top: 80px;
 }
 
-
-.section2>.wrap>p{
+.sub_txt{
     font-size: 1.2rem;
     line-height: 1.2;
     color: #666;
@@ -206,7 +264,7 @@ h3{
     color: #20274d;
 }
 
-#vision>p{
+#vision p{
     padding-left: 50px;
     font-weight: 600;
     font-size: 1.2rem;
@@ -275,7 +333,7 @@ h3{
 }
 #family{
     position: absolute;
-    top:-45%;
+    top:-38%;
     right: 0;
     box-shadow: 40px 10px #ddd;
 }
@@ -289,9 +347,13 @@ h3{
 #family_txt{
     position: absolute;
     right: 15%;
-    top:80%;
+    top:83%;
     color: #333;
     line-height: 1.2;
+}
+
+#section2 h3 {
+    padding-top: 80px;
 }
 
 /*박스 hover 효과*/
@@ -309,7 +371,7 @@ h3{
 
 .section3>.wrap>h3{padding-top: 220px;}
 
-.section3>.wrap>p{
+.product_txt{
     font-size: 1.2rem;
     line-height: 1.2;
     color: #666;
@@ -317,7 +379,7 @@ h3{
     margin: 20px 0 50px 0;
 }
 
-.section3>.wrap>p strong{color: #e20c19;}
+.product_txt strong{color: #e20c19;}
 
 hr{
     background:#666;
@@ -337,28 +399,29 @@ hr{
 
 /*section4*/
 
-.section4{
+#section4{
     width: 100%;
     background: url("../images/bg.jpg") center/cover;
     height: 1080px;
     position: relative;
 }
 
-.section4>#news>h3{padding-top: 220px;}
-.section4>#news>ul{display: flex;}
-.section4>#news>ul>li{
+#section4 #news h3{padding-top: 10;}
+#section4 #news ul{display: flex;}
+#section4 #news ul li{
     padding: 50px 50px 10px 0;
     font-size: 1.1rem;
     font-weight: 800;
 }
+.donghwa_news a{color: #e20c19;}
 
-.section4>#news>ul>li>a:hover{color: #e20c19;}
 
-.section4>#news>img{width: 40%;}
+.color{color:#e20c19;}
+#section4 #news img{width: 40%;}
 #board{
     position: absolute;
     left:50%;
-    top:25%;
+    top:35%;
     font-size: 1.3rem;
     width: 32%;
 }
@@ -384,25 +447,60 @@ hr{
     font-weight: bold;
     color: #000000;
 }
-#board>ul>li>a:hover{color: #e20c19;}
+#board2{
+    position: absolute;
+    left:50%;
+    top:35%;
+    font-size: 1.3rem;
+    width: 32%;
+    display: none;
+}
+
+.view>span>a{
+    font-size: 0.9rem;
+}
+
+#board2 .flex{
+    padding: 0;
+    align-items:center;
+}
+#board2>p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#board2>.view{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+#board2>ul{margin: 10px 0;}
+#board2>ul>li{margin: 20px 0;}
+
+#board2>ul>li>a{
+    font-weight: bold;
+    color: #000000;
+}
+#board>ul>li>a:hover,#board2>ul>li>a:hover{color: #e20c19;}
 
 .month{
     color: #666;
     font-size: 0.8rem;
 }
+.click{cursor: pointer;}
 
 .board_line{width: 100%;}
 .mid_line{width: 100%; background: #666;}
 
 /*section5*/
-.section5{
+.section{
     width: 100%;
     height: 1080px;
 }
 .flex{
     display: flex;
     justify-content: space-between;
-    padding-top: 250px;
+    padding-top: 260px;
 }
 
 #investment,#recruitment{
@@ -451,6 +549,7 @@ hr{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    padding-bottom: 50px;
 }
 
 .brand>div{
@@ -465,6 +564,7 @@ hr{
     margin: 55px auto;
     width: 100%;
 }
+
 
 footer{
     width: 100%;
@@ -511,11 +611,18 @@ footer>.wrap>.sns>#icon>li>a{
         width: 10px;
         height: 10px;
     }
-    .bx-wrapper .bx-next{display: none;}
-    .bx-wrapper .bx-prev{display: none;}
-    .section2{height: auto;}
-    .section2>.wrap>h3{padding: 0;}
-    .section2>.wrap{margin: 0 }
+    /*비주얼배너*/
+    .txt{
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    #section2 .wrap{padding-top: 50px;}
+    #section2{height: 100%;}
+    #section2>.wrap>h3{padding: 0;}
+    #section2>.wrap{margin: 0 }
     #family,#family_txt{display: none;}
     #esg{width: 40%; left: 60%;  overflow: hidden;}
     #vision,#business{
@@ -524,8 +631,8 @@ footer>.wrap>.sns>#icon>li>a{
         overflow: hidden;
     }
 
-    .section3{margin-top: 100px;}
-    .section4{padding: 0;}
+    #section3{margin-top: 100px;}
+    #section4{padding: 0;}
     #news{display: none;}
     #board{
         position: absolute;
@@ -542,8 +649,8 @@ footer>.wrap>.sns>#icon>li>a{
         background: url(../images/icon_insta02.png) center/cover;
         width: 50px; height: 50px;
     }
-    .section5{padding: 0;}
-    .section5>.flex{
+    #section5{padding: 0;}
+    #section5 .flex{
         display: block;
         padding:0;
     }
@@ -552,7 +659,7 @@ footer>.wrap>.sns>#icon>li>a{
         margin-bottom: 20px;
     }
     #recruitment{width: 98%;}
-    .section5 h3{padding: 80px 0 20px 0;}
+    .section5 h3{padding: 0px 0 20px 0;}
     .section5{width: 100%;}
     .brand>div{
         width:20%;
@@ -560,4 +667,4 @@ footer>.wrap>.sns>#icon>li>a{
     footer{width: 100%; height: auto;}
     #icon{display: none;}
 
-}/*모바일 끝*/
+}/*모바일 끝
