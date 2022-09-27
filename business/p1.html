@@ -125,16 +125,125 @@
             </ul>
         </aside>
 
-        <form>
-            <table>
+        <form id="form" method="post" >
+            <table id="table">
+                <caption>상품등록</caption>
                 <tr>
-                    <th rowspan="2">진열상태</th>
+                    <th colspan="2" class="title">진열상태</th>
+                </tr>
+                <tr class="">
+                    <th>진열상태</th>
+                    <td>
+                        <input type="checkbox">
+                        <label for="">진열함</label>
+                        <input type="checkbox" >
+                        <label for="">진열안함</label>
+                    </td>
                 </tr>
                 <tr>
-                    <th>진열상태</th>
-                    <tr>진열함</tr>
+                    <th>판매상태</th>
+                    <td>
+                        <input type="checkbox" >
+                        <label for="">판매중</label>
+                        <input type="checkbox" >
+                        <label for="">판매중지</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="title">상품필수 정보</th>
+                </tr>
+                <tr>
+                    <th>상품명</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>상품명(관리용)</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>모델명</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>상품코드</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>상품요약설명</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>상품상세설명</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr class="search">
+                    <th>검색어 설정</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="title">이미지 등록</th>
+                </tr>
+                <tr>
+                    <th class="img">대표이미지</th>
+                    <td>
+                        <input type="file" >
+                    </td>
+                </tr>
+                <tr>
+                    <th class="img">상세이미지</th>
+                    <td>
+                        <input type="file" >
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="title">판매정보</th>
+                </tr>
+                <tr>
+                    <th>정가</th>
+                    <td>
+                        <input type="number" >원
+                    </td>
+                </tr>
+                <tr>
+                    <th>판매가</th>
+                    <td>
+                        <input type="number" >원
+                    </td>
+                </tr>
+                <tr>
+                    <th>배송비</th>
+                    <td>
+                        <input type="checkbox" >
+                        <label for="">무료</label>
+                        <input type="checkbox" >
+                        <label for="">5,000</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>재고수량</th>
+                    <td>
+                        <input type="number" >개
+                    </td>
                 </tr>
             </table>
+            <div>
+            <button>상품등록</button>
+            <button>취소</button>
+            </div>
         </form>
 
 
