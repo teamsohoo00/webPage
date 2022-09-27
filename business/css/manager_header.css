@@ -5,11 +5,11 @@
 font-family: 'SEBANG_Gothic_Bold';
 font-family: 'Pretendard-Regular';
 */
-
+html{font-family: 'Pretendard-Regular';}
 header{border-bottom:1px solid #d3d3d3; font-family: 'Pretendard-Regular';}
 /* 공통 */
 .wrap{max-width:1440px; margin:0 auto;}
-.header_flex{display:flex; flex-flow:row wrap;}
+.header_flex, .flex{display:flex; flex-flow:row wrap;}
 
 /* 로고 */
 .wrap>div>h1>a>img{width:100%;}

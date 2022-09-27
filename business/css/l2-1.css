@@ -76,20 +76,16 @@ input[type=checkbox]{width:1vw; height:1.5vh; margin:0 1% 0 0;}
     font-weight:900;
     font-size:1vw;
 }
-.clear>button{
-    background:#37594B;
-    border:none;
-    color:#fff;
-}
-.reset>button{
+.clear>button, .reset>button{
     color:#37594B;
     background:#fff;
     border:1px solid #37594B;
+    cursor:pointer;
 }
 /* 가입완료, 돌아가기 호버 효과 */
 .clear>button:hover{
-    background:#fff;
-    color:#37594B;
+    background:#37594B;
+    color:#fff;
     border:1px solid #37594B;
 }
 

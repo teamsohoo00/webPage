@@ -27,16 +27,19 @@ header{border-bottom:1px solid #dedede;}
     content:'';
     margin: 0;
 }
-#gnb{justify-content:space-between; align-items:center; margin-top:20px;}
-#gnb>li{height:8vh; line-height:2.8; box-sizing: border-box;}
+nav>h1{width:15%;}
+nav>ul{width:85%;}
+
+#gnb{justify-content:space-between; align-items:center; margin-top:1%;}
+#gnb>li{height:7vh; line-height:2.5; box-sizing: border-box;}
 #gnb>li>a{font-size:1.5vw; font-weight:500;}
-#gnb>li:first-child>a>img{width:80%;}
 #gnb>li:last-child>a:first-child>img{margin-right:30px;}
-#gnb>li:last-child img{width:20%;}
+#gnb>li:last-child img{width:25%;}
 #gnb>li:hover{border-bottom:3px solid #36594c;}
 #gnb>li:hover>a{color:#36594c; font-weight: 900;}
-#gnb>li:first-child:hover,
 #gnb>li:last-child:hover{border-bottom:0;}
+
+
 
 
 
@@ -52,14 +55,10 @@ footer{background:#36594c; padding:30px 0;}
 
 @media all and (max-width:1024px){ /* 모바일 */
     /* 헤더영역 */
-    #util,
-    #gnb>li:nth-child(2),
-    #gnb>li:nth-child(3),
-    #gnb>li:nth-child(4),
-    #gnb>li:nth-child(5){
-        display:none;
-    }
-    #gnb{margin:0;}
+    #util,#gnb{display:none;}
+    
+    
+    
 
 
 
