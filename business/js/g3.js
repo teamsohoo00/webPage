@@ -1,3 +1,4 @@
+
 $(function(){
 	$(".minus").click(function(){
 		//var number_cnt = parseInt($("#number_cnt").text());
@@ -14,6 +15,7 @@ $(function(){
 		$("#number_cnt2").text(parseInt($("#number_cnt2").text()) + 1);
 	});
 });
+
 
 $(function(){
     $("#product01").click(function(){

@@ -15,44 +15,50 @@
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">제품판매약국 찾기</a></li>
             </ul>
-        
-            <ul class="flex" id="gnb">
-                <li>
+            <nav class="flex"> 
+                <h1>
                     <a href="#">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
-                </li>
-                <li>
-                    <a href="#">브랜드 스토리</a>
-                </li>
-                <li>
-                    <a href="#">제품정보</a>
-                </li>
-                <li>
-                    <a href="#">상품구매</a>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                    <a href="#"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
-                </li>
-            </ul>
+                </h1>
+                <ul class="flex" id="gnb">
+                    <li>
+                        <a href="#">브랜드 스토리</a>
+                    </li>
+                    <li>
+                        <a href="#">제품정보</a>
+                    </li>
+                    <li>
+                        <a href="#">상품구매</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                        <a href="#"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                </ul>
+                <span class="menu" id="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </nav>
         </div>
     </header>
 
     <section class="section1">
         <h1>JOIN US</h1>
         <div class="id">
-            <input type="text" placeholder="아이디" name="" />
+            <input type="text" placeholder=" 아이디" name="" />
         </div>
         <div class="password">
-            <input type="password" placeholder="비밀번호" name="" />
+            <input type="password" placeholder=" 비밀번호" name="" />
 
         </div>
         <div class="password">
-            <input type="password" placeholder="비밀번호 확인" name="" />
+            <input type="password" placeholder=" 비밀번호 확인" name="" />
         </div>
         <div class="name">
-            <input type="name" placeholder="이름" name="" />
+            <input type="name" placeholder=" 이름" name="" />
         </div>
         <div class="tel">
             <h6>휴대폰번호</h6>
@@ -68,27 +74,34 @@
             <h6>약관동의</h6>
             <div>
                 <p>
-                    <input type="checkbox" name="" >전체 약관에 모두 동의 합니다.
+                    <input type="checkbox" id="allChk" class="checkbox">
+                    <label for="allChk">전체 약관에 모두 동의 합니다.</label>
                 </p>
             </div>
             <div>
                 <p>
-                    <input type="checkbox" name="" >이용약관 <span class="color">(필수)</span>
+                    <input type="checkbox" id="essential1" class="checkbox">
+                    <label for="essential1">이용약관 <span class="color">(필수)</span></label>
                 </p>
                 <p>
-                    <input type="checkbox" name="" >개인정보 수집 및 이용 안내 <span class="color">(필수)</span>
+                    <input type="checkbox" id="essential2" class="checkbox">
+                    <label for="essential2">개인정보 수집 및 이용 안내 <span class="color">(필수)</span></label>
                 </p>
                 <p>
-                    <input type="checkbox" name="" >만 14세 이상입니다. <span class="color">(필수)</span>
+                    <input type="checkbox" id="essential3" class="checkbox">
+                    <label for="essential3">만 14세 이상입니다. <span class="color">(필수)</span></label>
                 </p>
                 <p>
-                    <input type="checkbox" name="" >마케팅 수신동의 <span class="margin">(선택)</span>
-                    <input type="checkbox" name="" class="size">이메일
-                    <input type="checkbox" name="" class="size">SMS,카카오톡  
+                    <input type="checkbox" id="market" class="checkbox">
+                    <label for="market">마케팅 수신동의 <span class="margin">(선택)</span></label>
+                    <input type="checkbox" id="email" class="size checkbox">
+                    <label for="email">이메일</label>
+                    <input type="checkbox" id="sns" class="size checkbox">
+                    <label for="sns">SMS,카카오톡</label>
                 </p>
             </div>
-            <div class="clear"><button>가입완료</button></div>
-            <div class="reset"><button>돌아가기</button></div>
+            <div class="clear"><button type="button" onClick="">가입완료</button></div>
+            <div class="reset"><button type="button" onClick="">돌아가기</button></div>
         </div>
     </section>
 
@@ -136,6 +149,14 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+        $("#allChk").change(function(){
+    var isChk = $(this).is(":checked");
+    $(".checkbox").prop("checked",isChk);
+    });
+    </script>
     
 </body>
 </html>

@@ -2,6 +2,10 @@
 @import url('./reset.css');
 @import url('./common.css');
 
+
+header{border:none;}
+
+
 /* section1 */
 .section1 img{
     width:100vw; height:auto;

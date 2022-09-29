@@ -16,27 +16,33 @@
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">제품판매약국 찾기</a></li>
             </ul>
-        
-            <ul class="flex" id="gnb">
-                <li>
+            <nav class="flex"> 
+                <h1>
                     <a href="#">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
-                </li>
-                <li>
-                    <a href="#">브랜드 스토리</a>
-                </li>
-                <li>
-                    <a href="#">제품정보</a>
-                </li>
-                <li>
-                    <a href="#">상품구매</a>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                    <a href="#"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
-                </li>
-            </ul>
+                </h1>
+                <ul id="gnb">
+                    <li>
+                        <a href="#">브랜드 스토리</a>
+                    </li>
+                    <li>
+                        <a href="#">제품정보</a>
+                    </li>
+                    <li>
+                        <a href="#">상품구매</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                        <a href="#"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                </ul>
+                <div id="m_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -137,16 +143,19 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="./h1_main..js"></script> -->
+
+
+    
     <script src="./js/wow.js"></script>
-<script>
-    wow = new WOW({
-        animateClass: 'animated',
-        offset:100,
-		live:true
-    }
-    );
-    wow.init();
-</script>
+    <script src="./js/common.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset:100,
+            live:true
+        }
+        );
+        wow.init();
+    </script>
 </body>
 </html>
