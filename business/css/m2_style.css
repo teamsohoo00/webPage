@@ -125,7 +125,7 @@
 .list01>div.impo>.botton{
     font-size:1rem;
     font-weight:500;
-    margin-top:50px;
+    margin-top:15px;
     display:flex;
     flex-flow:row wrap;
     justify-content:space-around;
@@ -206,7 +206,7 @@
 .list02>div.impo>.botton{
     font-size:1rem;
     font-weight:500;
-    margin-top:50px;
+    margin-top:15px;
     display:flex;
     flex-flow:row wrap;
     justify-content:space-around;
@@ -324,7 +324,7 @@ footer{margin-top:50px;}
     .list01>div.impo{
         width:36%; font-size:1rem; margin-top:10px;}
     .list01>div.impo>.botton{
-        font-size:0.7rem; margin-top:30px;
+        font-size:0.7rem; margin-top:10px;
     }
     .list01>div.impo>.botton>a{
         border:1px solid #555;
@@ -348,7 +348,7 @@ footer{margin-top:50px;}
     .list02>div.impo{
         width:36%; font-size:1rem; margin-top:10px;}
     .list02>div.impo>.botton{
-        font-size:0.7rem; margin-top:30px;
+        font-size:0.7rem; margin-top:10px;
     }
     .list02>div.impo>.botton>a{
         border:1px solid #555;
