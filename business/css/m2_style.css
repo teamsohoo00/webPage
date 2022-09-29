@@ -99,7 +99,7 @@
 .list01>a{
     width:30%; height:200px;
     position:absolute;
-    top:30px;
+    top:25px;
     border:2px solid #222;
     overflow:hidden;
     box-sizing:border-box;
@@ -180,7 +180,7 @@
 .list02>a{
     width:30%; height:200px;
     position:absolute;
-    top:30px;
+    top:25px;
     border:2px solid #222;
     overflow:hidden;
     box-sizing:border-box;
