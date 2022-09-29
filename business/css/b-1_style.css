@@ -63,17 +63,17 @@ h2{
 	visibility:hidden;
 }
 .check>li{float:left;  color:#333;}
-.checkBox{
-    display:block;
+.checkBox{display:none;}
+.checkList{
+    display:inline-block;
     border:1px solid #888;
     width:20px;
     height:20px;
     box-sizing:border-box;
     cursor:pointer;
 }
-input.checkBox[type="checkbox"]:checked{
-    background-color:#36594c;
-    color:#fff;
+.checkBox:checked + .checkList{
+    background:url('../img/b_img/check.png') no-repeat center/18px #36594c;
 }
 .check>li:nth-child(2),
 .check>li:nth-child(3),
