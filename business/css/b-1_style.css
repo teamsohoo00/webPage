@@ -214,18 +214,15 @@ h2{
 
 @media all and (max-width:1024px){
     .wrap{width:100%;}
-    .wrap>ul{
-        width:100%; 
-        padding-left:25%; 
-        margin:0;
-        box-sizing:border-box;
-    }
+    .wrap>ul{padding-left:0; width:50%; margin:0 auto;}
+    .wrap>ul>li{width:20%; font-size:1.5vw;}
     #section{display:block;}
     .section01,.section02{
         width:100%; 
         padding:0 15%;
         box-sizing:border-box;
     }
+    .check>li{font-size:1.4vw;}
     .product01>li:nth-child(3),
     .product02>li:nth-child(3),
     .product01>li:nth-child(4),
@@ -234,4 +231,20 @@ h2{
     .product02>li:nth-child(5){
         left:40%;
     }
+    .product01>li:nth-child(3),.product02>li:nth-child(3){
+        font-size:1.8vw;
+    }
+    .product01>li:nth-child(5)>span>#mi01,
+    .product01>li:nth-child(5)>span>#plus01,
+    .product02>li:nth-child(5)>span>#mi02,
+    .product02>li:nth-child(5)>span>#plus02{font-size:1.3vw;}
+    .product01>li:nth-child(4)>ul>li,
+    .product02>li:nth-child(4)>ul>li{font-size:1.5vw;}
+    .product01>li:nth-child(6)>span,
+    .product02>li:nth-child(6)>span{font-size:2vw;}
+    .section02>ul>li:nth-child(2){font-size:1.8vw;}
+    .section02>ul>li:nth-child(1){font-size:1.3vw;}
+    .section02>ul>li:nth-child(3),
+    .section02>ul>li:nth-child(5){font-size:1.8vw;}
+    .section02>p>a{font-size:2vw;}
 }

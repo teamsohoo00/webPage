@@ -9,11 +9,11 @@ h2{
     overflow: hidden;
     text-indent: -9999px;
 }
-.wrap>ul{margin-left:35%;}
+.wrap>ul{padding-left:35%; height:100px;}
 .wrap>ul>li{
     float:left;
-    width:100px;
-    height:100px;
+    width:11%;
+    height:100%;
     border:1px solid #36594c;
     background:#36594c;
     border-radius:50%;
@@ -69,7 +69,8 @@ h2{
 
 @media all and (max-width:1024px){
     .wrap{width:100%;}
-    .wrap>ul{margin-left:25%;}
+    .wrap>ul{padding-left:0; width:50%; margin:0 auto;}
+    .wrap>ul>li{width:20%; font-size:1.5vw;}
     .wrap>div{margin-left:35%;}
     .wrap>div>#shoppingCart>p{left:31%;}
 }
