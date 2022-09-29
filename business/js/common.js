@@ -1,4 +1,5 @@
-var menu = document.getElementById("menu_btn");
+
+var menu = document.getElementById("m_btn");
 var gnb =  document.getElementById("gnb");
 gnb.setAttribute("style","display:none");
 menu.onclick = function(){
@@ -8,3 +9,28 @@ menu.onclick = function(){
 		gnb.style.display = "none";
 	}
 }
+
+
+
+/* 햄버거 버튼 변형 */
+var burger = $('#m_btn');
+burger.each(function(index){
+	var $this = $(this);
+	$this.on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('active-' + (index+1));
+	})
+});
+
+
+
+/*
+$( window ).resize(function() {
+	var wwidth = $(window).width();
+	alert(wwidth);
+	if(){
+
+	}
+
+});
+*/

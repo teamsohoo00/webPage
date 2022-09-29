@@ -9,7 +9,6 @@ table, tr, th, td{border:1px solid #333; vertical-align: middle;}
 section{justify-content: space-between;}
 #form{width:80%; margin:4% 2% 5% 0;}
 
-
 /* table */
 #table{width:100%;}
 #table>caption{
@@ -18,15 +17,10 @@ section{justify-content: space-between;}
     text-align:left;    
 }
 #table th{height:35px;}
-.title{
-    height:50px;
-    font-weight:800;
-}
+.title{height:50px; font-weight:800;}
 #table td{padding-left:2%;}
 
-
-
-
+input:focus{outline:1px solid #fff;}
 
 input[type=text]{
     width:50%; height:25px;
@@ -49,12 +43,4 @@ input[type=text]{
     font-weight:600;
 }
 
-#form>div>button:hover{
-    color:#fff;
-    background:#36594c;
-}
-
-
-
-
-
+#form>div>button:hover{color:#fff; background:#36594c;}

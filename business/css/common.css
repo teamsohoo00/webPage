@@ -30,7 +30,10 @@ header{border-bottom:1px solid #dedede;}
 nav>h1{width:15%;}
 nav>ul{width:85%;}
 
-#gnb{justify-content:space-between; align-items:center; margin-top:1%;}
+#gnb.flex{
+    display:flex ;
+    justify-content:space-between; align-items:center; margin-top:1%;
+}
 #gnb>li{height:7vh; line-height:2.5; box-sizing: border-box;}
 #gnb>li>a{font-size:1.5vw; font-weight:500;}
 #gnb>li:last-child>a:first-child>img{margin-right:30px;}
@@ -38,8 +41,6 @@ nav>ul{width:85%;}
 #gnb>li:hover{border-bottom:3px solid #36594c;}
 #gnb>li:hover>a{color:#36594c; font-weight: 900;}
 #gnb>li:last-child:hover{border-bottom:0;}
-
-
 
 
 
@@ -55,9 +56,57 @@ footer{background:#36594c; padding:30px 0;}
 
 @media all and (max-width:1024px){ /* 모바일 */
     /* 헤더영역 */
+    nav.flex{position:relative;}
+    nav.flex>h1 img{width:75%;}
     #util,#gnb{display:none;}
+    /* 햄버거 버튼 */
+    #m_btn{
+        height:50px;
+        position:absolute;
+        right:30px;
+        top:7px;
+        cursor:pointer;
+    }
+    #m_btn>span{
+        width:50px; height:10px;
+        background:#36594C;
+        display:block;
+    }
+    #m_btn.active-1>span:nth-child(1){
+        -webkit-transform: translateY (20px) rotate (-45deg);
+        transform: translateY(20px) rotate(-45deg);
+    }
+    #m_btn>span:nth-child(2){margin:10px 0;}
+    #m_btn.active-1>span:nth-child(2){opacity: 0;}
+    #m_btn.active-1>span:nth-child(3){
+        -webkit-transform: translateY(-20px) rotate(45deg);
+        transform: translateY(-20px) rotate(45deg);
+    }
+
+    /* 모바일 gnb */
+    #gnb.flex{display:block ;}
+    #gnb, #m_btn{position:fixed;}
+    #gnb{
+        display:block;
+        width:100%;
+        height:100%;
+        background:#98A62E;
+        margin:0 !important;
+    }
     
-    
+    #gnb>li{text-align:center;}
+    #gnb>li>a{font-size:1.5rem;}
+    #gnb>li:last-child img{display:none;}
+    #gnb>li:last-child>a:first-child::after{
+        content:'마이페이지';
+        margin-right:40px;
+    }
+    #gnb>li:last-child>a:last-child::after{
+        content:'장바구니';
+    }
+    #gnb>li:hover{border:none; background:#4A5912;}
+    #gnb>li:hover>a{color:#fff;}
+
     
 
 
@@ -68,6 +117,23 @@ footer{background:#36594c; padding:30px 0;}
     #footer_under img{margin:0 auto; display:block;}
     #footer_under>ul:nth-child(2){margin:2% 0;}
     #footer_under>ul:last-child{text-align:center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
