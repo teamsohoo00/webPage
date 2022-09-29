@@ -14,10 +14,8 @@ $(function(){
 
 $(function(){
 	$("#mi01").click(function(){
-		$("#num01").text(parseInt($("#num01").text())-1);
-        if(parseInt($("#num01").text())==1){
-            $("#mi01").attr('disabled',true);
-        }
+        $("#num02").text(parseInt($("#num02").text())-1);
+        
 	});
 	$("#plus01").click(function(){
 		$("#num01").text(parseInt($("#num01").text()) + 1);

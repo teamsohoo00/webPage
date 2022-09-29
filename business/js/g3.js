@@ -1,14 +1,13 @@
 
 $(function(){
+	
 	$(".minus").click(function(){
-		//var number_cnt = parseInt($("#number_cnt").text());
-		$("#number_cnt").text( parseInt($("#number_cnt").text())-1);
+		$("#number_cnt").text(parseInt($("#number_cnt").text()) - 1);
 	});
 	$(".plus").click(function(){
 		$("#number_cnt").text(parseInt($("#number_cnt").text()) + 1);
 	});
     $(".minus2").click(function(){
-		//var number_cnt = parseInt($("#number_cnt").text());
 		$("#number_cnt2").text( parseInt($("#number_cnt2").text())-1);
 	});
 	$(".plus2").click(function(){
