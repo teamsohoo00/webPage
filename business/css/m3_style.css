@@ -200,7 +200,7 @@ footer{margin-top:50px;}
     /*기간 설정 영역*/
     .section02{
         width:50%; height:80px;
-        margin:20% auto 0;
+        margin:40px auto 0;
         text-align:center;
         display:flex;
         flex-flow:row wrap;

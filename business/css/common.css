@@ -56,6 +56,17 @@ footer{background:#36594c; padding:30px 0;}
 #footer_under li,#footer_under li a{color:#fff;}
 #footer_under p,#footer_under li{font-size:0.8vw;}
 
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width:1024px){ /* 모바일 */
     /* 헤더영역 */
     #util,
@@ -64,6 +75,9 @@ footer{background:#36594c; padding:30px 0;}
     #gnb>li:nth-child(4),
     #gnb>li:nth-child(5){
         display:none;
+    }
+    header{
+        background:url('../img/icon/menu_button.png')no-repeat 99% 10px;
     }
 
 
