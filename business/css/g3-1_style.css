@@ -13,18 +13,18 @@ h3{
     padding:0 0 15px 2%;
     border-bottom:2px solid #d8d8d8;
     color:#333;
-    font-size:1.6rem;
+    font-size:1.6vw;
     font-weight:700;
 }
 input,select,option,button{font-family:'Pretendard-Regular';}
 
 
 /*위쪽 현재진행상태표시 영역*/
-.wrap>ul{margin-left:35%;}
+.wrap>ul{padding-left:35%; height:100px;}
 .wrap>ul>li{
     float:left;
-    width:100px;
-    height:100px;
+    width:11%;
+    height:100%;
     border:1px solid #36594c;
     background:#36594c;
     border-radius:50%;
@@ -32,7 +32,7 @@ input,select,option,button{font-family:'Pretendard-Regular';}
     padding-top:27px;
     box-sizing:border-box;
     color:#fff;
-    line-height:1.3em;
+    line-height:1.2em;
     font-weight:700;
 }
 .wrap>ul>li:nth-child(even){
@@ -67,7 +67,7 @@ input,select,option,button{font-family:'Pretendard-Regular';}
 #section01>form>p{
     margin-bottom:10px;
     color:#555;
-    font-size:1.2rem;
+    font-size:1.2vw;
     padding:5px 0;
     font-weight:600;
 }
@@ -84,12 +84,12 @@ input,select,option,button{font-family:'Pretendard-Regular';}
     height:30px;
     width:8%;
     padding:0 1%;
-    margin-left:4%;
+    margin-left:4.5%;
     border-radius:0;
     color:#333;
-    font-size:1.1rem;
+    font-size:0.8vw;
     border:1px solid #c4c4c4;
-    background:url('../img/g3-1_img/icon.png') no-repeat 85% center/15px;
+    background:url('../img/g3-1_img/icon.png') no-repeat 85% center/20%;
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
@@ -97,12 +97,12 @@ input,select,option,button{font-family:'Pretendard-Regular';}
 }
 #section01>form>#phone>#tel,
 #section01>form>p>#detail{
-    width:72.7%; padding-left:1%;
-    font-size:1rem;
+    width:72.5%; padding-left:1%;
+    font-size:0.9vw;
     box-sizing:border-box;
 }
 #section01>form>p:nth-of-type(3)>button{
-    margin-left:6%;
+    margin-left:7%;
     cursor:pointer;
     height:30px;
     width:8%;
@@ -115,7 +115,7 @@ input,select,option,button{font-family:'Pretendard-Regular';}
 #section01>form>p>#adress{margin-left:2.5%; width:72.5%;}
 #section01>form>p>#adn,
 #section01>form>p>#detail{
-    margin-left:10.5%;
+    margin-left:12.5%;
     width:83.2%;
 }
 
@@ -125,7 +125,7 @@ input,select,option,button{font-family:'Pretendard-Regular';}
     border:1px solid #c4c4c4;
 }
 #product>p{
-    font-size:1.3rem;
+    font-size:1.3vw;
     font-weight:500;
     padding:15px 3%;
     border:1px solid #c4c4c4;
@@ -155,16 +155,16 @@ input,select,option,button{font-family:'Pretendard-Regular';}
     margin-left:34%;
 }
 #product>ul>li:last-child{
-    font-size:1.1rem;
+    font-size:1.1vw;
     margin:4% 0;
     width:50%;
 }
 #productDetail{margin-top:11%;}
-#productDetail>.num01{font-size:1rem;}
+#productDetail>.num01{font-size:1vw;}
 #productDetail>li:nth-child(2){margin:0 3%; color:#888; font-size:1rem;}
 #productDetail>li:nth-child(3){
     color:#888; 
-    font-size:0.8rem;
+    font-size:0.8vw;
     padding-top:0.5%;
 }
 
@@ -207,7 +207,7 @@ input,select,option,button{font-family:'Pretendard-Regular';}
 }
 #section02>#sectionTop>li{position:relative;}
 #section02>#sectionTop>li:nth-child(1){
-    font-size:1.6rem;
+    font-size:1.3vw;
     font-weight:700;
 }
 #section02>#sectionTop>li:nth-child(2){padding:25px 0;}
@@ -224,7 +224,7 @@ input,select,option,button{font-family:'Pretendard-Regular';}
     margin:20px 0 5px 0;
 }
 #section02>#sectionTop>li:nth-child(5){
-    font-size:1.3rem;
+    font-size:1.2vw;
     font-weight:700;
 }
 #section02>#sectionTop>li:nth-child(5)>span{color:#36594c;}
@@ -240,16 +240,16 @@ input,select,option,button{font-family:'Pretendard-Regular';}
 .checkBox:checked + .checkList{
     background:url('../img/g3-1_img/check.png') no-repeat center/18px #36594c;
 }
-.checkText{font-size:1.1rem;}
+.checkText{font-size:1vw;}
 #sectionBottom>li:last-child{padding:20px 8%;}
 #sectionBottom>li:last-child>ul>li:nth-child(2){margin:15px 0 15px 8%;}
 #sectionBottom>li:last-child>ul>li:nth-child(3){margin-left:8%;}
 #sectionBottom>li:last-child>ul>li:nth-child(4){
     margin:35px 0 15px 8%;
-    font-size:0.9rem;
+    font-size:0.9vw;
 }
 #sectionBottom>li:last-child>ul>li:nth-child(2)>label,
-#sectionBottom>li:last-child>ul>li:nth-child(3)>label{font-size:0.9rem;}
+#sectionBottom>li:last-child>ul>li:nth-child(3)>label{font-size:0.8vw;}
 
 /*결제하기 버튼*/
 #section02>p{margin-top:20px;}
@@ -261,6 +261,38 @@ input,select,option,button{font-family:'Pretendard-Regular';}
     background:#36594c;
     color:#fff;
     text-align:center;
-    font-size:1.5rem;
+    font-size:1.3vw;
     font-weight:700;
+}
+
+@media all and (max-width:1024px){
+    .wrap{width:100%;}
+    .wrap>ul{padding-left:0; width:50%; margin:0 auto;}
+    .wrap>ul>li{width:20%; font-size:1.5vw;}
+    .wrap>div.flex{
+        display:block; 
+        width:70%; 
+        margin:120px auto 0;
+    }
+    #section01,#section02{margin:0; width:100%;}
+    #payment>li>a{font-size:1.3vw;}
+    #section01>h3{font-size:2vw;}
+    #section01>form p{font-size:1.7vw;}
+    #section01>form>#phone>select{
+        font-size:1.4vw;
+        background-size:25%;
+    }
+    #section01>form>p:nth-of-type(3)>button{font-size:1.2vw;}
+    #product>p{font-size:1.5vw;}
+    #product>ul>li:last-child{font-size:1.3vw;}
+    #productDetail>li{font-size:1.1vw;}
+    #section02>#sectionTop>li:nth-child(1){font-size:1.8vw;}
+    #section02>#sectionTop>li:nth-child(5){font-size:2vw;}
+    .checkText{font-size:1.5vw;}
+    #sectionBottom>li:last-child>ul>li:nth-child(2)>label,
+    #sectionBottom>li:last-child>ul>li:nth-child(3)>label,
+    #sectionBottom>li:last-child>ul>li:nth-child(4)
+    {font-size:1.3vw;}
+    #section02>p>a{font-size:1.8vw;}
+    
 }
