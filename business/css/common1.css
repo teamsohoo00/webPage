@@ -2,8 +2,8 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
 @import url('https://webfontworld.github.io/sebang/SebangGothic.css');
 /*
-font-family: 'SEBANG_Gothic_Bold';
-font-family: 'Pretendard-Regular';
+font-family: 'Pretendard';
+font-family: 'SebangGothic';
 */
 
 
@@ -29,21 +29,30 @@ header{border-bottom:1px solid #dedede;}
 }
 nav>h1{width:15%;}
 nav>ul{width:85%;}
-
-#gnb.flex{
-    display:flex !important;
-    justify-content:space-between;
-    align-items:center; margin-top:1%;
+#gnb::after{
+    content:'';
+    width:0; height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
 }
-#gnb>li{height:7vh; line-height:2.5; box-sizing: border-box;}
-#gnb>li>a{font-size:1.5vw; font-weight:500;}
-#gnb>li:last-child>a:first-child>img{margin-right:30px;}
-#gnb>li:last-child img{width:25%;}
-#gnb>li:hover{border-bottom:3px solid #36594c;}
-#gnb>li:hover>a{color:#36594c; font-weight: 900;}
-#gnb>li:last-child:hover{border-bottom:0;}
-
-
+#gnb>li{
+    float:left;
+    width:12%; height:100%;
+    text-align: center;
+    padding-top:3%;
+    box-sizing: border-box;
+}
+#gnb>li>a{
+    font-size:1.2vw;
+    
+    
+    
+    
+    
+}
+#gnb>li:last-child{padding-top:2%;}
+#gnb>li:last-child img{width:30%;}#gnb>li:last-child>a:first-child>img{margin-right:30px;}
 
 
 /* 푸터 */
@@ -86,28 +95,7 @@ footer{background:#36594c; padding:30px 0;}
 
     /* 모바일 gnb */
     
-    #gnb,#m_btn{position:fixed;}
-    #gnb.flex{
-        display:block;
-        width:100%;
-        height:100%;
-        background:#98A62E;
-        margin:0 !important;
-        align-items: flex-start;
-    }
     
-    #gnb>li{text-align:center; width:100%; }
-    #gnb>li>a{font-size:1.5rem;}
-    #gnb>li:last-child img{display:none;}
-    #gnb>li:last-child>a:first-child::after{
-        content:'마이페이지';
-        margin-right:40px;
-    }
-    #gnb>li:last-child>a:last-child::after{
-        content:'장바구니';
-    }
-    #gnb>li:hover{border:none; background:#4A5912;}
-    #gnb>li:hover>a{color:#fff;}
 
     
 

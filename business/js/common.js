@@ -11,7 +11,6 @@ menu.onclick = function(){
 }
 
 
-
 /* 햄버거 버튼 변형 */
 var burger = $('#m_btn');
 burger.each(function(index){
@@ -26,10 +25,9 @@ burger.each(function(index){
 
 /*
 $( window ).resize(function() {
-	var wwidth = $(window).width();
-	alert(wwidth);
-	if(){
-
+	var width = $(window).width();
+	if(width<=1024){
+		classList.remove('.flex');
 	}
 
 });
