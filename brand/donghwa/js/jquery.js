@@ -93,10 +93,39 @@ $(document).ready(function(){
 });
 
 
-
-/*게시판 영역*/
-$("#news>ul>.donghwa_news").click(function(){
-    $("#news>ul>.donghwa_news").hide();
+/*모바일 햄버거 버튼*/
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $(".m_nav").addClass("on");
+        $(".bg_shadow").css("display","block");
+        return false;
+    });
+    $('.close_btn').click(function(){
+        $(".m_nav").removeClass("on");
+        $(".bg_shadow").css("display","none");
+        return false;
+    });
+    $('.menu').click(function(){
+        $('.sub').slideUp();
+        if ($(this).children('.sub').is(':hidden')){
+           $(this).children('.sub').slideDown();
+        } else{
+           $(this).children('.sub').slideUp();
+        }
+     });
 })
 
+/*퀵메뉴*/
 
+$(document).ready(function(){
+    $(".quick a").click(function(){
+        $(".quick_container").css("display","block");
+        return false;
+    });
+    $(".quick_close").click(function(){
+        $(".quick_container").css("display","none");
+        return false;
+    });
+});
+
+/*로고 누르면 맨위로 올라가게*/
