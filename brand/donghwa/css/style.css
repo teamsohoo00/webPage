@@ -86,7 +86,7 @@ header nav{
     height: 100%;
 }
 .myslide{
-    height: 99.9%;
+    height: 969px;
     overflow: hidden;
     display: none;
 }
@@ -788,8 +788,10 @@ footer>.wrap>.sns>#icon>li>a{
     #investment{
         width: 98%;
         margin-bottom: 20px;
+        margin-top: 150px;
+        height: 220px;
     }
-    #recruitment{width: 98%;}
+    #recruitment{width: 98%; height: 220px;}
     .section5 h3{padding: 0px 0 20px 0;}
     .section5{width: 100%;}
     .brand>div{
