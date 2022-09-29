@@ -19,18 +19,14 @@ section{justify-content: space-between;}
 #table th{height:35px;}
 .title{height:50px; font-weight:800;}
 #table td{padding-left:2%;}
-
 input:focus{outline:1px solid #fff;}
-
-input[type=text]{
+input[type=text],input[type=number]{
     width:50%; height:25px;
     background:rgb(226, 226, 226);
     border:none;
-
 }
-
-
-
+input[type=number]{width:20%;}
+#exhibition2,#sale2,#parcel2{margin-left:80px;}
 
 /* 버튼 */
 #form>div{text-align: center; margin-top:3%;}
@@ -44,3 +40,7 @@ input[type=text]{
 }
 
 #form>div>button:hover{color:#fff; background:#36594c;}
+textarea{
+    width:500px;
+    height:150px
+}

@@ -8,6 +8,7 @@ menu.onclick = function(){
 	}else{
 		gnb.style.display = "none";
 	}
+	
 }
 
 
@@ -20,15 +21,3 @@ burger.each(function(index){
     $(this).toggleClass('active-' + (index+1));
 	})
 });
-
-
-
-/*
-$( window ).resize(function() {
-	var width = $(window).width();
-	if(width<=1024){
-		classList.remove('.flex');
-	}
-
-});
-*/

@@ -67,7 +67,7 @@
                     </ul>
                 </div>
                 <div class="header_under">
-                    <ul class="header_flex gnb">
+                    <ul id="gnb">
                         <li>
                             <a href="#">상품관리</a>
                         </li>
@@ -90,6 +90,11 @@
                             <a href="#">앱스토어</a>
                         </li>
                     </ul>
+                    <div id="m_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,19 +139,19 @@
                 <tr class="">
                     <th>진열상태</th>
                     <td>
-                        <input type="checkbox">
-                        <label for="">진열함</label>
-                        <input type="checkbox" >
-                        <label for="">진열안함</label>
+                        <input type="radio" name="exhibition" id="exhibition1">
+                        <label for="exhibition1">진열함</label>
+                        <input type="radio" name="exhibition" id="exhibition2">
+                        <label for="exhibition2">진열안함</label>
                     </td>
                 </tr>
                 <tr>
                     <th>판매상태</th>
                     <td>
-                        <input type="checkbox" >
-                        <label for="">판매중</label>
-                        <input type="checkbox" >
-                        <label for="">판매중지</label>
+                        <input type="radio" name="sale" id="sale1">
+                        <label for="sale1">판매중</label>
+                        <input type="radio" name="sale" id="sale2">
+                        <label for="sale2">판매중지</label>
                     </td>
                 </tr>
                 <tr>
@@ -179,19 +184,19 @@
                 <tr>
                     <th>상품요약설명</th>
                     <td>
-                        <input type="text" >
+                        <input type="text" style="width:500px;">
                     </td>
                 </tr>
                 <tr>
                     <th>상품상세설명</th>
                     <td>
-                        <input type="text" >
+                        <textarea></textarea>
                     </td>
                 </tr>
                 <tr class="search">
                     <th>검색어 설정</th>
                     <td>
-                        <input type="text" >
+                        <textarea></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -228,10 +233,10 @@
                 <tr>
                     <th>배송비</th>
                     <td>
-                        <input type="checkbox" >
-                        <label for="">무료</label>
-                        <input type="checkbox" >
-                        <label for="">5,000</label>
+                        <input type="radio" name="parcel" id="parcel1">
+                        <label for="parcel1">무료</label>
+                        <input type="radio" name="parcel" id="parcel2">
+                        <label for="parcel2">5,000</label>
                     </td>
                 </tr>
                 <tr>
@@ -250,7 +255,8 @@
 
     <!-- aside javascript -->
     <script src="./js/p.js"></script>
-
+    <!-- 햄버거 버튼 -->
+    <script src="./js/common.js" ></script>
 
 
 
