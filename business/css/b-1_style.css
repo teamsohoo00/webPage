@@ -128,10 +128,10 @@ input.checkBox[type="checkbox"]:checked{
     border:1px solid #333;
     padding:5px 0;
 }
-.product01>li:nth-child(5)>span>#mi01,
-.product01>li:nth-child(5)>span>#plus01,
-.product02>li:nth-child(5)>span>#mi02,
-.product02>li:nth-child(5)>span>#plus02{
+#mi01,
+#plus01,
+#mi02,
+#plus02{
     border:0;
     background:#fff;
     color:#333;
@@ -139,6 +139,7 @@ input.checkBox[type="checkbox"]:checked{
     font-size:1.1rem;
     padding:0 10px;
 }
+
 .product01>li:nth-child(5)>span:nth-of-type(2),
 .product02>li:nth-child(5)>span:nth-of-type(2){
     display:inline-block;
