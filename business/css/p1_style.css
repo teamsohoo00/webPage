@@ -44,3 +44,9 @@ textarea{
     width:500px;
     height:150px
 }
+
+
+@media all and (max-width:1024px){
+    aside a{font-size:0.8rem;}
+    aside>ul>li a{line-height:3;}
+}

@@ -6,7 +6,7 @@ var myChart = new Chart(context, {
     type: 'bar',
     data: { 
         labels: [
-            '9/13','914','9/15','9/16','9/17'
+            '9/13','9/14','9/15','9/16','9/17'
         ],
         datasets: [
             { 
