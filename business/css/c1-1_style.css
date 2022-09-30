@@ -47,12 +47,13 @@
     border:1px solid #ddd;
     margin-right:10px;
 }
+
 .seldatecss .ui-widget-header {
     border: 1px solid #dddddd;
-    background: #37594b;
+    background: #37594b; 
     color: #333333;
-    font-weight: bold;
-}
+    font-weight: bold;}
+
 
 .select option {
     background: #37594b;
@@ -125,4 +126,6 @@ button{
     font-weight: bold;
     color:#666;
 }
+
+
 

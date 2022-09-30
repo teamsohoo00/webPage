@@ -13,23 +13,25 @@ header{border-bottom:1px solid #d3d3d3; font-family: 'Pretendard-Regular';}
 
 /* 로고 */
 .wrap>div>h1>a>img{width:100%;}
-.wrap>div.logo{width:11%;margin:1% 1% 0 0;}
+.wrap>div.logo{ width: 8%; margin: 2% 2% 1% 2%;}
 .wrap>div:last-child{width:88%;}
 
 /* 유틸 상단 */
-.header_top{justify-content:space-between; height:50%;}
+.header_top{justify-content:space-between; height:50%; margin:2px 3%} 
 .header_top>ul>li{margin-right:20px;}
-.header_top>ul>li>a{font-size:0.9vw; color:#5e5e5e;}
+.header_top ul li:nth-child(1),
+.header_top ul li:nth-child(2){margin-top:5px;}
+.header_top>ul>li>a{font-size:0.85555vw; color:#606060;}
 .header_top>ul>li:last-child{margin:0;}
 .header_top>ul>li>a>img{width:20px;}
 
 
-.header_under{height:50%;}
+.header_under{height:50%; margin:0 3%;}
 .header_top,.header_under{line-height:2.5;}
 
 /* gnb */
 .gnb{justify-content: space-between;}
-.gnb>li>a{color:#5e5e5e; font-size:1vw;}
+.gnb>li>a{color:#606060; font-size:0.9999vw; font-weight:bold;}
 .gnb>li:hover{
     border-bottom:3px solid #9EB4A8;
 }
@@ -42,7 +44,7 @@ header{border-bottom:1px solid #d3d3d3; font-family: 'Pretendard-Regular';}
 
 @media all and (max-width:1024px){
     div.header_flex>div:last-child{display:none;}
-    div.logo>h1>a>img{width:120px;}
+    div.logo>h1>a>img{width:80px;}
 
 
 }
