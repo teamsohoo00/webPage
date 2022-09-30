@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "reset.css";
 @import "common.css";
-.wrap{width:1440px; margin:150px auto 200px;}
+.wrap{width:1440px; margin:150px auto 200px; color:#333;}
 h2{
     display: none;
     visibility: hidden;
@@ -9,6 +9,15 @@ h2{
     overflow: hidden;
     text-indent: -9999px;
 }
+h3{
+    padding:0 0 15px 2%;
+    border-bottom:2px solid #d8d8d8;
+    color:#333;
+    font-size:1.6rem;
+    font-weight:700;
+}
+input,select,option,button{font-family:'Pretendard-Regular';}
+
 
 /*위쪽 현재진행상태표시 영역*/
 .wrap>ul{margin-left:35%;}
@@ -50,158 +59,175 @@ h2{
 	clear:both;
 	visibility:hidden;
 }
+.wrap>div{margin-top:120px;}
 
-
-#section{margin-top:120px;}
-/*왼쪽영역*/
-.section01{width:60%; margin-right:5%;}
-.check::after{
-	content:'';
-	width:0; height:0;
-	display:block;
-	clear:both;
-	visibility:hidden;
-}
-.check>li{float:left;  color:#333;}
-#check_box01,#check_box02,#check_box03{
-    border:1px solid #888;
-    width:20px;
-    height:20px;
-    box-sizing:border-box;
-    cursor:pointer;
-}
-.check>li:nth-child(2),
-.check>li:nth-child(3),
-.check>li:nth-child(4){padding-top:2px;}
-.check>li:nth-child(2){
-    margin-left:1%;
-    cursor:pointer;
-}
-.check>li:nth-child(3){margin:0 4%; color:#ddd;}
-.check>li:nth-child(4){cursor:pointer;}
-.section01>p{border-top:2px solid #ddd; margin-top:10px;}
-
-/*왼쪽영역 product*/
-.product01,.product02{
-    height:250px; 
-    position:relative;
-    border-bottom:1px solid #ddd;
-    margin-bottom:30px;
-}
-.product01>li,.product02>li{position:absolute;}
-.product01>li:nth-child(2),.product02>li:nth-child(2){left:3%;}
-.product01>li:nth-child(2)>img{width:40%;}
-.product02>li:nth-child(2)>img{width:73%;}
-.product01>li:nth-child(3),.product02>li:nth-child(3){
-    left:35%;
-    font-size:1.8rem;
-    padding-top:15px;
-}
-.product01>li:nth-child(4),
-.product02>li:nth-child(4){left:35%; bottom:40%;}
-.product01>li:nth-child(4)>ul::after,
-.product02>li:nth-child(4)>ul::after{
-	content:'';
-	width:0; height:0;
-	display:block;
-	clear:both;
-	visibility:hidden;
-}
-.product01>li:nth-child(4)>ul>li,
-.product02>li:nth-child(4)>ul>li{
-    float:left;
-    color:#888;
-}
-.product01>li:nth-child(4)>ul>li:nth-child(2),
-.product02>li:nth-child(4)>ul>li:nth-child(2){margin:0 10px;}
-.product01>li:nth-child(5),
-.product02>li:nth-child(5){
-    left:35%;
-    bottom:23%;
-    border:1px solid #333;
-    padding:5px 0;
-}
-.product01>li:nth-child(5)>span:nth-of-type(odd),
-.product02>li:nth-child(5)>span:nth-of-type(odd){
-    padding:0 10px;
-    cursor:pointer;
-    color:#333;
-}
-.product01>li:nth-child(5)>span:nth-of-type(2),
-.product02>li:nth-child(5)>span:nth-of-type(2){
-    display:inline-block;
-    width:25px;
-    color:#333;
-    text-align:center;
-}
-.product01>li:nth-child(6),
-.product02>li:nth-child(6){
-    right:0;
-    bottom:23%;
+/*왼쪽영역 입력란*/
+#section01{width:60%; margin-right:5%;}
+#section01>form{padding:20px 0 20px 5%;}
+#section01>form>p{
+    margin-bottom:10px;
+    color:#555;
     font-size:1.2rem;
-    color:#333;
-}
-.product01>li:nth-child(6)>span,
-.product02>li:nth-child(6)>span{
-    font-size:1.8rem;
+    padding:5px 0;
     font-weight:600;
 }
-.product01>li:nth-child(7),
-.product02>li:nth-child(7){
-    right:0;
+#section01>form>p:nth-of-type(3){margin:0;}
+#section01>form>p:nth-of-type(4){margin:5px 0;}
+#section01>form>p>input{
+    width:83%;
+    height:30px;
+    margin-left:2%;
+    border:1px solid #c4c4c4;
+    border-radius:0;
+}
+#section01>form>#phone>select{
+    height:30px;
+    width:8%;
+    padding:0 1%;
+    margin-left:4%;
+    border-radius:0;
+    color:#333;
+    font-size:1.1rem;
+    border:1px solid #c4c4c4;
+    background:url('../img/g3-1_img/icon.png') no-repeat 85% center/15px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
     cursor:pointer;
 }
-.product01>li:nth-child(7)>img,
-.product02>li:nth-child(7)>img{width:20px;}
+#section01>form>#phone>#tel,
+#section01>form>p>#detail{
+    width:72.7%; padding-left:1%;
+    font-size:1rem;
+    box-sizing:border-box;
+}
+#section01>form>p:nth-of-type(3)>button{
+    margin-left:6%;
+    cursor:pointer;
+    height:30px;
+    width:8%;
+    border-radius:0;
+    border:1px solid #36594c;
+    color:#36594c;
+    background:none;
+    font-weight:600;
+}
+#section01>form>p>#adress{margin-left:2.5%; width:72.5%;}
+#section01>form>p>#adn,
+#section01>form>p>#detail{
+    margin-left:10.5%;
+    width:83.2%;
+}
 
+/*왼쪽영역 주문상품*/
+#product{
+    margin:30px 5%;
+    border:1px solid #c4c4c4;
+}
+#product>p{
+    font-size:1.3rem;
+    font-weight:500;
+    padding:15px 3%;
+    border:1px solid #c4c4c4;
+    border-bottom:2px solid #c4c4c4;
+    background:#eee;
+    box-sizing:border-box;
+}
+#product>ul{height:140px;}
+#product>ul>li,
+#productDetail>li{float:left;}
+#product>ul::after,
+#productDetail::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+#product>ul>li:first-child{
+    margin:2% 5%;
+    border:1px solid #ddd;
+    padding:1% 0;
+    box-sizing:border-box;
+}
+#product>ul>li>img{
+    width:30%;
+    margin-left:34%;
+}
+#product>ul>li:last-child{
+    font-size:1.1rem;
+    margin:4% 0;
+    width:50%;
+}
+#productDetail{margin-top:11%;}
+#productDetail>.num01{font-size:1rem;}
+#productDetail>li:nth-child(2){margin:0 3%; color:#888; font-size:1rem;}
+#productDetail>li:nth-child(3){
+    color:#888; 
+    font-size:0.8rem;
+    padding-top:0.5%;
+}
+
+/*왼쪽영역 결제수단*/
+#payment{margin:30px 5%;}
+#payment>li{
+    width:16.6%;
+    border:1px solid #c4c4c4;
+    border-left:0;
+    box-sizing:border-box;
+}
+#payment>li:first-child{border-left:1px solid #c4c4c4;}
+#payment>li>a{
+    display:block;
+    padding:80px 0 10px 0;
+    background:url('') no-repeat center 30%;
+    text-align:center;
+}
+#payment>li:nth-child(1)>a{background-image:url('../img/g3-1_img/card.png');}
+#payment>li:nth-child(2)>a{background-image:url('../img/g3-1_img/cash.png');}
+#payment>li:nth-child(3)>a{
+    background-image:url('../img/g3-1_img/kakao.png');
+    background-position:center 40%;
+}
+#payment>li:nth-child(4)>a{
+    background-image:url('../img/g3-1_img/naver.png');
+    background-position:center 40%;
+}
+#payment>li:nth-child(5)>a{
+    background-image:url('../img/g3-1_img/PAYCO.png');
+    background-position:center 40%;
+}
+#payment>li:nth-child(6)>a{background-image:url('../img/g3-1_img/phone.png');}
 
 /*오른쪽영역*/
-.section02{width:30%;}
-.section02>.price{
-    border:1px solid #ddd;
+#section02{width:35%;}
+#section02>ul{
     padding:30px 8%;
+    border:1px solid #c4c4c4;
 }
-.section02>.price>li:nth-child(1){color:#888;}
-.section02>.price>li:nth-child(2){
-    color:#666;
-    font-size:1.3rem;
-    margin:20px 0;
+#section02>#sectionTop>li{position:relative;}
+#section02>#sectionTop>li:nth-child(1){
+    font-size:1.6rem;
+    font-weight:700;
 }
-.section02>.price>li:nth-child(2),
-.section02>.price>li:nth-child(3),
-.section02>.price>li:nth-child(5){
-    position:relative;
-}
-.section02>.price>li:nth-child(2)>span,
-.section02>.price>li:nth-child(3)>span,
-.section02>.price>li:nth-child(5)>span{
+#section02>#sectionTop>li:nth-child(2){padding:25px 0;}
+#section02>#sectionTop>li:nth-child(2),
+#section02>#sectionTop>li:nth-child(3){font-size:1.1rem;}
+#section02>#sectionTop>li:nth-child(2)>span,
+#section02>#sectionTop>li:nth-child(3)>span,
+#section02>#sectionTop>li:nth-child(5)>span{
     position:absolute;
     right:0;
 }
-.section02>.price>li:nth-child(3),
-.section02>.price>li:nth-child(5){color:#666; font-size:1.3rem;}
-.section02>.price>li:nth-child(4){
-    border-top:1px solid #ddd;
-    margin:15px 0;
+#section02>#sectionTop>li:nth-child(4){
+    border-top:1px solid #c4c4c4;
+    margin:20px 0 5px 0;
 }
-
-.section02>.price>li:nth-child(5){color:#333; font-weight:700;}
-.section02>.chk_box{background: #ddd; padding: 30px;}
-
-/*주문하기 버튼*/
-.section02>p{margin-top:20px;}
-.section02>p>a{
-    display:block;
-    width:100%;
-    height:80px;
-    background:#36594c;
-    color:#fff;
-    line-height:80px;
-    text-align:center;
+#section02>#sectionTop>li:nth-child(5){
+    font-size:1.3rem;
     font-weight:700;
-    font-size:1.8rem;
 }
-
-@media all and (max-width:1024px){
-    .wrap{width:100%;}
+#section02>#sectionTop>li:nth-child(5)>span{color:#36594c;}
+#sectionBottom>li:nth-child(1)>input{
+    border-radius:0;
 }

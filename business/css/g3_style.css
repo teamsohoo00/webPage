@@ -14,6 +14,7 @@ h2{
     text-indent: -9999px;
 }
 
+
 /*활명수 제품사진*/
 #section01{padding-left:10%;}
 #section01>img{display:block;}
@@ -48,6 +49,7 @@ h2{
 /*배송비*/
 #section02>ul>li:nth-child(3){font-size:1.2rem;}
 #section02>ul>li:nth-child(3)>span{font-size:2.2rem; font-weight:900; padding-right:10px;}
+
 #section02>ul>li:nth-child(4){
     padding:3% 0 10%; 
     font-size:0.9rem;
@@ -83,8 +85,7 @@ h2{
 
 /*활명수 수량변경*/
 #section02>ul>li>#select02,
-#section02>ul>li>#select03{
-    width:470px; 
+#section02>ul>li>#select03{ 
     margin-top:10px; 
     padding:10px 15px;
     background:#eaeaea;
@@ -159,15 +160,37 @@ h2{
 
 @media all and (max-width:1024px){
     header{width:100%;}
-
-
-
-
-
-
-
-
-
+    .wrap{
+        display:block;
+        width:100%;
+        margin:0 auto;
+        padding-bottom:200px;
+    }
+    #section01{
+        padding:0;
+        height:auto;
+    }
+    #section01>img{margin-left:25%; width:50%; height:50%;}
+    #section01 p{display:none;}
+    #section02{
+        width:50%;
+        padding:0;
+        margin-left:25%;
+    }
+    #section02>ul>li:nth-child(2){display:none;}
+    #section02>ul>li:nth-child(1){font-size:1.5rem; font-weight:500;}
+    #section02>ul>li:nth-child(3){
+        font-size:0.9rem;
+        padding-top:20px;
+    }
+    #section02>ul>li:nth-child(3)>span{
+        font-size:1.8rem;
+        padding-right:5px;
+    }
+    #section02>ul>li:nth-child(4){
+        font-size:0.8rem;
+        padding:10px 0 60px;
+    }
 
 }
 
