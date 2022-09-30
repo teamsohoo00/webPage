@@ -1,0 +1,30 @@
+@charset  "utf-8";
+
+
+header{border-bottom:1px solid #d3d3d3;}
+/* 공통 */
+.wrap{max-width:1440px; margin:0 auto;}
+.header_flex{display:flex; flex-flow:row wrap;}
+
+/* 로고 */
+.wrap>div>h1>a>img{width:100%;}
+.wrap>div.logo{width:11%;margin:1% 1% 0 0;}
+.wrap>div:last-child{width:88%;}
+
+/* 유틸 상단 */
+.header_top{justify-content:space-between; height:50%;}
+.header_top>ul>li{margin-right:20px;}
+.header_top>ul>li>a{font-size:0.9vw; color:#5e5e5e;}
+.header_top>ul>li:last-child{margin:0;}
+.header_top>ul>li>a>img{width:20px;}
+
+
+.header_under{height:50%;}
+.header_top,.header_under{line-height:2.5;}
+
+/* gnb */
+.gnb{justify-content: space-between;}
+.gnb>li>a{
+    color:#5e5e5e;
+    font-size:1vw;
+}
