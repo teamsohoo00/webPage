@@ -1,14 +1,19 @@
 
 $(function(){
-	
 	$(".minus").click(function(){
-		$("#number_cnt").text(parseInt($("#number_cnt").text()) - 1);
+		var num = parseInt($("#number_cnt").text())
+		if(num>1){
+			$("#number_cnt").text(num -1);
+		}
 	});
 	$(".plus").click(function(){
 		$("#number_cnt").text(parseInt($("#number_cnt").text()) + 1);
 	});
     $(".minus2").click(function(){
-		$("#number_cnt2").text( parseInt($("#number_cnt2").text())-1);
+		var num = parseInt($("#number_cnt2").text())
+		if(num>1){
+			$("#number_cnt2").text(num -1);
+		}
 	});
 	$(".plus2").click(function(){
 		$("#number_cnt2").text(parseInt($("#number_cnt2").text()) + 1);
@@ -50,4 +55,8 @@ $(function(){
 		$("#active>li#product").nextAll("li").css("display","none");
 	});
 });
+
+function updateAll(){
+	var n1 = document.getElementById("number_cnt")
+}
 

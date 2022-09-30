@@ -177,20 +177,26 @@ h2{
         margin-left:25%;
     }
     #section02>ul>li:nth-child(2){display:none;}
-    #section02>ul>li:nth-child(1){font-size:1.5rem; font-weight:500;}
+    #section02>ul>li:nth-child(1){font-size:3vw; font-weight:500;}
     #section02>ul>li:nth-child(3){
-        font-size:0.9rem;
+        font-size:2vw;
         padding-top:20px;
     }
     #section02>ul>li:nth-child(3)>span{
-        font-size:1.8rem;
+        font-size:3vw;
         padding-right:5px;
     }
     #section02>ul>li:nth-child(4){
-        font-size:0.8rem;
+        font-size:1.5vw;
         padding:10px 0 60px;
     }
+    #product,#product01,#product02{font-size:1.5vw;}
+    #select02>li,#select03>li{font-size:1.8vw;}
+    #total{font-size:2vw;}
+    #section02>ul>#total>span{font-size:3vw;}
+    #section02>div>p{font-size:1.8vw;}
 
+    #section02>div>p:last-of-type{margin-right:0;}
+    #section02>div>p:first-of-type{margin-left:1.5%;}
 }
-
 
