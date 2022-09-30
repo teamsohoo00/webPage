@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <title>new</title>
+    <title>관리자페이지</title>
     <link href="./css/e_main_style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
@@ -69,7 +69,7 @@
                     </ul>
                 </div>
                 <div class="header_under">
-                    <ul class="header_flex gnb">
+                    <ul id="gnb">
                         <li>
                             <a href="#">상품관리</a>
                         </li>
@@ -92,6 +92,11 @@
                             <a href="#">앱스토어</a>
                         </li>
                     </ul>
+                    <div id="m_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -316,7 +321,7 @@
     </section>
 
     <script src="./js/e_main.js"></script>
-
+    <script src="./js/common.js"></script>
 
 
 
