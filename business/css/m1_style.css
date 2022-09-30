@@ -146,6 +146,13 @@ footer{margin-top:30px;}
 
 
 
+
+/*중간 사이즈 이미지 어긋남 방지용*/
+@media all and (max-width:1919px){
+    .section03{width:1440px;}
+}
+
+
 /*모바일*/
 @media all and (max-width:1024px){
     .section01>div{
@@ -162,7 +169,7 @@ footer{margin-top:30px;}
         margin-right:50px;
         color:#222;
     }
-    .section02{margin-top:40px;}
+    .section02{width:614.4px; margin-top:40px;}
     .section02>ul>li>span:first-child{
         width:30%;
     }
@@ -178,6 +185,7 @@ footer{margin-top:30px;}
     .section02>ul>li:nth-child(6)>span:last-child{
         font-size:1rem;
     }
+    .section03{width:768px;}
     .section03>div>a:hover{
         background:#fff;
         color:#37594B;

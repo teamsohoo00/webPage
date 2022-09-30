@@ -180,6 +180,13 @@ footer{margin-top:50px;}
 
 
 
+/*중간 사이즈 이미지 어긋남 방지용*/
+@media all and (max-width:1919px){
+    .section02{width:761.2px;}
+    .section03{width:950.6px;}
+}
+
+
 /*모바일*/
 @media all and (max-width:1024px){
     .section01>div{
@@ -199,7 +206,7 @@ footer{margin-top:50px;}
 
     /*기간 설정 영역*/
     .section02{
-        width:50%; height:80px;
+        width:512px; height:80px;
         margin:40px auto 0;
         text-align:center;
         display:flex;
@@ -219,6 +226,7 @@ footer{margin-top:50px;}
 
 
     /*문의 리스트 영역*/
+    .section03{width:512px;}
     .section03>.list{height:40px;}
     .section03>.list>div>p:first-child{
         font-size:1rem;

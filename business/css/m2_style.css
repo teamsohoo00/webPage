@@ -50,11 +50,11 @@
 /*타이틀 영역*/
 #title{
     width:75%; height:50px;
-    text-align:left;
     border-bottom:4px solid #37594B;
     margin:50px auto 0;
 }
 #title>h4{
+    text-align:left;
     font-size:1.6rem;
     font-weight:600;
     line-height:50px;
@@ -278,8 +278,18 @@ footer{margin-top:50px;}
 
 
 
+/*중간 사이즈 이미지 어긋남 방지용*/
+@media all and (max-width:1919px){
+    .section01{width:1920px;}  
+    #title{width:1440px;}
+    .section02{width:761.2px;}
+    .section03{width:950.6px;}
+}
+
+
 /*모바일*/
 @media all and (max-width:1024px){
+    .section01{width:1024px;}
     .section01>div{
         margin-left:26.5%;
     }
@@ -295,9 +305,13 @@ footer{margin-top:50px;}
         color:#222;
     }
 
+
+    /*타이틀 영역*/
+    #title{width:75%;}
+
     /*기간 설정 영역*/
     .section02{
-        width:50%; height:80px;
+        width:512px; height:80px;
         margin:40px auto 0;
         text-align:center;
         display:flex;
@@ -316,7 +330,7 @@ footer{margin-top:50px;}
     {width:100px; height:25px;}
 
     /*구매 리스트 영역*/
-    .section03{height:550px;}
+    .section03{width:512px; height:550px;}
     .list01{height:180px;}
     .list01>a{height:160px; top:25px;}
     .list01>a>img{top:0%;}
