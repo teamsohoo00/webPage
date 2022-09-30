@@ -25,9 +25,8 @@ header{border-bottom:2px solid #d3d3d3;}
 }
 #util>li:nth-child(3)::after{content:''; margin: 0;}
 nav>h1{width:15%;}
-
 nav>h1 img{width:50%;}
-nav>ul{width:82%;}
+nav>ul{width:85%;}
 #gnb::after{
     content:'';
     width:0; height:0;
@@ -48,30 +47,12 @@ nav>ul{width:82%;}
 #gnb>li:nth-child(2),#gnb>li:nth-child(3){width:10%;}
 #gnb>li:nth-child(4){margin:0;}
 #gnb>li>a{font-size:1.3rem;}
-nav>ul{width:85%;}
-#gnb::after{
-    content:'';
-    width:0; height:0;
-    display:block;
-    clear:both;
-    visibility:hidden;
-}
-#gnb>li{
-    float:left !important;
-    width:15%; height:100%;
-    text-align:center;
-    padding:3% 0 2%;
-    box-sizing:border-box;
-    margin-right:15%;
-}
-#gnb>li>a{font-size:1.3rem;}
 #gnb>li:hover{border-bottom:3px solid #36594C;}
 #gnb>li:last-child:hover{border:none;}
 #gnb>li:hover>a{font-weight:900; color:#36594C;}
 #gnb>li:last-child{padding-top:2%;}
 #gnb>li:last-child>a:first-child>img{margin-right:30px;}
 #gnb>li:last-child img{width:20%;}
-#gnb>li:last-child>a:first-child>img{margin-right:30px;}
 
 
 /* 푸터 */
@@ -127,20 +108,14 @@ footer{background:#36594c; padding:30px 0;}
     #gnb>li>a>img{display:none;}
     #gnb>li:last-child>a:first-child{padding-top:15px;}
     #gnb>li:last-child>a:first-child::after{content:'마이페이지'}
-    #gnb>li:hover{background:#fff; border:none;}
-    #gnb>li:hover>a{color:#36594C;}
+    #gnb>li:hover{background:#36594C; border:none;}
+    #gnb>li:hover>a{color:#fff;}
     #gnb>li{
-        float:none !important;
+        float:none;
         width:100%;
         height:70px;
-        padding-top:20px;
+        padding-top:25px;
     }
-    #gnb>li>a{display:block;}
-    #gnb>li>a>img{display:none;}
-    #gnb>li:last-child>a:first-child{padding-top:15px;}
-    #gnb>li:last-child>a:first-child::after{content:'마이페이지'}
-    #gnb>li:hover{background:#36594C;}
-    #gnb>li:hover>a{color:#fff;}
     
     
 
