@@ -205,14 +205,15 @@
                 <tr>
                     <th class="img">대표이미지</th>
                     <td>
-                        <input type="file" multiple>
-                        <img id="preview">
+                        <input type="file" id="image1" accept="image/*" onchange="setThumbnail1(event);" multiple>
+                        <div id="image_container1"></div>
                     </td>
                 </tr>
                 <tr>
                     <th class="img">상세이미지</th>
                     <td>
-                        <input type="file" multiple>
+                        <input type="file" id="image2" accept="image/*" onchange="setThumbnail2(event);" multiple>
+                        <div id="image_container2"></div>
                     </td>
                 </tr>
                 <tr>
@@ -257,6 +258,7 @@
     <script src="./js/p.js"></script>
     <!-- 햄버거 버튼 -->
     <script src="./js/common.js" ></script>
+    <script src="./js/p1.js"></script>
 
 
 
