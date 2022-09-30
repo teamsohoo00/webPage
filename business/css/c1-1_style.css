@@ -6,14 +6,14 @@
 *{box-sizing: border-box;color:#5c5c5c;}
 .align{display: flex;}
 /*section1 영역*/
-.t_wrap{width:70%; margin:0 3%; margin-top:70px;}
+.t_wrap{width:70%;margin: 4% 3% 9% 3%;}
 .section1{margin-bottom:70px;}
 .section1 table{margin-bottom:30px;}
 .t_wrap h2{
-    font-size:16px; 
+    font-size:17px; 
     font-weight: bold; 
     color:#666; 
-    margin-bottom:15px;
+    margin-bottom:2%;
 }
 .t_wrap table{
     border:1px solid #ddd;
@@ -54,6 +54,12 @@
     color: #333333;
     font-weight: bold;}
 
+/*.ui-state-default ui-state-highlight ui-state-active ui-state-hover{    
+    border: 1px solid #dad55e;
+    background: #37594b;
+    color: #777620;
+} 호버시 backgrouond 변경*/ 
+
 
 .select option {
     background: #37594b;
@@ -82,7 +88,9 @@ button{
     margin-right:10px;
     cursor:pointer;
 }
+.btn button:hover{background: #37594b; color:#fff;}
 .btn{text-align: center;}
+.btn button{color:#37594b;}
 
 /*section2 영역*/
 .lineup{float: right; font-size:11px;margin-bottom:10px;}

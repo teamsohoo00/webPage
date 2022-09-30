@@ -1,6 +1,7 @@
 @charset  "utf-8";
 
 aside{width:15%;}
+.p_aside{width:14%;}
 aside>ul{
     font-size:1.0rem;
     font-weight:500;

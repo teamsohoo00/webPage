@@ -31,19 +31,20 @@ header{border-bottom:1px solid #d3d3d3; font-family: 'Pretendard-Regular';}
 
 /* gnb */
 .gnb{justify-content: space-between;}
-.gnb>li>a{color:#606060; font-size:0.9999vw; font-weight:bold;}
-.gnb>li:hover{
-    border-bottom:3px solid #9EB4A8;
-}
+.gnb>li>a{color:#606060; font-size:0.9vw; font-weight:bold;}
+
 .gnb>li:hover>a{
     font-weight:800;
     color:#9EB4A8;
+    border-bottom:3px solid #9EB4A8;
+    padding-bottom: 18px;
+    box-sizing: border-box;
 }
 
 
 
 @media all and (max-width:1024px){
-    div.header_flex>div:last-child{display:none;}
+
     div.logo>h1>a>img{width:80px;}
 
 

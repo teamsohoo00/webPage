@@ -105,7 +105,7 @@ input,select,option,button{font-family:'Pretendard-Regular';}
 	left: 52%;
 	transform: translate(-50%, -50%);
 }
-.lineup strong{font-size:2rem; color:#37594b;}
+.lineup strong{font-size:1.8rem; color:#37594b;}
 .lineup p{
     font-size: 2rem;
     font-weight: bold;
