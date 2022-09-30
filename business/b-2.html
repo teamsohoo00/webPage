@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>new</title>
-    <link href="./css/l_style.css" rel="stylesheet" type="text/css" />
-    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <link href="./css/b-2_style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<section>
     <header>
         <div>
             <ul class="flex" id="util">
@@ -45,43 +44,27 @@
             </nav>
         </div>
     </header>
-    <div class="wrap">
-        <div class="section1">
-           <h2>LOGIN</h2>
-           <div class="idpw">
-              <p><input type="text" name="u_id" placeholder="아이디" /></p>
-              <p><input type="password" name="u_pw" placeholder="비밀번호"/></p>
-           </div>
-            <div class="button">
-              <a href="h1_main.html"><input type="submit" value="로그인"></a>
-              <a href="#"><input type="submit" value="비회원 구매"></a>
-           </div>
-           <div class="function">
-              <div class="radiobox">
-                 <input type="radio" name="saveChk" id="saveChk" />
-                 <label for="saveChk">아이디저장</label>
-              </div>
-              <div class="link">
-                 <a href="#">아이디 찾기</a>
-                 <a href="#">비밀번호 찾기</a>
-                 <a href="./l2-1.html">회원가입</a>
-              </div>
-           </div>
-           <div class="sns_login">
-                <p>다음 계정으로 로그인 하기</p>
-                <a href="#"><img src="./img/g2_img/sns_login01.png" alt="sns_login01"/></a>
-                <a href="#"><img src="./img/g2_img/sns_login02.png" alt="sns_login02"/></a>
-                <a href="#"><img src="./img/g2_img/sns_login03.png" alt="sns_login03"/></a>
-                <a href="#"><img src="./img/g2_img/sns_login04.png" alt="sns_login04"/></a>
-           </div>
+<section class="wrap">
+    <h2>장바구니 비었을때</h2>
+    <ul>
+        <li>1<br/>장바구니</li>
+        <li>&nbsp;</li>
+        <li>2<br/>주문/결제</li>
+        <li>&nbsp;</li>
+        <li>3<br/>주문완료</li>
+    </ul>
+    <div>
+        <div id="shoppingCart">
+            <img src="./img/b_img/shoppingCart.png" alt="shoppingCart" />
+            <p>0</p>
         </div>
-     </div>
-   
-
-
-    <footer>
-        <div>
-       <div id="footer_sns">
+        <p>장바구니에 담긴 상품이 없어요</p>
+        <p>원하는 상품을 담아보세요</p>
+    </div>
+</section>
+<footer>
+    <div>
+        <div id="footer_sns">
              <ul class="flex">
                  <li>
                      <a href="#">
@@ -106,7 +89,6 @@
                      <a href="#">
                          <img src="./img/icon/ft_logo.png" alt="logo" />
                      </a>
-                     
                  </li>
              </ul>
              <ul>
@@ -119,9 +101,8 @@
                  <li><a href="#">개인정보 취급 방침</a></li>
                  <li>Copyright (c) DONG WHA PHARM. CO., LTD ALL Rights Reserved. </li>
              </ul>
-         </div>
-     </div>
+        </div>
+    </div>
 </footer>
-</section>
 </body>
 </html>
