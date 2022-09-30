@@ -26,15 +26,13 @@ header{border-bottom:1px solid #d3d3d3;}
 .header_top,.header_under{line-height:2.5;}
 
 /* gnb */
-<<<<<<< HEAD
 #gnb::after{
     content:'';
     display: block;
-=======
-#gnb:after{
+}
+#gnb::after{
     content:'';
     display:block;
->>>>>>> 98fd3ee0a0ec62d6ac36f056eaaba3a257f17dc2
     clear:both;
 }
 #gnb{width:100%; height:100%;}
@@ -42,10 +40,7 @@ header{border-bottom:1px solid #d3d3d3;}
     float:left;
     margin-right:6%;
     height:100%;
-<<<<<<< HEAD
     box-sizing: border-box;
-=======
->>>>>>> 98fd3ee0a0ec62d6ac36f056eaaba3a257f17dc2
 }
 #gnb>li>a{color:#5e5e5e; font-size:1.5rem;}
 #gnb>li:hover{border-bottom:3px solid #9EB4A8;}
@@ -56,10 +51,8 @@ header{border-bottom:1px solid #d3d3d3;}
 @media all and (max-width:1024px){
     .header_top, #gnb{display:none;}
     div.logo>h1>a>img{width:120px;}
-    .header_under{position:relative;}
-<<<<<<< HEAD
-=======
-
+    .header_under{position:relative;
+    }
 
     #m_btn{
         height:50px;
@@ -105,11 +98,6 @@ header{border-bottom:1px solid #d3d3d3;}
     #gnb>li:hover{background:#fff; border:none;}
     #gnb>li:hover>a{color:#36594C;}
     
-
-
->>>>>>> 98fd3ee0a0ec62d6ac36f056eaaba3a257f17dc2
-
-
     #m_btn{
         height:50px;
         position:absolute;
