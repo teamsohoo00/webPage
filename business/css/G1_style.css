@@ -415,7 +415,7 @@ html{ font-family: 'Pretendard'; }
 
 /*중간 사이즈 이미지 어긋남 방지용*/
 @media all and (max-width:1919px){
-    .section1, .section2, .section3{width:1920px;}
+    .section1, .section2, .section3, .section4{width:1920px;}
 }
 
 
