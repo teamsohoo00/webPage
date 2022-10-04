@@ -1,68 +1,17 @@
 @charset  "utf-8";
 @import "reset.css";
+@import "mypage_top.css";
 @import "common.css";
 
-/*현재 페이지 영역*/
-.section01{
-    text-align:center;
-    width:100%;
-    margin-top:80px;
-}
-.section01>h3{
-    font-size:2rem;
-    font-weight:700;
-    margin-top:50px;
-    color:#222;
-}
-.section01>p{
-    margin:20px 0 60px 0;
-    color:#222;
-}
-.section01>div{
-    width:75%;
-    margin-left:34%;
-}
-.section01>div>a{
-    width:130px; height:40px;
-    line-height:40px;
-    float:left;
-    border:2px solid #aaa;
-    border-radius:30px;
-    font-size:1.6rem;
-    font-weight:500;
-    margin-right:100px;
-    color:#222;
-}
+
 .section01>div>a:nth-child(1){
     background:#37594B;
     color:#fff;
 }
-.section01>div>a:last-child{margin-right:0;}
-.section01>div::after{
-	content:'';
-	width:0; height:0;
-	display:block;
-	clear:both;
-	visibility:hidden;
-}
-
-/*타이틀 영역*/
-#title{
-    width:75%; height:50px;
-    text-align:left;
-    border-bottom:4px solid #37594B;
-    margin:50px auto 0;
-}
-#title>h4{
-    font-size:1.6rem;
-    font-weight:600;
-    line-height:50px;
-    color:#222;
-}
 
 /*회원정보 영역*/
 .section02{
-    width:60%; height:600px;
+    height:600px;
     margin:110px auto 0;
 }
 .section02>ul>li{
@@ -154,20 +103,7 @@ footer{margin-top:30px;}
 
 /*모바일*/
 @media all and (max-width:1024px){
-    .section01>div{
-        margin-left:26.5%;
-    }
-    .section01>div>a{
-        width:120px; height:35px;
-        line-height:35px;
-        float:left;
-        border:2px solid #aaa;
-        border-radius:30px;
-        font-size:1.5rem;
-        font-weight:500;
-        margin-right:50px;
-        color:#222;
-    }
+
     .section02{width:614.4px; margin-top:40px;}
     .section02>ul>li>span:first-child{
         width:30%;
@@ -200,9 +136,4 @@ footer{margin-top:30px;}
         margin-right:120px;
     }
 
-
-
-
-
-    
 }

@@ -1,64 +1,12 @@
 @charset  "utf-8";
 @import "reset.css";
+@import "mypage_top.css";
 @import "common.css";
 
-/*현재 페이지 영역*/
-.section01{
-    text-align:center;
-    width:100%;
-    position:relative;
-    margin-top:80px;
-}
-.section01>h3{
-    font-size:2rem;
-    font-weight:700;
-    margin-top:50px;
-    color:#222;
-}
-.section01>p{
-    margin:20px 0 60px 0;
-    color:#222;
-}
-.section01>div{
-    width:75%;
-    margin-left:34%;
-}
-.section01>div>a{
-    width:130px; height:40px;
-    line-height:40px;
-    float:left;
-    border:2px solid #aaa;
-    border-radius:30px;
-    font-size:1.6rem;
-    font-weight:500;
-    margin-right:100px;
-    color:#222;
-}
+
 .section01>div>a:nth-child(3){
     background:#37594B;
     color:#fff;
-}
-.section01>div>a:last-child{margin-right:0;}
-.section01>div::after{
-	content:'';
-	width:0; height:0;
-	display:block;
-	clear:both;
-	visibility:hidden;
-}
-
-/*타이틀 영역*/
-#title{
-    width:75%; height:50px;
-    text-align:left;
-    border-bottom:4px solid #37594B;
-    margin:50px auto 0;
-}
-#title>h4{
-    font-size:1.6rem;
-    font-weight:600;
-    line-height:50px;
-    color:#222;
 }
 
 /*기간 설정 영역*/
@@ -172,14 +120,6 @@ footer{margin-top:50px;}
 
 
 
-
-
-
-
-
-
-
-
 /*중간 사이즈 이미지 어긋남 방지용*/
 @media all and (max-width:1919px){
     .section02{width:761.2px;}
@@ -189,20 +129,6 @@ footer{margin-top:50px;}
 
 /*모바일*/
 @media all and (max-width:1024px){
-    .section01>div{
-        margin-left:26.5%;
-    }
-    .section01>div>a{
-        width:120px; height:35px;
-        line-height:35px;
-        float:left;
-        border:2px solid #aaa;
-        border-radius:30px;
-        font-size:1.5rem;
-        font-weight:500;
-        margin-right:50px;
-        color:#222;
-    }
 
     /*기간 설정 영역*/
     .section02{
@@ -219,10 +145,8 @@ footer{margin-top:50px;}
         font-weight:600;
         word-spacing:0.8em;
     }
-    .section02>p:nth-child(2)
-    {width:20px; margin-left:20px;}
-    .section02>p>input
-    {width:100px; height:25px;}
+    .section02>p:nth-child(2){width:20px; margin-left:20px;}
+    .section02>p>input{width:100px; height:25px;}
 
 
     /*문의 리스트 영역*/
