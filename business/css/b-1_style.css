@@ -1,7 +1,8 @@
 @charset "utf-8";
 @import "reset.css";
 @import "common.css";
-.wrap{width:1440px; margin:150px auto 200px;}
+.wrap{width:1440px; margin:0 auto;}
+form{width:100%;}
 h2{
     display: none;
     visibility: hidden;
@@ -54,164 +55,160 @@ h2{
 
 #section{margin-top:120px;}
 /*왼쪽영역*/
-.section01{width:70%; margin-right:5%;}
-.check::after{
-	content:'';
+.wrap{width:1440px; margin:150px auto 200px; position: relative;}
+.wrap::after,.clear::after,.right::after{
+    content:'';
 	width:0; height:0;
 	display:block;
 	clear:both;
 	visibility:hidden;
 }
-.check>li{float:left;  color:#333;}
-.checkBox{
-    display:block;
-    border:1px solid #888;
-    width:20px;
-    height:20px;
-    box-sizing:border-box;
-    cursor:pointer;
-}
-input.checkBox[type="checkbox"]:checked{
-    background-color:#36594c;
-    color:#fff;
-}
-.check>li:nth-child(2),
-.check>li:nth-child(3),
-.check>li:nth-child(4){padding-top:2px;}
-.check>li:nth-child(2){margin-left:1%;}
-.check>li:nth-child(2)>label{
-    width:100%;
-    cursor:pointer;
-    color:#333;
-}
-.check>li:nth-child(3){margin:0 4%; color:#ddd;}
-.check>li:nth-child(4){cursor:pointer;}
-.section01>p{border-top:2px solid #ddd; margin-top:10px;}
 
-/*왼쪽영역 product*/
-.product01,.product02{
-    height:250px; 
-    position:relative;
-    border-bottom:1px solid #ddd;
-    margin-bottom:30px;
+.choice{display: flex; margin: 10px 0;}
+.choice>p{margin-right: 10px;}
+#mi01,#plus01,
+#mi02,#plus02{
+    cursor: pointer;
+    display: inline-block;
+    background: #ddd;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    
 }
-.product01>li,.product02>li{position:absolute;}
-.product01>li:nth-child(2),.product02>li:nth-child(2){left:3%;}
-.product01>li:nth-child(2)>img{width:40%;}
-.product02>li:nth-child(2)>img{width:70%;}
-.product01>li:nth-child(3),.product02>li:nth-child(3){
-    left:35%;
-    font-size:1.8rem;
-    padding-top:15px;
+.down{width:50px;}
+#basket{
+    width: 65%;
+    float: left;
 }
-.product01>li:nth-child(4),
-.product02>li:nth-child(4){left:35%; bottom:45%;}
-.product01>li:nth-child(4)>ul::after,
-.product02>li:nth-child(4)>ul::after{
-	content:'';
-	width:0; height:0;
-	display:block;
-	clear:both;
-	visibility:hidden;
-}
-.product01>li:nth-child(4)>ul>li,
-.product02>li:nth-child(4)>ul>li{
-    float:left;
-    color:#888;
-}
-.product01>li:nth-child(4)>ul>li:nth-child(2),
-.product02>li:nth-child(4)>ul>li:nth-child(2){margin:0 10px;}
-.product01>li:nth-child(5),
-.product02>li:nth-child(5){
-    left:35%;
-    bottom:23%;
-    border:1px solid #333;
-    padding:5px 0;
-}
-#mi01,
-#plus01,
-#mi02,
-#plus02{
-    border:0;
-    background:#fff;
-    color:#333;
-    cursor:pointer;
-    font-size:1.1rem;
-    padding:0 10px;
+.row{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 280px;
 }
 
-.product01>li:nth-child(5)>span:nth-of-type(2),
-.product02>li:nth-child(5)>span:nth-of-type(2){
-    display:inline-block;
-    width:25px;
-    color:#333;
-    text-align:center;
-}
-.product01>li:nth-child(6),
-.product02>li:nth-child(6){
-    right:0;
-    bottom:23%;
-    font-size:1.2rem;
-    color:#333;
-}
-.product01>li:nth-child(6)>span,
-.product02>li:nth-child(6)>span{
-    font-size:1.8rem;
-    font-weight:600;
-}
-.product01>li:nth-child(7),
-.product02>li:nth-child(7){
-    right:0;
-    cursor:pointer;
-}
-.product01>li:nth-child(7)>img,
-.product02>li:nth-child(7)>img{width:20px;}
 
+.pname1{
+    position: absolute;
+    right: 55%;
+    top:5%;
+    font-size: 1.6rem;
+}
 
-/*오른쪽영역*/
-.section02{width:25%;}
-.section02>ul{
-    border:1px solid #ddd;
-    padding:30px 8%;
+.pname2{
+    position: absolute;
+    right: 50%;
+    top:5%;
+    font-size: 1.6rem;
 }
-.section02>ul>li:nth-child(1){color:#888;}
-.section02>ul>li:nth-child(2){
-    color:#666;
-    font-size:1.3rem;
-    margin:20px 0;
-}
-.section02>ul>li:nth-child(2),
-.section02>ul>li:nth-child(3),
-.section02>ul>li:nth-child(5){
-    position:relative;
-}
-.section02>ul>li:nth-child(2)>span,
-.section02>ul>li:nth-child(3)>span,
-.section02>ul>li:nth-child(5)>span{
-    position:absolute;
-    right:0;
-}
-.section02>ul>li:nth-child(3),
-.section02>ul>li:nth-child(5){color:#666; font-size:1.3rem;}
-.section02>ul>li:nth-child(4){
-    border-top:1px solid #ddd;
-    margin:15px 0;
-}
-.section02>ul>li:nth-child(5){color:#333; font-weight:700;}
 
-/*주문하기 버튼*/
-.section02>p{margin-top:20px;}
-.section02>p>a{
-    display:block;
-    width:100%;
-    height:80px;
-    background:#36594c;
-    color:#fff;
-    line-height:80px;
-    text-align:center;
-    font-weight:700;
-    font-size:1.8rem;
+.row{position: relative;}
+.price1{
+    position: absolute;
+    right: 50%;
+    top: 75%;
 }
+.price2{
+    position: absolute;
+    right: 50%;
+    bottom: 5%;
+}
+.delivery1{
+    font-size: 0.8rem; color: #666;
+    margin-bottom: 20px;
+}
+
+.delete1{
+    position: absolute;
+    top:5%;
+    right:1%;
+}
+
+.delete2{
+    position: absolute;
+    top:5%;
+    right:1%
+}
+
+.sum{
+    font-size: 2rem;
+    position: absolute;
+    left: 380%;
+    bottom: 5%;
+    width: 200px;
+}
+
+/*오른쪽 결제하기 창*/
+#sum_p_price2{
+    display: none;
+}
+
+.right{
+    float: right;
+    width: 30%;
+    height: 300px;
+    text-align: left;
+    font-size: 1.6rem;
+    color: #333;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.sumcount{
+    margin: 20px;
+}
+
+.right1,.right2,.right3{margin-top: 20px; }
+.right1{margin-top: 40px;}
+.summoney{
+    margin: 0 0 0 280px;
+}
+.free{
+    margin: 0 0 0 340px;
+}
+.right p{
+    float: left;
+    margin-left: 50px;
+}
+
+.sumcount{
+    font-size: 1.1rem;
+    color: #666;
+    text-align: left;
+    margin: 20px;
+}
+
+hr{
+    margin-left: 20px;
+    width: 90%;
+    background: #ddd;
+    height: 2px;
+    border: 0;
+    display: inline-block;
+}
+#goorder{
+    position: absolute;
+    bottom: -25%;
+    background: #36594c;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#goorder>a{
+    color: #fff;
+}
+
+#sum_p_price1{
+    color: #000;
+    font-weight: bold;
+}
+#sum_p_num{width: 50%;}
+
 
 @media all and (max-width:1024px){
     .wrap{width:100%;}
@@ -221,18 +218,49 @@ input.checkBox[type="checkbox"]:checked{
         margin:0;
         box-sizing:border-box;
     }
-    #section{display:block;}
-    .section01,.section02{
-        width:100%; 
-        padding:0 15%;
-        box-sizing:border-box;
+    .right{
+        width: 100%;
+        height: 200px;
     }
-    .product01>li:nth-child(3),
-    .product02>li:nth-child(3),
-    .product01>li:nth-child(4),
-    .product02>li:nth-child(4),
-    .product01>li:nth-child(5),
-    .product02>li:nth-child(5){
-        left:40%;
+    #basket{width: 100%;}
+    .subdiv img{width: 120px;}
+    .row{height: 150px;}
+    .pname1,.pname2{
+        left: 18%; 
+        font-size: 1.2rem;
+        top:35%;
+        
+    }
+    .price1,.price2{left: 18%;}
+    .price1{top:60%;}
+    .sum{
+        font-size: 1.2rem;
+        font-weight: bold;
+        left: 60%;
+    }
+    .right{
+        border: 0;
+        margin: 0px auto;
+    }
+    #sum_p_price2{
+        display: block;
+        background: #36594c;
+        margin: 0 auto;
+        color: #fff;
+    }
+    .right hr {display: none;}
+    #goorder a {display: none;}
+    #sum_p_num{width: 50%; left: 3%;}
+    .right3{display: none;}
+    .right1,.right2{
+        display: block;
+        margin: 0 auto;
+        text-align: right;
+        width: 100%;
+        margin: 20px 0;
+        
+    }
+    #sum_p_price,.free,#sum_p_price1{
+        margin: 0 50px;
     }
 }
