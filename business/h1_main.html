@@ -10,14 +10,14 @@
 </head>
 <body>
     <header>
-        <div>
+        <div id="header">
             <ul class="flex" id="util">
                 <li><a href="./l.html">로그인</a></li>
                 <li><a href="./l2-1.html">회원가입</a></li>
                 <li><a href="./s.html">제품판매약국 찾기</a></li>
             </ul>
             <nav class="flex"> 
-                <h1>
+                <h1 id="logo">
                     <a href="./h1_main.html">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
@@ -34,7 +34,7 @@
                     </li>
                     <li>
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                        <a href="#"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
                     </li>
                 </ul>
                 <div id="m_btn">
@@ -54,20 +54,24 @@
         </div><!--section1 끝(비주얼)-->
         <div class="section2"><!--section2 시작-->
             <div>
-                <p class="section2_text">한 모금 한 모금을 마실 때마다<br/>
-                    식도와 코, 입이 뻥 뚫리는<br/>
-                    기가 막힌 맛과 향!<br/>
-                    <br/><br/>
-                    과식으로 인한 소화 불량!<br/>
-                    <span class="color1">활명수</span>로 한번에 <span class="color2">해결</span>하세요!
-                </p>
-                <img class="wow tada" src="./img/h1_images/contents.png" alt="contents"/>
+                <div class="contents_txt">
+                    <p class="contents_txt1 clear">" 한 모금 한 모금을 마실 때마다 
+                        식도와 코, 입이 <div class="bounce">뻥</div>  &nbsp; 뚫리는 
+                        기가 막힌 맛과 향! "</p>
+                    <p class="contents_txt2">과식으로 인한 소화 불량!<br/>
+                        <span class="color1">활명수</span>로 한번에 <span class="color2">해결</span>하세요!<br/></p>
+                </div>
+                <div class="wow tada">
+                <img src="./img/h1_images/content.png" alt="contents"/>
             </div>
+                
+            </div>
+            <div class="content_txt"><img src="./img/h1_images/rotate.png" class="rotating_img" alt="content_txt" /></div>
         </div><!--section2 끝-->
         <div class="section3"><!--section3 시작-->
             <div>
                 <p>소비자의 선택, <span class="color1">활명수</span></p>
-                <img class="bottle wow rollIn" src="./img/h1_images/bottle.png" alt="bottle" />
+                <img class="bottle wow rollIn" src="./img/h1_images/bottle1.png" alt="bottle" />
                 <img class="bottle_background wow rollIn" src="./img/h1_images/brand.png" alt="brand" />
 
                 <div class="section3_text1 wow bounceInLeft">
@@ -90,12 +94,15 @@
             </div>
         </div><!--section3 끝-->
         <div class="section4 wow fadeIn"><!--section4 시작-->
-            <img src="./img/h1_images/collaboration1.png" alt="guess_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration2.png" alt="showmethemoney_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration3.png" alt="PLEATSMAMA_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration4.png" alt="fila_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration5.png" alt="kakao_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration6.jpg" alt="monami_whalMyungsoo" />
+            <h4>Collaboration</h4>
+            <figure>
+                <img src="./img/h1_images/collaboration1.png" alt="guess_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration2.png" alt="showmethemoney_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration3.png" alt="PLEATSMAMA_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration4.png" alt="fila_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration5.png" alt="kakao_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration6.jpg" alt="monami_whalMyungsoo" />
+            </figure>
         </div><!--section4 끝-->
     </section>
 
@@ -143,19 +150,17 @@
             </div>
         </div>
     </footer>
-
-
-    
+    <!-- <script src="./h1_main..js"></script> -->
     <script src="./js/wow.js"></script>
     <script src="./js/common.js"></script>
-    <script>
-        wow = new WOW({
-            animateClass: 'animated',
-            offset:100,
-            live:true
-        }
-        );
-        wow.init();
-    </script>
+<script>
+    wow = new WOW({
+        animateClass: 'animated',
+        offset:100,
+		live:true
+    }
+    );
+    wow.init();
+</script>
 </body>
 </html>

@@ -88,7 +88,7 @@ input[type=checkbox]{width:1vw; height:1.5vh; margin:0 1% 0 0;}
     cursor:pointer;
 }
 /* 가입완료, 돌아가기 호버 효과 */
-.clear>button:hover{
+.clear>button:hover,.reset>button:hover{
     background:#37594B;
     color:#fff;
     border:1px solid #37594B;

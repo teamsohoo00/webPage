@@ -9,14 +9,14 @@
 </head>
 <body>
     <header>
-        <div>
+        <div id="header">
             <ul class="flex" id="util">
                 <li><a href="./l.html">로그인</a></li>
                 <li><a href="./l2-1.html">회원가입</a></li>
                 <li><a href="./s.html">제품판매약국 찾기</a></li>
             </ul>
             <nav class="flex"> 
-                <h1>
+                <h1 id="logo">
                     <a href="./h1_main.html">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
@@ -33,7 +33,7 @@
                     </li>
                     <li>
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                        <a href="#"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
                     </li>
                 </ul>
                 <div id="m_btn">
@@ -49,13 +49,13 @@
 
     <section class="section1">
         <div class="images">
-            <img src="./img/icon/check.png" alt=""  />
+            <img src="./img/icon/check.png" alt="check"  />
         </div>
         <div class="text">
             <p>회원가입이 완료되었습니다.<br/>
             활명수의 회원이 되신 것을 환영합니다.</p>
         </div>
-            <button class="btn reset">돌아가기</button>
+            <button class="btn reset" onclick="location.href='./l2-1..html'">돌아가기</button>
             <button class="btn login">로그인</button>
         
     </section>
@@ -103,5 +103,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/common.js"></script>
 </body>
 </html>
