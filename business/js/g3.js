@@ -2,66 +2,25 @@
 $(function(){
     $("#product01").click(function(){
         $("#select02").css("display","block");
-		$(".minus").click(function(){
-			var num = parseInt($("#number_cnt").text())
-			if(num>1){
-				$("#number_cnt").text(num -1);
-				var n1 = $("#number_cnt").text();
-				var n2 = $("#number_cnt2").text();
-				var numTotal = 12000
-	
-				var p1 = numTotal*n1;
-				var p2 = numTotal*n2;
-	
-				var total = parseInt(p1) + parseInt(p2);
-				$("#totalPrice").text(total);
-			}
-		});
-		$(".plus").click(function(){
-			$("#number_cnt").text(parseInt($("#number_cnt").text()) + 1);
-			var n1 = $("#number_cnt").text();
-				var n2 = $("#number_cnt2").text();
-				var numTotal = 12000
-	
-				var p1 = numTotal*n1;
-				var p2 = numTotal*n2;
-	
-				var total = parseInt(p1) + parseInt(p2);
-				$("#totalPrice").text(total);
-		});
-		
+		$("#number_cnt").text(1);
+		var n1 = $("#number_cnt").text();
+		var n2 = $("#number_cnt2").text();
+		var numTotal = 12000
+		var p1 = numTotal*n1;
+		var p2 = numTotal*n2;
+		var total =parseInt(p1) + parseInt(p2);
+		$("#totalPrice").text(total);
     });
     $("#product02").click(function(){
         $("#select03").css("display","block");
-		$(".minus2").click(function(){
-			var num = parseInt($("#number_cnt2").text())
-			if(num>1){
-				$("#number_cnt2").text(num -1);
-				var n1 = $("#number_cnt").text();
-				var n2 = $("#number_cnt2").text();
-				var numTotal = 12000
-	
-				var p1 = numTotal*n1;
-				var p2 = numTotal*n2;
-	
-				var total = parseInt(p1) + parseInt(p2);
-				
-				$("#totalPrice").text(total);
-			}
-		});
-		$(".plus2").click(function(){
-			$("#number_cnt2").text(parseInt($("#number_cnt2").text()) + 1);
-			var n1 = $("#number_cnt").text();
-			var n2 = $("#number_cnt2").text();
-			var numTotal = 12000
-	
-			var p1 = numTotal*n1;
-			var p2 = numTotal*n2;
-	
-			var total = parseInt(p1) + parseInt(p2);
-			
-			$("#totalPrice").text(total);
-		});
+		$("#number_cnt2").text(1);
+		var n1 = $("#number_cnt").text();
+		var n2 = $("#number_cnt2").text();
+		var numTotal = 12000
+		var p1 = numTotal*n1;
+		var p2 = numTotal*n2;
+		var total =parseInt(p1) + parseInt(p2);
+		$("#totalPrice").text(total);
     });
     $(".cancel").click(function(){
         $("#select02").css("display","none");
@@ -87,6 +46,55 @@ $(function(){
 });
 
 
+$(function(){
+	$(".minus").click(function(){
+		var num = parseInt($("#number_cnt").text());
+		if(num>1){
+			$("#number_cnt").text(num -1);	
+		};
+		var n1 = $("#number_cnt").text();
+		var n2 = $("#number_cnt2").text();
+		var numTotal = 12000
+		var p1 = numTotal*n1;
+		var p2 = numTotal*n2;
+		var total =parseInt(p1) + parseInt(p2);
+		$("#totalPrice").text(total);
+	});
+	$(".plus").click(function(){
+		$("#number_cnt").text(parseInt($("#number_cnt").text()) + 1);
+		var n1 = parseInt($("#number_cnt").text());
+		var n2 = parseInt($("#number_cnt2").text());
+		var numTotal = 12000
+		var p1 = numTotal*n1;
+		var p2 = numTotal*n2;
+		var total =parseInt(p1) + parseInt(p2);
+		$("#totalPrice").text(total);
+	});
+	$(".minus2").click(function(){
+		var num = parseInt($("#number_cnt2").text());
+		if(num>1){
+			$("#number_cnt2").text(num -1);	
+		};
+		var n1 = parseInt($("#number_cnt").text());
+		var n2 = parseInt($("#number_cnt2").text());
+		var numTotal = 12000
+		var p1 = numTotal*n1;
+		var p2 = numTotal*n2;
+		var total =parseInt(p1) + parseInt(p2);
+		$("#totalPrice").text(total);
+	});
+	$(".plus2").click(function(){
+		$("#number_cnt2").text(parseInt($("#number_cnt2").text()) + 1);
+		var n1 = parseInt($("#number_cnt").text());
+		var n2 = parseInt($("#number_cnt2").text());
+		var numTotal = 12000
+		var p1 = numTotal*n1;
+		var p2 = numTotal*n2;
+		var total =parseInt(p1) + parseInt(p2);
+		$("#totalPrice").text(total);
+	});
+});
+
 
 
 $(function(){
@@ -105,5 +113,13 @@ $(function(){
 	});
 });
 
-
+$(function(){
+	$("#photo1").click(function(){
+		$(".mainImg").attr('src','./img/g3_img/img02.jpg');
+		
+	});
+	$("#photo2").click(function(){
+		$(".mainImg").attr('src','./img/g3_img/img03.jpg');
+	});
+});
 

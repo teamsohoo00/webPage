@@ -19,10 +19,15 @@ h2{
 #section01>img{display:block;}
 #section01 p{
     width:125px; 
-    height:125px;
-    border:2px solid #ddd;
+    height:115px;
+    border:2px solid #eee;
     margin-right:2%;
-    background:url('') no-repeat center/90%;
+    background:url('') no-repeat center/100%;
+    cursor:pointer;
+}
+#section01 p:hover{
+    border:2px solid #ddd;
+    transform:scale(1.03); transition:all .4s;
 }
 #section01>div::after{
 	content:'';
@@ -83,6 +88,10 @@ h2{
 
 
 /*활명수 수량변경*/
+#section02>ul>li>.block>li::selection,
+#section02>ul>li>.block>li>span::selection{
+    background-color:white;
+}
 #section02>ul>li>#select02,
 #section02>ul>li>#select03{ 
     margin-top:10px; 
