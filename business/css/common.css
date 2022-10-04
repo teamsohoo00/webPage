@@ -148,7 +148,7 @@ footer{background:#36594c; padding:30px 0;}
     {padding-top:15px; line-height:50px;}
     #gnb>li:last-child>a:first-child::after{content:'마이페이지'}
     #gnb>li:hover{background:#fff; border:none;}
-    #gnb>li:hover>a{color:#36594C;}
+    #gnb>li:hover>a{color:#36594C;box-sizing:border-box;}
     #gnb>li{
         float:none !important;
         width:100%;
