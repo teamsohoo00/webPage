@@ -120,7 +120,7 @@ input,select,option,button{font-family:'Pretendard-Regular';}
 }
 
 @media all and (max-width:1024px){
-   
+    .text p:first-child::after{width:420px;}
 }
 @media all and (max-width:768px){
     .lineup>ul>li {

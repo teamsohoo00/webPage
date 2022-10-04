@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>new</title>
+    <title>회원정보조회</title>
     <link href="./css/c1-1_style.css" rel="stylesheet" type="text/css" />
     <link href="./css/manager_header.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./js/jQueryUI/css/jquery-ui.css">
@@ -18,7 +18,7 @@
         <div class="wrap header_flex">
             <div class="header_flex logo">
                 <h1>
-                    <a href="#">
+                    <a href="e_main.html">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
                 </h1>
@@ -54,13 +54,13 @@
                 <div class="header_under">
                     <ul class="header_flex gnb">
                         <li>
-                            <a href="#">상품관리</a>
+                            <a href="p.html">상품관리</a>
                         </li>
                         <li>
                             <a href="#">주문관리</a>
                         </li>
                         <li>
-                            <a href="#">고객관리</a>
+                            <a href="c.html">고객관리</a>
                         </li>
                         <li>
                             <a href="#">디자인관리</a>
@@ -83,21 +83,21 @@
         <aside>
             <ul>
                 <li class="menu">
-                    <a>고객관리</a>
+                    <a href="c.html">고객관리</a>
                 </li>
                 <li class="menu">
-                    <a>회원관리</a>
-                    <ul class="hide">
-                        <li><a href="#">상품관리</a></li>
-                        <li><a href="#">상품등록</a></li>
-                    </ul>
+                    <a href="#">회원관리</a>
+                        <ul class="hide">
+                            <li><a href="c1-1.html">회원정보 조회</a></li>
+                            <li><a href="#">회원가입/탈퇴관리</a></li>
+                        </ul>
                 </li>
                 <li class="menu">
-                    <a>알림설정</a>
-                    <ul class="hide">
-                        <li><a href="#">상품재고 관리</a></li>
-                        <li><a href="#">품절상품 관리</a></li>
-                    </ul>
+                    <a href="#">알림설정</a>
+                        <ul class="hide">
+                            <li><a href="#">상품재고 관리</a></li>
+                            <li><a href="#">품절상품 관리</a></li>
+                        </ul>
                 </li>
             </ul>
         </aside>
@@ -262,5 +262,12 @@
             </div>
         </div>
     </div>
+    <script>
+        /*스크립트*/
+        $(".menu a").click(function(evt){
+            $.scrollTo(this.hash,3000);
+            evt.preventDefault();
+        });
+    </script>
 </body>
 </html>

@@ -97,10 +97,7 @@ input,select,option,button{font-family:'Pretendard-Regular';}
 
 
 /*모바일버전*/
-@media all and (max-width:1024px){
 
-    
-}
 
 @media all and (max-width:768px){
     .lineup>ul>li {
