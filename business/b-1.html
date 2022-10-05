@@ -47,7 +47,6 @@
         </nav>
     </div>
 </header>
-
 <section class="wrap">
     <h2>장바구니 비었을때</h2>
     <ul>
@@ -59,15 +58,21 @@
     </ul>
 </section>
 <div class="wrap">
-    <form name="orderform" id="orderform" method="post" class="orderform" action="/Page" onsubmit="return false;">
+<form name="orderform" id="orderform" method="post" class="orderform" action="/Page" onsubmit="return false;">
+    <section>
+        <h2>왼쪽</h2>
         <div class="choice">
             <a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delCheckedItem();">선택상품삭제</a>
         </div>
         <div id="basket" class="clear">
             <div class="row data">
                 <div class="subdiv">
-                    <div class="check"><input type="checkbox" name="buy" value="260" checked="" onclick="javascript:basket.checkItem();">&nbsp;</div>
-                    <div class="img img1"><img src="./img/b_img/img01.jpg" width="250"></div>
+                    <div class="check">
+                        <input type="checkbox" name="buy" value="260" checked="" onclick="javascript:basket.checkItem();" id="chk1" />
+                        &nbsp;
+                        <label for="chk1" class="chkBox">&nbsp;</label>
+                    </div>
+                    <div class="img img1"><img src="./img/b_img/img01.jpg"></div>
                     <div class="pname1">
                         <span>활명수</span>
                     </div>
@@ -89,8 +94,12 @@
             </div>
             <div class="row data">
                 <div class="subdiv">
-                    <div class="check"><input type="checkbox" name="buy" value="261" checked="" onclick="javascript:basket.checkItem();">&nbsp;</div>
-                    <div class="img img2"><img src="./img/b_img/img02.jpg" width="250"></div>
+                    <div class="check">
+                        <input type="checkbox" name="buy" value="261" checked="" onclick="javascript:basket.checkItem();" id="chk2" />
+                        &nbsp;
+                        <label for="chk2" class="chkBox">&nbsp;</label>
+                    </div>
+                    <div class="img img2"><img src="./img/b_img/img02.jpg"></div>
                     <div class="pname2">
                         <span>미인활명수</span>
                     </div>
@@ -99,7 +108,6 @@
                     <div class="basketprice delivery1"><input type="hidden" name="p_price" id="p_price2" class="p_price" value="12000">배송비 무료 | 일반 택배</div>
                     <div class="num">
                         <div class="updown">
-        
                             <span onclick="javascript:basket.changePNum(2);"><i class="down" id="mi02">-</i></span>
                             <input type="text" name="p_num2" id="p_num2" size="2" maxlength="4" class="p_num" value="1" onkeyup="javascript:basket.changePNum(2);">
                             <span onclick="javascript:basket.changePNum(2);"><i class="up" id="plus02">+</i></span>
@@ -111,30 +119,32 @@
                     <div class="basketcmd"><a href="javascript:void(0)" class="abutton delete2" onclick="javascript:basket.delItem();">삭제</a></div>
                 </div>
             </div>
-
-    </div>
-    <div class="right clear">
-        <div class="wrap right-align sumcount" id="sum_p_num">전체상품 : 3개</div>
-        <div class="right1">
-        <p>주문금액</p>
-        <div class="bigtext right-align summoney" id="sum_p_price">46,000원</div>
         </div>
-        <div class="right2">
-        <p>배송비</p>
-        <div class="free">무료</div>
-        </div>
-        <hr/>
-        <div class="right3">
-        <p>결제금액</p>
-        <div class="bigtext right-align summoney" id="sum_p_price1">46,000원</div>
-
+    </section>
+    <section>
+        <h2>오른쪽</h2>
+        <div class="right clear">
+            <div class="wrap right-align sumcount" id="sum_p_num">전체상품 : 3개</div>
+            <div class="right1">
+            <p>주문금액</p>
+            <div class="bigtext right-align summoney" id="sum_p_price">46,000원</div>
+            </div>
+            <div class="right2">
+            <p>배송비</p>
+            <div class="free">무료</div>
+            </div>
+            <hr/>
+            <div class="right3">
+            <p>결제금액</p>
+            <div class="bigtext right-align summoney" id="sum_p_price1">46,000원</div>
+            </div> 
         </div>
         <div onclick="location.href ='http://127.0.0.1:5501/business/g3.html' " id="goorder" class="right-align">
-            <div onclick="location.href ='https://www.naver.com/'" class="bigtext right-align summoney" id="sum_p_price2">46,000원 결제하기</div>
+                <div onclick="location.href ='https://www.naver.com/'" class="bigtext right-align summoney" id="sum_p_price2">46,000원 결제하기</div>
                 <a href="http://127.0.0.1:5501/business/g3.html">주문하기</a>
-        </div>
-    </div>
-    </form>
+            </div>
+    </section>
+</form>
 </div>
     <footer>
         <div>
