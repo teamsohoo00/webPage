@@ -65,8 +65,8 @@
     background: #37594b;
     color: #fff;
     padding: 3px 0;
-  }
-  .member[type=text] {
+}
+.member[type=text] {
     height:30px;
     width:240px;
     border: 0;
