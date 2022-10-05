@@ -17,15 +17,20 @@ h2{
 /*활명수 제품사진*/
 #section01{padding-left:10%;}
 #section01>img{display:block;}
-#section01 p{
-    width:125px; 
-    height:115px;
+
+#section01>div>img{
+    width:115px; 
+    height:105px;
     border:2px solid #eee;
     margin-right:2%;
-    background:url('') no-repeat center/100%;
     cursor:pointer;
 }
-#section01 p:hover{
+#section01>div>img.photo1{
+    padding:10px;
+    box-sizing:border-box;
+    background-color:#f6f6f6;
+}
+#section01>div>img:hover{
     border:2px solid #ddd;
     transform:scale(1.03); transition:all .4s;
 }
@@ -37,9 +42,7 @@ h2{
 	visibility:hidden;
 }
 #section01>div{padding-top:2%;}
-#section01>div>p{float:left;}
-#section01>div>p:first-of-type{background-image:url('../img/g3_img/img02.jpg');}
-#section01>div>p:last-of-type{background-image:url('../img/g3_img/img03.jpg');}
+#section01>div>img{float:left;}
 
 /*활명수 제목 및 금액*/
 #section02{padding-left:5%; box-sizing:border-box;}

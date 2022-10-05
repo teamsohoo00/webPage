@@ -28,7 +28,6 @@ $(function(){
 		$("#number_cnt").val(parseInt($("#number_cnt").text(1)));
 		var cnt = $("#number_cnt2").text();
 		var ber = 12000
-
 		var plus = ber*parseInt(cnt);
 		$("#totalPrice").text(plus);
 
@@ -114,11 +113,13 @@ $(function(){
 });
 
 $(function(){
-	$("#photo1").click(function(){
-		$(".mainImg").attr('src','./img/g3_img/img02.jpg');
-		
+	$(".photo1").click(function(){
+		$(".mainImg").attr('src','./img/g3_img/img01.jpg');
 	});
-	$("#photo2").click(function(){
+	$(".photo2").click(function(){
+		$(".mainImg").attr('src','./img/g3_img/img02.jpg');
+	});
+	$(".photo3").click(function(){
 		$(".mainImg").attr('src','./img/g3_img/img03.jpg');
 	});
 });
