@@ -2,7 +2,6 @@
 @import url('./reset.css');
 @import url('./common.css');
 
-#header{width:100%; height:126px;}
 /* section1 */
 .clear::after{
 	content:'';
@@ -30,9 +29,8 @@
 .section2>div>.contents_txt{
     text-align:left;
     position:absolute;
-    top:70%;
-    left:25%;
-    transform:translate(-25%,-30%);
+    top:60%;
+    left:15%;
     font-size:1.5vw;
     color: #222;
     line-height: 1.5;
@@ -50,7 +48,7 @@ font-weight: bold;
 font-size: 1.6vw;
 }
 .contents_txt2{
-    margin-top: 50px;
+    margin-top: 9%;
     font-size: 2vw;
     margin-bottom: 30px;
     font-weight: 600;
@@ -66,6 +64,11 @@ font-size: 1.6vw;
     color:#f96768;
     font-weight:900;
     font-size:2vw;
+}
+.content_txt3{
+  position:absolute;
+  top:28%; right:-41%;
+  width:150%;
 }
 .section1{
   position:relative;
@@ -137,6 +140,7 @@ font-size: 1.6vw;
     top:20%;
     left:45%;
     text-align:right;
+    width:13%;
 }
 .section3_text1>p:nth-child(1),.section3_text1>p:nth-child(2){display:inline-block;}
 .section3_text1>p:nth-child(1){font-size:1.5vw;}
