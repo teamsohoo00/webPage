@@ -43,7 +43,7 @@ h2{
 	clear:both;
 	visibility:hidden;
 }
-.wrap>div{margin:100px 0 0 42%;}
+.wrap>div{margin:100px 0 0 40%;}
 .wrap>div>#shoppingCart{position:relative;}
 .wrap>div>#shoppingCart>img{margin-left:50px;}
 .wrap>div>#shoppingCart>p{

@@ -25,22 +25,26 @@ $(function(){
     $(".cancel").click(function(){
         $("#select02").css("display","none");
 		$("#active>li#product").text('상품을 선택하세요');
-		$("#number_cnt").val(parseInt($("#number_cnt").text(1)));
-		var cnt = $("#number_cnt2").text();
-		var ber = 12000
-		var plus = ber*parseInt(cnt);
-		$("#totalPrice").text(plus);
-
+		$("#number_cnt").val(parseInt($("#number_cnt").text(0)));
+		var n1 = $("#number_cnt").text();
+		var n2 = $("#number_cnt2").text();
+		var numTotal = 12000
+		var p1 = numTotal*n1;
+		var p2 = numTotal*n2;
+		var total =parseInt(p1) + parseInt(p2);
+		$("#totalPrice").text(total);
     });
     $(".cancel2").click(function(){
         $("#select03").css("display","none");
 		$("#active>li#product").text('상품을 선택하세요');
 		$("#number_cnt2").val(parseInt($("#number_cnt2").text(1)));
-		var cnt = $("#number_cnt").text();
-		var ber = 12000
-
-		var plus = ber*parseInt(cnt);
-		$("#totalPrice").text(plus);
+		var n1 = $("#number_cnt").text();
+		var n2 = $("#number_cnt2").text();
+		var numTotal = 12000
+		var p1 = numTotal*n1;
+		var p2 = numTotal*n2;
+		var total =parseInt(p1) + parseInt(p2);
+		$("#totalPrice").text(total);
     });
 });
 
