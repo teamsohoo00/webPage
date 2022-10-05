@@ -182,7 +182,7 @@ h2{
         height:auto;
     }
     #section01>img{margin-left:25%; width:50%; height:50%;}
-    #section01 p{display:none;}
+    #section01>div>img{display:none;}
     #section02{
         width:50%;
         padding:0;
