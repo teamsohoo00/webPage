@@ -50,7 +50,7 @@
 
     <section id="wrap">
         <div class="section1 wow fadeIn"><!--section1 시작(비주얼)-->
-            <img id="visual_img" src="./img/h1_images/visual.png" alt="visual_banner" />
+            <img id="visual_img" src="./img/h1_images/visual_img.png" alt="visual_banner" />
         </div><!--section1 끝(비주얼)-->
         <div class="section2"><!--section2 시작-->
             <div>
@@ -62,11 +62,12 @@
                         <span class="color1">활명수</span>로 한번에 <span class="color2">해결</span>하세요!<br/></p>
                 </div>
                 <div class="wow tada">
-                <img src="./img/h1_images/content.png" alt="contents"/>
+                    <img src="./img/h1_images/content.png" alt="contents"/>
+                </div>
+                <div class="content_txt3">
+                    <img src="./img/h1_images/rotate.png" class="rotating_img" alt="content_txt3" />
+                </div>
             </div>
-                
-            </div>
-            <div class="content_txt"><img src="./img/h1_images/rotate.png" class="rotating_img" alt="content_txt" /></div>
         </div><!--section2 끝-->
         <div class="section3"><!--section3 시작-->
             <div>
@@ -161,6 +162,11 @@
     }
     );
     wow.init();
+</script>
+<script>
+    $(document).ready(function() {
+    $('#visual_img').fadeIn(2500);
+    });
 </script>
 </body>
 </html>
