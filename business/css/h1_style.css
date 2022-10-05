@@ -3,7 +3,6 @@
 @import url('./common.css');
 
 /* section1 */
-
 .clear::after{
 	content:'';
 	width:0; height:0;
@@ -11,18 +10,25 @@
 	clear:both;
 	visibility:hidden;
 }
-.section1 img{
-    width:100%; height:auto;
-    display:block;
+.section1{
+  position:relative;
+  background:url('../img/h1_images/visual_banner.png') no-repeat center;
+  width:100%; height:50vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
+#visual_img1{
+  width:150px;
+  height:150px;
+  margin-right:20px;
+}
+#visual_img2{width:60px;}
 
 /* section2 */
 .section2{
     background:#FFF9E1;
-    height: 40vw;
+    height: 50vw;
     width: 100%;
 }
 .section2>div{
@@ -37,9 +43,8 @@
 .section2>div>.contents_txt{
     text-align:left;
     position:absolute;
-    top:70%;
-    left:25%;
-    transform:translate(-25%,-30%);
+    top:60%;
+    left:15%;
     font-size:1.5vw;
     color: #222;
     line-height: 1.5;
@@ -57,7 +62,7 @@ font-weight: bold;
 font-size: 1.6vw;
 }
 .contents_txt2{
-    margin-top: 50px;
+    margin-top: 9%;
     font-size: 2vw;
     margin-bottom: 30px;
     font-weight: 600;
@@ -74,6 +79,12 @@ font-size: 1.6vw;
     font-weight:900;
     font-size:2vw;
 }
+.content_txt3{
+  position:absolute;
+  top:28%; right:-41%;
+  width:150%;
+}
+
 .section2 img{
     width:20%; height:auto;
     display:block;
@@ -133,6 +144,7 @@ font-size: 1.6vw;
     top:20%;
     left:45%;
     text-align:right;
+    width:13%;
 }
 .section3_text1>p:nth-child(1),.section3_text1>p:nth-child(2){display:inline-block;}
 .section3_text1>p:nth-child(1){font-size:1.5vw;}
@@ -332,6 +344,8 @@ font-size: 1.6vw;
   }
 
 @media all and (max-width:1024px){ /* 모바일 */
+  
+
   .section4>figure{
     width:75%;
     margin:0 auto;

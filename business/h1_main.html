@@ -22,7 +22,7 @@
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
                 </h1>
-                <ul class="flex" id="gnb">
+                <ul id="gnb">
                     <li>
                         <a href="./g1.html">브랜드 스토리</a>
                     </li>
@@ -31,6 +31,9 @@
                     </li>
                     <li>
                         <a href="./g3.html">상품구매</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html">마이페이지</a>
                     </li>
                     <li>
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
@@ -46,12 +49,12 @@
         </div>
     </header>
 
-
-
     <section id="wrap">
         <div class="section1 wow fadeIn"><!--section1 시작(비주얼)-->
-            <img id="visual_img" src="./img/h1_images/visual.png" alt="visual_banner" />
+            <div class="wow pulse"><img id="visual_img1" src="./img/h1_images/visual_img(2).png" alt="visual_banner" /></div>
+            <div class="wow wobble"><img id="visual_img2" src="./img/h1_images/product-1.png" alt="visual_banner" /></div>
         </div><!--section1 끝(비주얼)-->
+
         <div class="section2"><!--section2 시작-->
             <div>
                 <div class="contents_txt">
@@ -62,11 +65,12 @@
                         <span class="color1">활명수</span>로 한번에 <span class="color2">해결</span>하세요!<br/></p>
                 </div>
                 <div class="wow tada">
-                <img src="./img/h1_images/content.png" alt="contents"/>
+                    <img src="./img/h1_images/content.png" alt="contents"/>
+                </div>
+                <div class="content_txt3">
+                    <img src="./img/h1_images/rotate.png" class="rotating_img" alt="content_txt3" />
+                </div>
             </div>
-                
-            </div>
-            <div class="content_txt"><img src="./img/h1_images/rotate.png" class="rotating_img" alt="content_txt" /></div>
         </div><!--section2 끝-->
         <div class="section3"><!--section3 시작-->
             <div>
@@ -161,6 +165,11 @@
     }
     );
     wow.init();
+</script>
+<script>
+    $(document).ready(function() {
+    $('#visual_img').fadeIn(3500);
+    });
 </script>
 </body>
 </html>

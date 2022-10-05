@@ -124,14 +124,17 @@ input,select,option,button{font-family:'Pretendard-Regular';}
 }
 @media all and (max-width:768px){
     .lineup>ul>li {
-        width: 20vw;
-        height: 20vw;
+        width: 13vw;
+        height: 13vw;
         padding-top: 4.9vw;
-        font-size: 3.3vw;
+        font-size: 2.5vw;
+        padding-top:3%;
     }
     .lineup>ul>li:nth-child(even) {
         width: 4vw;
         background-size: 100% auto;
         margin: 0 3vw;
     }
+    .lineup strong{font-size:1.6rem; color:#37594b;}
+    .lineup>div{margin-top:80px;};
     }

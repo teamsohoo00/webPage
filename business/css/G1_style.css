@@ -63,14 +63,13 @@ html{ font-family: 'Pretendard'; }
     position:absolute;
     right:20%; bottom:15%;
 }
-
 .section1>div>.line01{
     position:absolute;
-    top:53%; left:31%;  
+    top:53%; left:31%;
+    /*추가한 부분*/
+    transform:scale(70%);
+    opacity:0;
 }
-
-
-
 
 /*첨가 생약 효능 영역*/
 .section2{

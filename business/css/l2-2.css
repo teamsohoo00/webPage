@@ -11,7 +11,7 @@ font-family: 'SEBANG_Gothic_Bold';
 .section1{
     max-width:1440px;
     margin:0 auto;
-    padding:7% 0;
+    padding:7% 0 10% 0;
     text-align:center;
 }
 .section1>.images{width:80%; margin:0 auto 4%;}
@@ -37,10 +37,12 @@ font-family: 'SEBANG_Gothic_Bold';
     color:#37594B;
     background:#fff;
 }
+.section1>.reset:hover{background:#37594B; color:#fff;}
 .section1>.login{
     background:#37594B;
     color:#fff;
 }
+.section1>.login:hover{background:#fff; color:#37594B;}
 
 
 @media all and (max-width:1024px){ /* 모바일 */
