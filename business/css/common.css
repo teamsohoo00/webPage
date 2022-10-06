@@ -79,11 +79,9 @@ nav>ul{width:85%;}
 #gnb li a:hover::after{width:90%;}
 #gnb>li:nth-child(5) a:after{content:none;}
 #gnb>li:nth-child(5)>a{display:inline;}
-
-#gnb>li:nth-child(5){padding-top:30px;}
+#gnb>li:nth-child(5){padding-top:15px}
 #gnb>li:nth-child(5)>a:first-child>img{margin-right:30px;}
-#gnb>li:nth-child(5) img{width:20%;}
-#gnb>li:nth-child(5)>a:first-child>img{margin-right:30px;}
+#gnb>li:nth-child(5) img{width:25%;}
 
 
 /* 푸터 */

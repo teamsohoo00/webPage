@@ -1,11 +1,14 @@
 $(document).ready(function(){
-    $(".menu>a").click(function(){
-        var submenu = $(this).next("ul");
-
-        if( submenu.is(":visible") ){
-            submenu.slideUp();
-        }else{
-            submenu.slideDown();
-        }
-    });
+      $('.menu>a').click(function(){
+          if ( $(this).parent().hasClass('active') ){
+            $(this).parent().removeClass('active');
+            $(this).next().slideUp();
+          }else {
+            $('.menu').removeClass('active');
+            $('.hide').slideUp();
+            $(this).parent().addClass('active');
+            $(this).next().slideDown();
+          }
+          return false;
+      });
 });

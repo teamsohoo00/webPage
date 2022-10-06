@@ -12,7 +12,7 @@
         <div class="wrap header_flex">
             <div class="header_flex logo">
                 <h1>
-                    <a href="./e_main.html">
+                    <a href="#">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
                 </h1>
@@ -21,7 +21,7 @@
                 <div class="header_flex header_top">
                     <ul class="header_flex">
                         <li>
-                            <a href="#">
+                            <a href="e_main.html">
                                 <img src="./img/icon/menu.png" alt="menu" />
                             </a>
                         </li>
@@ -47,13 +47,13 @@
                 <div class="header_under">
                     <ul class="header_flex gnb">
                         <li>
-                            <a href="./p.html">상품관리</a>
+                            <a href="p.html">상품관리</a>
                         </li>
                         <li>
                             <a href="#">주문관리</a>
                         </li>
                         <li>
-                            <a href="./c.html">회원관리</a>
+                            <a href="c.html">고객관리</a>
                         </li>
                         <li>
                             <a href="#">디자인관리</a>
@@ -82,13 +82,13 @@
         <aside class="p_aside">
             <ul>
                 <li class="menu">
-                    <a>상품관리</a>
+                    <a href="p.html">상품관리</a>
                 </li>
                 <li class="menu">
                     <a>상품등록</a>
                     <ul class="hide">
-                        <li><a href="./p.html">상품관리</a></li>
-                        <li><a href="./p1.html">상품등록</a></li>
+                        <li><a href="p.html">상품관리</a></li>
+                        <li><a href="#">상품등록</a></li>
                     </ul>
                 </li>
                 <li class="menu">
@@ -231,16 +231,15 @@
             </div>
         </form>
     </section>
-
     <!-- aside javascript -->
     <script src="./js/p.js"></script>
-    <!-- 햄버거 버튼 -->
-    <script src="./js/common.js" ></script>
-    <script src="./js/p1.js"></script>
-
-
-
-
+    <script>
+        /*스크립트*/
+        $("menu a").click(function(evt){
+            $.scrollTo(this.hash,3000);
+            evt.preventDefault();
+        });
+    </script>
 
 </body>
 </html>

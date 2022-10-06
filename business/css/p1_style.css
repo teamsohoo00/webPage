@@ -3,45 +3,40 @@
 @import url('./p_aside.css');
 @import url('./manager_header.css');
 
+*{box-sizing: border-box;color:#5c5c5c;}
 
 /* 공통 */
-table, tr, th, td{border:1px solid #333; vertical-align: middle;}
-section{justify-content: space-between;}
-#form{width:80%; margin:4% 2% 5% 0;}
+table, tr, th, td{border:1px solid #ddd; vertical-align: middle;}
+#form {width: 78%; margin: 4% 3% 9% 3%;}
+caption{color:#666;font-weight: 900; font-size: 16px;}
+.menu:first-child a{color:#fff;}
+.flex{display:flex; flex-flow:row wrap;}
 
 
 /* table */
 #table{width:100%;}
 #table>caption{
     margin-bottom:2%;
-    font-size:1.5rem;
+    font-size:17px;
     text-align:left;    
+    font-weight: bold;
 }
-#table th{height:35px;}
-.title{
-    height:50px;
-    font-weight:800;
-}
-#table td{padding-left:2%;}
-
-
-
-
-
-input[type=text]{
-    width:50%; height:25px;
-    background:rgb(226, 226, 226);
+#table th{height:35px; width:20%; padding:10px;}
+.title{height:50px; font-weight:800;}
+#table td{padding:0 2%;}
+input:focus{outline:1px solid #fff;}
+input[type=text],input[type=number]{
+    width:100%; height:25px;
+    background:#eaeaea;
     border:none;
-
 }
-
-
-
+input[type=number]{width:20%;}
+#exhibition2,#sale2,#parcel2{margin-left:5%;}
 
 /* 버튼 */
-#form>div{text-align: center; margin-top:3%;}
+#form>div{text-align: center; margin-top:5%;}
 #form>div>button{
-    width:30%; height:50px;
+    width:20%; height:50px;
     background:#fff;
     border:1px solid #36594c;
     color:#36594c;
@@ -49,12 +44,14 @@ input[type=text]{
     font-weight:600;
 }
 
-#form>div>button:hover{
-    color:#fff;
-    background:#36594c;
+#form>div>button:hover{color:#fff; background:#36594c;}
+textarea{
+    width:100%;
+    height:150px
 }
 
 
-
-
-
+@media all and (max-width:1024px){
+    aside a{font-size:0.8rem;}
+    aside>ul>li a{line-height:3;}
+}

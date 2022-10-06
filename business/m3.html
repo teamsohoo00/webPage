@@ -20,7 +20,6 @@
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
                 </h1>
-                <!--클래스 삭제-->
                 <ul id="gnb">
                     <li>
                         <a href="./g1.html">브랜드 스토리</a>
@@ -31,13 +30,25 @@
                     <li>
                         <a href="./g3.html">상품구매</a>
                     </li>
-                    <!--추가-->
                     <li>
                         <a href="./m1.html">마이페이지</a>
                     </li>
                     <li>
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                        <a href="./b-2.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-2.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
                     </li>
                 </ul>
                 <div id="m_btn">
@@ -52,37 +63,56 @@
         <h3>MY PAGE</h3>
         <p>MY PAGE > 문의내역</p>
         <div>
-            <a href="http://127.0.0.1:5501/business/M1.html#">회원정보</a>
-            <a href="http://127.0.0.1:5501/business/m2.html">구매내역</a>
-            <a href="http://127.0.0.1:5501/business/m3.html">문의내역</a>
+            <a href="./m1.html">회원정보</a>
+            <a href="./m2.html">구매내역</a>
+            <a href="./m3.html">문의내역</a>
         </div>
     </div>
     <div id="title">
     <h4>문의내역</h4>
     </div>
     <div class="section02">
-        <p>기간 : <input type="date" /></p>
+        <p><input type="date" /></p>
         <p>~</p>
         <p><input type="date" /></p>
+        <a href="">조회</a>
+        <form>
+            <select name="answer" >
+              <option value="korean" selected>전체</option>
+              <option value="english">접수완료</option>
+              <option value="chinese">답변완료</option>
+            </select>
+          </form>
     </div>
+
     <div class="section03">
         <div class="list">
-            <div>
-                <p>문의 날짜 : 2022년 8월 12일</p>
-                <p>문의유형 : 배송 관련 문의</p>
+            <div class="name">
+                <p>날짜</p>
+                <p>2022.08.12</p>
             </div>
             <div>
-                <a href="#"><p>상세 보기</p></a>
+                <p>유형</p>
+                <p>배송</p>
             </div>
-        </div>
+            <div>
+                <p>내용</p>
+                <p>4월10일에 시켰는데 언제쯤 도착할까요</p>
+            </div>
         <div class="response">
             <p>답변</p>
-            <div>
-                <p>Y</p>
-                <p>N</p>
+            <div id="answer">
+                <p class="yes">Y</p>
+                <p class="no">N</p>
             </div>
         </div>
+        <div id="detail">
+            <a href="">자세히 ></a>
+         </div>
+        </div>
     </div>
+
+
     <div class="section04">
         <div>
             <a class="previous" href="#">◁ 이전 페이지</a>

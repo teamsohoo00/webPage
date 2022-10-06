@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/common.js"></script>
     <title>new</title>
     <link href="./css/b-2_style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <header>
-        <div>
+        <div id="header">
             <ul class="flex" id="util">
                 <li><a href="./l.html">로그인</a></li>
                 <li><a href="./l2-1.html">회원가입</a></li>
                 <li><a href="./s.html">제품판매약국 찾기</a></li>
             </ul>
             <nav class="flex"> 
-                <h1>
+                <h1 id="logo">
                     <a href="./h1_main.html">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
                 </h1>
-                <ul class="flex" id="gnb">
+                <ul id="gnb">
                     <li>
                         <a href="./g1.html">브랜드 스토리</a>
                     </li>
@@ -32,11 +33,27 @@
                         <a href="./g3.html">상품구매</a>
                     </li>
                     <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                        <a href="./b-2.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-2.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
                     </li>
                 </ul>
-                <div class="M_menu" id="menu_btn">
+                <div id="m_btn">
                     <span></span>
                     <span></span>
                     <span></span>

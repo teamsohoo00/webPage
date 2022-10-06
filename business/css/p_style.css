@@ -2,27 +2,27 @@
 @import url('./reset.css');
 @import url('./manager_header.css');
 @import url('./p_aside.css');
-
+*{box-sizing: border-box;color:#5c5c5c;}
 
 /* 공통 */
-
-table, tr, th, td{border:1px solid #000; text-align:center;}
+table, tr, th, td{border:1px solid #ddd; text-align:center; vertical-align: middle;}
 table{width:100%; margin:2% 0 5%;}
 table>caption{text-align:left;}
-.wrap{justify-content: space-between;}
+
 .flex{display:flex; flex-flow:row wrap;}
-article{width:80%;}
-
-
+article{width:78%; margin: 3% 3% 9% 3%;}
+article caption{color:#666;}
+th{color:#7f7f7f; font-weight: bold;}
+td{color:#666; font-weight: bold;}
 /* 사이드메뉴 */
 
-
+.menu:first-child a{color:#fff;}
 
 
 
 /* 상품현황 */
-table>caption{font-size:1rem; font-weight:900; margin-bottom:2%;}
-#article>table th,#article>table td{padding-top:2.5%;}
+table>caption{font-size:17px; font-weight:900; margin-bottom:2%;}
+
 
 /* 상품 재고 현황 */
 #article>table:nth-child(2) td{padding-top:6.5%;}
@@ -32,10 +32,7 @@ table>caption{font-size:1rem; font-weight:900; margin-bottom:2%;}
     font-size:12px;
     margin:2% 0;
     font-weight:900;
-
 }
-
-
 /* 상품관리 */
 .background{background:#f0efef; height:200px;}
 .background>div{width:50%; padding:2% 0 2.5% 2% ;box-sizing: border-box;}
@@ -50,17 +47,9 @@ table>caption{font-size:1rem; font-weight:900; margin-bottom:2%;}
 }
 .background>div p:first-child{color:rgb(77, 77, 77); margin-bottom:2%;}
 
-
-
-
-
-
-
-
-
 @media all and (max-width:1024px){
-    section.flex{justify-content: space-around;}
-    aside{display:none;}
-    article{padding:0 3%;}
+
+    aside a{font-size:0.8rem;}
+    aside>ul>li a{line-height: 3;}
     .background>div{padding-top:5%;}
 }

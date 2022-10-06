@@ -2,13 +2,25 @@
 @import url('./reset.css');
 @import url('./common.css');
 
-/* section1 */
+
 .clear::after{
 	content:'';
 	width:0; height:0;
 	display:block;
 	clear:both;
 	visibility:hidden;
+}
+/* section1 */
+.section1{
+  position:relative;
+  background:url('../img/h1_images/visual_banner.png') no-repeat center;
+  width:100%; height:1127px;
+}
+#visual_img{
+  position:absolute;
+  top:32%; left:37.5%;
+  transform:scale(50%);
+  display:none;
 }
 
 /* section2 */
@@ -19,11 +31,9 @@
 }
 .section2>div{
     max-width:1920px;
-    height:100%;/*추가*/
     margin:0 auto;
     padding:50px 0;
     position:relative;
-    overflow:hidden;/*추가*/
 }
 
 /*수정함*/
@@ -31,7 +41,7 @@
 .section2>div>.contents_txt{
     text-align:left;
     position:absolute;
-    top:25%;/*수정*/
+    top:60%;
     left:15%;
     font-size:1.5vw;
     color: #222;
@@ -67,29 +77,29 @@ font-size: 1.6vw;
     font-weight:900;
     font-size:2vw;
 }
-.content_txt3{/*이 아래로 전체적으로 수정*/
-  width:33%;
+.content_txt3{
   position:absolute;
-  top:8%; right:15%;
+  width:100%; height:766px;
+  padding:6% 0 0 30%;
+  box-sizing: border-box;
+  top:0;
 }
-.section1{
-  background:url('../img/h1_images/visual_banner.png') no-repeat center;
-  width:100%; height:20%;
-}
-#visual_img{
-  transform:scale(50%);
-  width:100%; height:100%;
-}
-.section2>div>div.tada>img{
+
+.section2 img{
     width:20%; height:auto;
     display:block;
-    position:absolute;
-    top:25%; right:20%;
+    margin: 0 auto;
+    transform: translate(80%,60%);
+    position: relative;
     z-index: 999;
-}/*중복부분 삭제*/
-.rotating_img {
+}
+.content_txt{
+    transform: translate(50%,-55%);
+    width:30%;
+}
+.content_txt3>.rotating_img{
     -webkit-animation: rotation 150s infinite linear;
-    width:100%;/*추가*/
+    width:40%;
 }
 
 
@@ -333,11 +343,12 @@ font-size: 1.6vw;
 
 @media all and (max-width:1024px){ /* 모바일 */
   
-  #visual_img{/*수정*/
-    transform:scale(80%);
+
+  #visual_img{top:32%; left:28%;}
+
+  .content_txt3{
+    padding-top:10%;
   }
-
-
   .section4>figure{
     width:75%;
     margin:0 auto;
