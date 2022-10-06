@@ -56,28 +56,47 @@
     <h4>문의내역</h4>
     </div>
     <div class="section02">
-        <p>기간 : <input type="date" /></p>
+        <p><input type="date" /></p>
         <p>~</p>
         <p><input type="date" /></p>
+        <a href="">조회</a>
+        <form>
+            <select name="answer" >
+              <option value="korean" selected>전체</option>
+              <option value="english">접수완료</option>
+              <option value="chinese">답변완료</option>
+            </select>
+          </form>
     </div>
+
     <div class="section03">
         <div class="list">
-            <div>
-                <p>문의 날짜 : 2022년 8월 12일</p>
-                <p>문의유형 : 배송 관련 문의</p>
+            <div class="name">
+                <p>날짜</p>
+                <p>2022.08.12</p>
             </div>
             <div>
-                <a href="#"><p>상세 보기</p></a>
+                <p>유형</p>
+                <p>배송</p>
             </div>
-        </div>
+            <div>
+                <p>내용</p>
+                <p>4월10일에 시켰는데 언제쯤 도착할까요</p>
+            </div>
         <div class="response">
             <p>답변</p>
-            <div>
-                <p>Y</p>
-                <p>N</p>
+            <div id="answer">
+                <p class="yes">Y</p>
+                <p class="no">N</p>
             </div>
         </div>
+        <div id="detail">
+            <a href="">자세히 ></a>
+         </div>
+        </div>
     </div>
+
+
     <div class="section04">
         <div>
             <a class="previous" href="#">◁ 이전 페이지</a>
