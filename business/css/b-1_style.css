@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "reset.css";
 @import "common.css";
-.wrap{width:1440px; margin:150px auto 200px;}
+.wrap{width:1440px; margin:150px auto 130px;}
 form{width:100%;}
 h2{
     display: none;
@@ -13,7 +13,7 @@ h2{
 
 /*위쪽 현재진행상태표시 영역*/
 .wrap>ul{font-size:0; text-align: center;}
-div.wrap{margin-top:0;}
+div.wrap{margin-top:0; margin-bottom:200px;}
 .wrap>ul>li{
     display:inline-block;
     vertical-align: middle;
@@ -62,41 +62,23 @@ div.wrap{margin-top:0;}
 .orderform>section:first-of-type{width:65%;}
 .orderform>section:last-of-type{width:35%; margin-left:5%;}
 .choice{display: flex; margin-bottom:10px;}
-.choice>p{margin-right: 10px;}
-.img>img{width:28%;}
-
-.price1,.price2{width:14%; height:10%}
-#mi01,#plus01,
-#mi02,#plus02{
-    cursor: pointer;
-    display: inline-block;
-    background: #eee;
-    width: 25%;
-    height:100%;
-    text-align: center;
-    color:#333;
-}
-.p_num{width:43%;height:100%;display:inline-block;}
-.updown{
-    background:#eee; padding:8px 0;
-    width:100%;
-}
-.updown>input{border:0; background:#eee; text-align:center; color:#333;}
-.down{width:50px;}
+.choice>a{margin-right: 10px;}
 #basket{width:100%;}
+#basket>div:first-of-type{border-bottom:0;}
+
 .row{
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
     align-items: center;
     height: 280px;
-    position:relative;
     padding-top:30px;
     box-sizing:border-box;
 }
-#basket>div:first-of-type{border-bottom:0;}
+.subdiv{position:relative; width:100%; display:block;}
+.price0,.price{height:10%;}
+.price1,.price2{height:90%;}
 
-
-.check{position:relative;}
+.check{height:80%; width:20%;}
 #chk1,#chk2{display:none;}
 .chkBox{
     display:block;
@@ -115,47 +97,86 @@ div.wrap{margin-top:0;}
 
 .pname1,.pname2{
     position: absolute;
-    right: 55%;
+    left: 37%;
     top:12%;
     font-size: 1.7rem;
     color:#333;
     font-weight:600;
 }
-
-.pname2{right: 50%;}
-
-.price1{
-    position: absolute;
-    right: 50%;
-    top: 60%;
-}
-.price2{
-    position: absolute;
-    right: 50%;
-    top: 60%;
-}
-.delivery1{
-    font-size: 0.8rem; color: #666;
-    margin-bottom: 20px;
-}
+.pname2{left:37%;}
 
 .delete1,.delete2{
     position: absolute;
-    top:12%;
+    top:0;
     right:1%;
     text-indent:-999999999999px;
     display:block;
-    width:3%;
-    height:5%;
+    width:2.5%;
+    height:80%;
     background:url('../img/b_img/icon02.gif') no-repeat center/100% ;
+}
+
+.price1>.img,.price2>.img{
+    width:25%;
+    height:85%;
+    position:absolute;
+    top:0;
+}
+.img>img{width:100%; height:100%;}
+
+.delivery1{
+    font-size: 0.8rem; color: #666;
+    position:absolute;
+    left:37%;
+    bottom:45%;
+}
+
+.num{
+    width:13.2%;
+    height:13%;
+    position:absolute;
+    left:37%;
+    bottom:25%;
+}
+.updown{width:100%; height:100%; position:relative;}
+.updown>input{
+    border:0; 
+    background:#fff; 
+    text-align:center; 
+    color:#333;
+    display:inline-block;
+    width:50%;
+    height:100%;
+    position:absolute;
+    left:25%;
+    border:1px solid #eee;
+    box-sizing:border-box;
+}
+.updown>span{
+    display:inline-block;
+    width: 25%;
+    height:100%;
+    background: #eee;
+    cursor: pointer;
+    position:absolute;
+    top:0;
+}
+.updown>span:last-of-type{right:0;}
+#mi01,#plus01,
+#mi02,#plus02{
+    display:block;
+    width:100%; height:70%;
+    padding:15% 0;
+    text-align: center;
+    color:#333;
 }
 
 .sum{
     font-size: 2rem;
     position: absolute;
-    right:-350%;
-    top:130%;
     color:#333;
+    right:1%;
+    bottom:25%;
 }
 
 /*오른쪽 결제하기 창*/
@@ -171,6 +192,7 @@ div.wrap{margin-top:0;}
     box-sizing:border-box;
     padding:8% 11%;
 }
+.right>.sumcount{margin:0;}
 
 
 .right1,.right2,.right3{margin-top: 20px; position:relative;}
@@ -219,21 +241,53 @@ hr{
 
 
 @media all and (max-width:1024px){
-    .wrap{width:100%;}
+    .wrap{width:100%; margin-top:13vw; margin-bottom:10vw;}
     .orderform{display:block;}
     .orderform>section:first-of-type,
     .orderform>section:last-of-type{width:70%; margin:0 auto;}
     .orderform>section:last-of-type{margin-top:30px;}
+    .choice>a{font-size:1.3vw;}
+    .row{height:25vw; padding-top:3vw;}
 
-    .price1,.price2{width:15%;}
-    .delivery1{font-size:1.1vw;}
-    .sum{right:-325%; top:120%;}
-    #mi01,#plus01,
-    #mi02,#plus02{width:24%;}
-
-    .pname2{right:48%;}
     
+
+    .num{width:11vw; height:2.5vw;}
+
+    .delivery1{font-size:1.1vw;}
+    #mi01,#plus01,
+    #mi02,#plus02{
+        width:100%;
+        font-size:1.8vw;
+    }
+    .p_num{font-size:1.5vw;}
+
+    .pname1,.pname2{font-size:2.4vw;}
+    .sum{font-size:3vw;}
+    .right{height:30vw;}
+
+    .right1,.right2,.right3{margin-top:2vw;}
+    .right1{margin-top:4vw;}
+    #sum_p_num{font-size:1.5vw;}
+    .right1>p,.right2>p,.right3>p{font-size:1.9vw;}
+    #sum_p_price,#sum_p_price1{font-size:2.5vw;}
+    .free{font-size:2vw;}
+    
+    #goorder>a{display:none;}
+    #goorder{margin-top:2vw; height:6.5vw;}
+    #sum_p_price2{
+        display:block;
+        font-size:2.3vw;
+        color:#fff;
+        width:100%;
+        height:100%;
+        text-align:center;
+        line-height:6.5vw;
+    }
+    
+
+    .chkBox{width:1.6vw; height:1.6vw;}
 }
+
 
 @media all and (max-width:768px){
     .wrap>ul>li {
