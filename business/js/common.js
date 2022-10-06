@@ -15,4 +15,3 @@ $(function(){
 		$("#gnb").fadeToggle();
 	});
 });
-

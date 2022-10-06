@@ -1,0 +1,256 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+.wrap{width:1440px; margin:150px auto 200px;}
+form{width:100%;}
+h2{
+    display: none;
+    visibility: hidden;
+    width: 0; height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+/*위쪽 현재진행상태표시 영역*/
+.wrap>ul{font-size:0; text-align: center;}
+div.wrap{margin-top:0;}
+.wrap>ul>li{
+    display:inline-block;
+    vertical-align: middle;
+    width:100px;
+    height:100px;
+    border:1px solid #36594c;
+    background:#36594c;
+    border-radius:50%;
+    text-align:center;
+    padding-top:20px;
+    box-sizing:border-box;
+    color:#fff;
+    line-height:1.3em;
+    font-weight:700;
+    font-size:20px;
+}
+.wrap>ul>li:nth-child(even){
+    background:url('../img/b_img/icon01.gif') no-repeat center/30px;
+    border:none;
+}
+.wrap>ul>li:nth-child(3),
+.wrap>ul>li:nth-child(5){
+    background:none;
+    color:#666;
+    border-color:#888;
+}
+.wrap>ul::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+.clear::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+/*왼쪽영역*/
+.wrap{width:1440px;}
+
+.orderform{display:flex;}
+.orderform>section:first-of-type{width:65%;}
+.orderform>section:last-of-type{width:35%; margin-left:5%;}
+.choice{display: flex; margin-bottom:10px;}
+.choice>p{margin-right: 10px;}
+.img>img{width:28%;}
+
+.price1,.price2{width:14%; height:10%}
+#mi01,#plus01,
+#mi02,#plus02{
+    cursor: pointer;
+    display: inline-block;
+    background: #eee;
+    width: 25%;
+    height:100%;
+    text-align: center;
+    color:#333;
+}
+.p_num{width:43%;height:100%;display:inline-block;}
+.updown{
+    background:#eee; padding:8px 0;
+    width:100%;
+}
+.updown>input{border:0; background:#eee; text-align:center; color:#333;}
+.down{width:50px;}
+#basket{width:100%;}
+.row{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    align-items: center;
+    height: 280px;
+    position:relative;
+    padding-top:30px;
+    box-sizing:border-box;
+}
+#basket>div:first-of-type{border-bottom:0;}
+
+
+.check{position:relative;}
+#chk1,#chk2{display:none;}
+.chkBox{
+    display:block;
+    width:20px;
+    height:20px;
+    border:1px solid #666;
+    box-sizing:border-box;
+    position:absolute;
+    top:0;
+    cursor:pointer;
+}
+#chk1:checked + .chkBox,
+#chk2:checked + .chkBox{
+    background:url('../img/b_img/check.png') no-repeat center center/90% #36594c;
+}
+
+.pname1,.pname2{
+    position: absolute;
+    right: 55%;
+    top:12%;
+    font-size: 1.7rem;
+    color:#333;
+    font-weight:600;
+}
+
+.pname2{right: 50%;}
+
+.price1{
+    position: absolute;
+    right: 50%;
+    top: 60%;
+}
+.price2{
+    position: absolute;
+    right: 50%;
+    top: 60%;
+}
+.delivery1{
+    font-size: 0.8rem; color: #666;
+    margin-bottom: 20px;
+}
+
+.delete1,.delete2{
+    position: absolute;
+    top:12%;
+    right:1%;
+    text-indent:-999999999999px;
+    display:block;
+    width:3%;
+    height:5%;
+    background:url('../img/b_img/icon02.gif') no-repeat center/100% ;
+}
+
+.sum{
+    font-size: 2rem;
+    position: absolute;
+    right:-350%;
+    top:130%;
+    color:#333;
+}
+
+/*오른쪽 결제하기 창*/
+#sum_p_price2{
+    display: none;
+}
+.right{
+    width:100%;
+    text-align: left;
+    font-size: 1.6rem;
+    color: #333;
+    border: 1px solid #ddd;
+    box-sizing:border-box;
+    padding:8% 11%;
+}
+
+
+.right1,.right2,.right3{margin-top: 20px; position:relative;}
+.right1{margin-top:40px;}
+.right1>p,.right2>p,.right3>p{
+    position:absolute; 
+    right:0;
+    font-size:1.2rem;
+}
+.free{font-size:1.4rem;}
+.sumcount{
+    font-size: 1.1rem;
+    color: #666;
+    text-align: left;
+    margin:0;
+}
+
+hr{
+    width:100%;
+    background: #ddd;
+    height: 2px;
+    border: 0;
+    display: inline-block;
+}
+#goorder{
+    background: #36594c;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    cursor: pointer;
+    margin-top:20px;
+}
+
+#goorder>a{
+    color: #fff;
+    font-size:1.5rem;
+}
+
+#sum_p_price1{
+    color: #000;
+    font-weight: bold;
+    padding-bottom:40px;
+}
+#sum_p_num{width: 50%;}
+
+
+@media all and (max-width:1024px){
+    .wrap{width:100%;}
+    .orderform{display:block;}
+    .orderform>section:first-of-type,
+    .orderform>section:last-of-type{width:70%; margin:0 auto;}
+    .orderform>section:last-of-type{margin-top:30px;}
+
+    .price1,.price2{width:15%;}
+    .delivery1{font-size:1.1vw;}
+    .sum{right:-325%; top:120%;}
+    #mi01,#plus01,
+    #mi02,#plus02{width:24%;}
+
+    .pname2{right:48%;}
+    
+}
+
+@media all and (max-width:768px){
+    .wrap>ul>li {
+        width: 13vw;
+        height: 13vw;
+        padding-top: 4.9vw;
+        font-size: 2.5vw;
+        padding-top:3%;
+    }
+    .wrap>ul>li:nth-child(even) {
+        width: 4vw;
+        background-size: 100% auto;
+        margin: 0 4vw;
+    }
+    .wrap>div>#shoppingCart>p{
+        width:5vw;
+        height:5vw;
+        line-height:5vw;
+    }
+}

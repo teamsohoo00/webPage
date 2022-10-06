@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <title>회원정보</title>
+    <title>new</title>
     <link href="./css/m1_style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -20,7 +20,7 @@
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
                 </h1>
-                <ul class="flex" id="gnb">
+                <ul id="gnb">
                     <li>
                         <a href="./g1.html">브랜드 스토리</a>
                     </li>
@@ -31,8 +31,24 @@
                         <a href="./g3.html">상품구매</a>
                     </li>
                     <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
                         <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-1.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
                     </li>
                 </ul>
                 <div id="m_btn">
@@ -43,7 +59,7 @@
             </nav>
         </div>
     </header>
-    <div class="section01 wrap">
+    <div class="section01">
         <h3>MY PAGE</h3>
         <p>MY PAGE > 회원정보</p>
         <div>
@@ -55,7 +71,7 @@
     <div id="title">
     <h4>회원정보</h4>
     </div>
-    <div class="section02 wrap">
+    <div class="section02">
         <ul>
             <li>
                 <span>아이디</span>
@@ -80,21 +96,19 @@
                     <br/>(oo동 oo아파트 xx동 xxx호)
                 </span>
             </li>
-            <li>
+            <li id="agree">
                 <span>수신 동의 여부</span>
                 <span>배송정보 및 각종 소식등에 대한 문자, 메일 수신 동의 여부</span>
             </li>
-            <li>
-                <span>SNS&nbsp;
-                    <input type="checkbox" id="ok"><label for="ok">동의</label>
-                </span>
-                <span>E-mail 
-                    <input type="checkbox" id="check_email"><label for="check_email">동의</label>
-                </span>
-            </li>
         </ul>
+        <div id="sns">            
+            <span>SNS □동의</span><br/>
+            <span>E-mail □동의</span>
+        </div>
+
+
     </div>
-    <div class="section03 wrap">
+    <div class="section03">
         <div>
             <a href="#">정보수정</a>
             <a class="withdrawal" href="#">회원탈퇴</a>
