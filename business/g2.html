@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>제품정보</title>
+    <title>new</title>
     <link href="./css/g2_style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/animate.css" rel="stylesheet" type="text/css" />
     <link href="./css/common.css" rel="stylesheet" type="text/css" />
     <script src="./js/jQueryUI/js/jquery.js"></script>
     <script src="./js/jQueryUI/js/jquery-ui.js"></script>
     <script src="./js/jQueryUI/js/jquery-ui.min.js"></script>
     <script src="./js/g2.js"></script>
-    <script src="./js/common.js"></script>
+
 </head>
 <body>
 <section>
@@ -44,19 +45,6 @@
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
                         <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
                     </li>
-                    <li>
-                        <a href="./b-1.html">장바구니</a>
-                    </li>
-                    <li>
-                        <a href="./s.html">
-                            제품판매약국찾기
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./l.html">
-                            로그인/회원가입
-                        </a>
-                    </li>
                 </ul>
                 <div id="m_btn">
                     <span></span>
@@ -66,7 +54,6 @@
             </nav>
         </div>
     </header>
-
 <div class="wrap">
     <div class="section1"> 
         <h2>제품 사진 슬라이드 영역</h2>
@@ -141,6 +128,7 @@
                     </li>
                 </ul>
                 <a href="#" class="button next-button"><img class="circle02" src="./img/g2_img/circle02.png" alt="circle02"/></a>
+                <a href="#" class="button next-text">next ></a>
                 <div class="carousel">
                     <a class="active" href="#"></a>
                     <a href="#"></a>
@@ -764,6 +752,17 @@
     </div>
 </footer>
 </section>
+<script src="./js/wow.js"></script>
+<script src="./js/common.js"></script>
+<script>
+    wow = new WOW({
+        animateClass: 'animated',
+        offset:100,
+        live:true
+    }
+    );
+    wow.init();
+</script>
 
 </body>
 </html>

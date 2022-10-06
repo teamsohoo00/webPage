@@ -9,7 +9,7 @@
 .wrap{
     width:400px; 
     margin:0 auto;
-    padding:5% 0;
+    padding:7% 0 10% 0;
     color:#444;
     text-align: center;
 }
@@ -18,7 +18,7 @@ img{vertical-align:top;}
 /*section LOGIN 영역*/
 .section1 h2{
     font-size:30px; font-weight:700; 
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #37594b;
     padding-bottom: 20px;
 }
 .idpw{margin-top:20px; padding:10px;}
@@ -43,12 +43,12 @@ img{vertical-align:top;}
     font-size:15px; 
     color:#fff; 
     font-weight: bold;
-    background: #a1a1a1;
+    background: #919090;
     display: inline-block;
 }
 
 
-.button a:hover{background: rgba(0,0,0,0.5);}
+.button a:hover{background: rgba(0, 0, 0, 0.5);}
 .button a:first-child:hover{background: #5d9a81;}
 
 .button a:first-child{background: #37594b; margin-bottom:20px;}
@@ -84,5 +84,5 @@ input[id="saveChk"]{
 
   /* 모바일 버전 (1024px) */
 @media all and (max-width:1024px){
-    .wrap{padding:15% 0;}
+    .wrap{padding:18% 0;}
 }
