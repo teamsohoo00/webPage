@@ -4,7 +4,6 @@
 
 /*font-family: 'Pretendard';*/
 
-
 /*PC 버전*/
 *{margin:0; padding:0; box-sizing:border-box; text-decoration: none; list-style: none;}
 
@@ -92,7 +91,8 @@ img{vertical-align:top;}
 .product_img .info li + li {margin-top:16px}
 .product .button {display:block;position:absolute;top:400px;z-index:10;}
 .product .button.prev-button { display: none; left: 0; }
-.product .button.next-button { right: 0; }
+.product .button.next-button { right: 0;}
+.product .button.next-text{right:32px; top:453px; color:#e5e4e4;}
 .product .text {margin-top:55px;color:#404040;font-size:23px;text-align:center;}
 .product .text strong {font-size:30px;}
 
@@ -225,8 +225,6 @@ img{vertical-align:top;}
 
     .wrap{width:100%; margin:0 auto;}
   
-   
-    
     /*section1*/
     .section1{
         display: block; margin-bottom:100px; margin-top:100px;}
@@ -254,7 +252,7 @@ img{vertical-align:top;}
 
     .prev-button{position:absolute;top:-60px; left:0;}
     .next-button{position:absolute;top:-60px; right:0;}
-
+    .product .button.next-text{display:none;}
     /*제품 특징 영역*/
     .character{width:100%;padding:0 50px;}
     .character h3{font-size:3.25555vw;;}

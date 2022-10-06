@@ -15,7 +15,7 @@ html{font-family: 'Pretendard';}
 .flex{display:flex; flex-flow:row wrap}
 header>div,footer>div{max-width:1440px; margin:0 auto;}
 /* 헤더 */
-header{border-bottom:2px solid #d3d3d3; height:125px;}
+header{border-bottom:2px solid #d3d3d3;}
 #util,#footer_sns>ul{justify-content:flex-end;}
 #util a{font-size:1.5vh;}
 #util a:hover{color:#36594C; font-weight:600;}
