@@ -7,57 +7,52 @@
     <title>new</title>
     <link href="./css/g3_style.css" rel="stylesheet" type="text/css" />
     <script src="./js/g3.js"></script>
-    <!--추가-->
-    <script src="./js/common.js"></script>
 </head>
 <body>
-    <!--헤더 수정-->
-    <header>
-        <div id="header">
-            <ul class="flex" id="util">
-                <li><a href="./l.html">로그인</a></li>
-                <li><a href="./l2-1.html">회원가입</a></li>
-                <li><a href="./s.html">제품판매약국 찾기</a></li>
+<header>
+    <div>
+        <ul class="flex" id="util">
+            <li><a href="./l.html">로그인</a></li>
+            <li><a href="./l2-1.html">회원가입</a></li>
+            <li><a href="./s.html">제품판매약국 찾기</a></li>
+        </ul>
+        <nav class="flex"> 
+            <h1>
+                <a href="./h1_main.html">
+                    <img src="./img/icon/logo.png" alt="logo" />
+                </a>
+            </h1>
+            <ul class="flex" id="gnb">
+                <li>
+                    <a href="./g1.html">브랜드 스토리</a>
+                </li>
+                <li>
+                    <a href="./g2.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="./g3.html">상품구매</a>
+                </li>
+                <li>
+                    <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                    <a href="#"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                </li>
             </ul>
-            <nav class="flex"> 
-                <h1 id="logo">
-                    <a href="./h1_main.html">
-                        <img src="./img/icon/logo.png" alt="logo" />
-                    </a>
-                </h1>
-                <ul id="gnb">
-                    <li>
-                        <a href="./g1.html">브랜드 스토리</a>
-                    </li>
-                    <li>
-                        <a href="./g2.html">제품정보</a>
-                    </li>
-                    <li>
-                        <a href="./g3.html">상품구매</a>
-                    </li>
-                    <li>
-                        <a href="./m1.html">마이페이지</a>
-                    </li>
-                    <li>
-                        <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
-                    </li>
-                </ul>
-                <div id="m_btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+            <div id="m_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
 <section class="wrap flex">
     <h2>이미지 영역</h2>
     <div id="section01">
-        <img src="./img/g3_img/img01.jpg" alt="img01" />
+        <img class="mainImg" src="./img/g3_img/img01.jpg" alt="img01" />
         <div>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
+            <img class="photo1" src="./img/g3_img/img01.jpg" alt="photo" />
+            <img class="photo2" src="./img/g3_img/img02.jpg" alt="img02" />
+            <img class="photo3" src="./img/g3_img/img03.jpg" alt="img03" />
         </div>
     </div>
     <div id="section02">
@@ -77,24 +72,24 @@
                 </ul>
             </li>
             <li>
-                <ul id="select02">
+                <ul id="select02" class="block">
                     <li>활명수 10병<span class="cancel"><img src="./img/g3_img/icon03.gif" alt="icon03" /></span></li>
                     <li>
                         <span class="minus">-</span>
-                        <span id="number_cnt">1</span>
+                        <span id="number_cnt">0</span>
                         <span class="plus">+</span>
                     </li>
                 </ul>
-                <ul id="select03">
+                <ul id="select03" class="block">
                     <li>미인활액 10병<span class="cancel2"><img src="./img/g3_img/icon03.gif" alt="icon03" /></span></li>
                     <li>
                         <span class="minus2">-</span>
-                        <span id="number_cnt2">1</span>
+                        <span id="number_cnt2">0</span>
                         <span class="plus2">+</span>
                     </li>
                 </ul>
             </li>
-            <li id="total"><span>12,000</span>원</li>
+            <li id="total"><span id="totalPrice">12000</span>원</li>
             <li>&nbsp;</li>
         </ul>
         <div>

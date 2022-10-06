@@ -19,24 +19,30 @@
     margin:20px 0 60px 0;
     color:#222;
 }
+
+/*수정함*/
 .section01>div{
-    width:75%;
-    margin-left:34%;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
 }
 .section01>div>a{
-    width:130px; height:40px;
+    width:10vw; height:40px;
     line-height:40px;
     float:left;
-    border:2px solid #aaa;
+    border:1px solid #aaa;
     border-radius:30px;
-    font-size:1.6rem;
+    font-size:1.2vw;
     font-weight:500;
-    margin-right:100px;
     color:#222;
 }
 .section01>div>a:nth-child(3){
     background:#37594B;
     color:#fff;
+    border: 0;
+}
+.section01>div>a:nth-child(2){
+    margin: 0 30px;
 }
 .section01>div>a:last-child{margin-right:0;}
 .section01>div::after{
@@ -49,9 +55,9 @@
 
 /*타이틀 영역*/
 #title{
-    width:75%; height:50px;
+    width:70%; height:50px;
     text-align:left;
-    border-bottom:4px solid #37594B;
+    border-bottom:3px solid #37594B;
     margin:50px auto 0;
 }
 #title>h4{
@@ -180,83 +186,16 @@ footer{margin-top:50px;}
 
 
 
-/*중간 사이즈 이미지 어긋남 방지용*/
-@media all and (max-width:1919px){
-    .section02{width:761.2px;}
-    .section03{width:950.6px;}
-}
-
-
 /*모바일*/
 @media all and (max-width:1024px){
-    .section01>div{
-        margin-left:26.5%;
-    }
     .section01>div>a{
-        width:120px; height:35px;
+        width:20vw; height:35px;
         line-height:35px;
-        float:left;
-        border:2px solid #aaa;
+        border:1px solid #aaa;
         border-radius:30px;
-        font-size:1.5rem;
+        font-size:1.2rem;
         font-weight:500;
-        margin-right:50px;
         color:#222;
     }
-
-    /*기간 설정 영역*/
-    .section02{
-        width:512px; height:80px;
-        margin:40px auto 0;
-        text-align:center;
-        display:flex;
-        flex-flow:row wrap;
-        justify-content:center;
-    }
-    .section02>p{
-        width:200px;
-        font-size:1.2rem;
-        font-weight:600;
-        word-spacing:0.8em;
-    }
-    .section02>p:nth-child(2)
-    {width:20px; margin-left:20px;}
-    .section02>p>input
-    {width:100px; height:25px;}
-
-
-    /*문의 리스트 영역*/
-    .section03{width:512px;}
-    .section03>.list{height:40px;}
-    .section03>.list>div>p:first-child{
-        font-size:1rem;
-        font-weight:500;
-        margin-bottom:5px;
-    }
-    .section03>.list>div>p:last-child{
-        font-size:1.2rem;
-    }
-    .section03>.list>div:last-child{
-        height:40px;
-        line-height:40px;
-        font-size:1rem;
-        margin-top:0;
-    }
-    .section03>.response{
-        height:40px;
-        font-size:1rem;
-        margin-top:10px;
-    }
-    .section03>.response>div>p{
-        width:47%; height:25px;
-        margin:10px 6% 0 0;
-        border-radius: 20px;
-        line-height:25px;
-        font-size:0.8rem;
-        font-weight:600;
-    }
-
-
-    /*페이지 이동 버튼 영역*/
-    .section04>div>a{margin:0 50px;}
+    #title{width:90%;}
 }
