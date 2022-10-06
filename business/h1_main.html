@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/typing.js"></script>
     <title>활명수</title>
     <link href="./css/h1_style.css" rel="stylesheet" type="text/css" />
     <link href="./css/animate.css" rel="stylesheet" type="text/css" />
+    <script>
+        var timer = setTimeout(function(){
+            $(".v_logo").fadeIn(2000);
+            },3500);
+    </script>
 </head>
+
 <body>
     <header>
-        <div>
+        <div id="header">
             <ul class="flex" id="util">
-                <li><a href="http://127.0.0.1:5501/business/l.html">로그인</a></li>
-                <li><a href="http://127.0.0.1:5501/business/l2-1.html">회원가입</a></li>
-                <li><a href="http://127.0.0.1:5501/business/s.html">제품판매약국 찾기</a></li>
+                <li><a href="./l.html">로그인</a></li>
+                <li><a href="./l2-1.html">회원가입</a></li>
+                <li><a href="./s.html">제품판매약국 찾기</a></li>
             </ul>
             <nav class="flex"> 
-                <h1>
-                    <a href="http://127.0.0.1:5501/business/h1_main.html">
+                <h1 id="logo">
+                    <a href="./h1_main.html">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
                 </h1>
-                <ul class="flex" id="gnb">
+                <ul id="gnb">
                     <li>
-                        <a href="http://127.0.0.1:5501/business/g1.html">브랜드 스토리</a>
+                        <a href="./g1.html">브랜드 스토리</a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:5501/business/g2.html">제품정보</a>
+                        <a href="./g2.html">제품정보</a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:5501/business/g3.html">상품구매</a>
+                        <a href="./g3.html">상품구매</a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:5501/business/m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                        <a href="#"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
                     </li>
                 </ul>
-                <div class="M_menu" id="menu_btn">
+                <div id="m_btn">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -46,12 +57,29 @@
         </div>
     </header>
 
-
-
     <section id="wrap">
-        <div class="section1 wow fadeIn"><!--section1 시작(비주얼)-->
-            <img id="visual_img" src="./img/h1_images/visual.png" alt="visual_banner" />
+        <div class="section1"><!--section1 시작(비주얼)-->
+            <div class="visual">
+                <video src="./img/h1_images/visual.mp4" width="100%" height="" loop="loop" autoplay="" muted="">
+                </video>
+            </div>
+            <div class="visual_pic wow wobble"><img src="./img/h1_images/visual_whal.png" alt/></div>
+            <div class="typing-txt"> 
+                <ul>
+                  <li>125년</li>
+                  <li>당신 곁에</li>
+              </ul>
+              
+              </div> 
+              <div class="typing">
+                 <ul>
+                   <li></li>
+                   <li></li>
+                </ul>
+              </div> 
+            <div class="visual_logo"><img class="v_logo" src="./img/h1_images/visual_logo.png" alt/></div>
         </div><!--section1 끝(비주얼)-->
+
         <div class="section2"><!--section2 시작-->
             <div>
                 <div class="contents_txt">
@@ -61,12 +89,13 @@
                     <p class="contents_txt2">과식으로 인한 소화 불량!<br/>
                         <span class="color1">활명수</span>로 한번에 <span class="color2">해결</span>하세요!<br/></p>
                 </div>
-                <div class="wow tada">
-                <img src="./img/h1_images/content.png" alt="contents"/>
+                <div class="wow jello">
+                    <img src="./img/h1_images/content.png" alt="contents"/>
+                </div>
+                <div class="content_txt3">
+                    <img src="./img/h1_images/rotate.png" class="rotating_img" alt="content_txt3" />
+                </div>
             </div>
-                
-            </div>
-            <div class="content_txt"><img src="./img/h1_images/rotate.png" class="rotating_img" alt="content_txt" /></div>
         </div><!--section2 끝-->
         <div class="section3"><!--section3 시작-->
             <div>
@@ -94,16 +123,20 @@
             </div>
         </div><!--section3 끝-->
         <div class="section4 wow fadeIn"><!--section4 시작-->
-            <img src="./img/h1_images/collaboration1.png" alt="guess_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration2.png" alt="showmethemoney_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration3.png" alt="PLEATSMAMA_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration4.png" alt="fila_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration5.png" alt="kakao_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration6.jpg" alt="monami_whalMyungsoo" />
+            <h4>Collaboration</h4>
+            <figure>
+                <img src="./img/h1_images/collaboration1.png" alt="guess_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration2.png" alt="showmethemoney_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration3.png" alt="PLEATSMAMA_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration4.png" alt="fila_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration5.png" alt="kakao_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration6.jpg" alt="monami_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration7.jpg" alt="monami_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration7.jpg" alt="monami_whalMyungsoo" />
+
+            </figure>
         </div><!--section4 끝-->
     </section>
-
-
 
     <footer>
         <div>
@@ -149,6 +182,7 @@
     </footer>
     <!-- <script src="./h1_main..js"></script> -->
     <script src="./js/wow.js"></script>
+    <script src="./js/common.js"></script>
 <script>
     wow = new WOW({
         animateClass: 'animated',
@@ -158,5 +192,6 @@
     );
     wow.init();
 </script>
+
 </body>
 </html>
