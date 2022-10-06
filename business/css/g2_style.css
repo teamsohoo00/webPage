@@ -8,7 +8,7 @@
 *{margin:0; padding:0; box-sizing:border-box; text-decoration: none; list-style: none;}
 
 /*공통 사용*/
-.wrap{width:1440px; margin:0 auto;}
+.wrap{max-width:1440px; margin:0 auto;}
 section h2{
     display:none;
 	visibility:hidden;
@@ -27,8 +27,8 @@ img{vertical-align:top;}
 
 
 /*제품 사진 슬라이드 영역*/
-.product{width:40%;}
-.product .inner {position:relative;width:435px;}
+.product{width:40%; padding-right:30px;}
+.product .inner {position:relative;max-width:435px;}
 .product .inner > ul {height:604px; position:relative;}
 .product .inner > ul > li{
     position:absolute; top:0; left:0; width:100%; 
@@ -304,6 +304,10 @@ img{vertical-align:top;}
     }
 
 }
+@media(max-width:1024px){
+    .product .inner {position:relative;max-width:100%;}
+}
+
 @media(max-width:400px){ 
     .product_img .img:before{
         width:300px;

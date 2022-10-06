@@ -67,10 +67,11 @@
   }
   .member[type=text] {
     height:30px;
-    width:240px;
+    width:150px;
     border: 0;
     outline: none;
     background-color:#eaeaea;
+    margin-right:10px;
 }
 .date[type=date]{
     height:30px;
