@@ -10,58 +10,75 @@
 </head>
 <body>
     <header>
-        <div>
+        <div id="header">
             <ul class="flex" id="util">
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">제품판매약국 찾기</a></li>
+                <li><a href="./l.html">로그인</a></li>
+                <li><a href="./l2-1.html">회원가입</a></li>
+                <li><a href="./s.html">제품판매약국 찾기</a></li>
             </ul>
-        
-            <ul class="flex" id="gnb">
-                <li>
-                    <a href="#">
+            <nav class="flex"> 
+                <h1 id="logo">
+                    <a href="./h1_main.html">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
-                </li>
-                <li>
-                    <a href="#">브랜드 스토리</a>
-                </li>
-                <li>
-                    <a href="#">제품정보</a>
-                </li>
-                <li>
-                    <a href="#">상품구매</a>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                    <a href="#"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
-                </li>
-            </ul>
+                </h1>
+                <ul id="gnb">
+                    <li>
+                        <a href="./g1.html">브랜드 스토리</a>
+                    </li>
+                    <li>
+                        <a href="./g2.html">제품정보</a>
+                    </li>
+                    <li>
+                        <a href="./g3.html">상품구매</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                </ul>
+                <div id="m_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
     </header>
 
-
-
     <section id="wrap">
         <div class="section1 wow fadeIn"><!--section1 시작(비주얼)-->
-            <img id="visual_img" src="./img/h1_images/visual.png" alt="visual_banner" />
+            <div class="wow pulse"><img id="visual_img1" src="./img/h1_images/visual_img(2).png" alt="visual_banner" /></div>
+            <div class="wow wobble"><img id="visual_img2" src="./img/h1_images/product-1.png" alt="visual_banner" /></div>
         </div><!--section1 끝(비주얼)-->
+
         <div class="section2"><!--section2 시작-->
             <div>
-                <p class="section2_text">한 모금 한 모금을 마실 때마다<br/>
-                    식도와 코, 입이 뻥 뚫리는<br/>
-                    기가 막힌 맛과 향!<br/>
-                    <br/><br/>
-                    과식으로 인한 소화 불량!<br/>
-                    <span class="color1">활명수</span>로 한번에 <span class="color2">해결</span>하세요!
-                </p>
-                <img class="wow tada" src="./img/h1_images/contents.png" alt="contents"/>
+                <div class="contents_txt">
+                    <p class="contents_txt1 clear">" 한 모금 한 모금을 마실 때마다 
+                        식도와 코, 입이 <div class="bounce">뻥</div>  &nbsp; 뚫리는 
+                        기가 막힌 맛과 향! "</p>
+                    <p class="contents_txt2">과식으로 인한 소화 불량!<br/>
+                        <span class="color1">활명수</span>로 한번에 <span class="color2">해결</span>하세요!<br/></p>
+                </div>
+                <div class="section2_img">&nbsp;</div><!-- 수정 (이미지 추가) -->
+                <p class="section2_txt1 textEffect">소화불량</p>
+                <p class="section2_txt2 textEffect">식욕감퇴</p>
+                <p class="section2_txt3 textEffect">구토</p>
+                <p class="section2_txt4 textEffect">위부팽만감</p>
+                <p class="section2_txt5 textEffect">과식</p>
+                <p class="section2_txt6 textEffect">구역</p>
+                <p class="section2_icon textEffect">&nbsp;</p>
+                <!-- 수정 (위 이미지 삭제) -->
             </div>
         </div><!--section2 끝-->
         <div class="section3"><!--section3 시작-->
             <div>
                 <p>소비자의 선택, <span class="color1">활명수</span></p>
-                <img class="bottle wow rollIn" src="./img/h1_images/bottle.png" alt="bottle" />
+                <img class="bottle wow rollIn" src="./img/h1_images/bottle1.png" alt="bottle" />
                 <img class="bottle_background wow rollIn" src="./img/h1_images/brand.png" alt="brand" />
 
                 <div class="section3_text1 wow bounceInLeft">
@@ -84,16 +101,20 @@
             </div>
         </div><!--section3 끝-->
         <div class="section4 wow fadeIn"><!--section4 시작-->
-            <img src="./img/h1_images/collaboration1.png" alt="guess_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration2.png" alt="showmethemoney_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration3.png" alt="PLEATSMAMA_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration4.png" alt="fila_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration5.png" alt="kakao_whalMyungsoo" />
-            <img src="./img/h1_images/collaboration6.jpg" alt="monami_whalMyungsoo" />
+            <h4>Collaboration</h4>
+            <figure>
+                <img src="./img/h1_images/collaboration1.png" alt="guess_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration2.png" alt="showmethemoney_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration3.png" alt="PLEATSMAMA_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration4.png" alt="fila_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration5.png" alt="kakao_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration6.jpg" alt="monami_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration7.jpg" alt="monami_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration7.jpg" alt="monami_whalMyungsoo" />
+
+            </figure>
         </div><!--section4 끝-->
     </section>
-
-
 
     <footer>
         <div>
@@ -139,6 +160,7 @@
     </footer>
     <!-- <script src="./h1_main..js"></script> -->
     <script src="./js/wow.js"></script>
+    <script src="./js/common.js"></script>
 <script>
     wow = new WOW({
         animateClass: 'animated',
@@ -147,6 +169,11 @@
     }
     );
     wow.init();
+</script>
+<script>
+    $(document).ready(function() {
+    $('#visual_img').fadeIn(3500);
+    });
 </script>
 </body>
 </html>
