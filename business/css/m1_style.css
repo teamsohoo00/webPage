@@ -116,6 +116,12 @@
     left: 20%;
     margin-top: 10px;
 }
+#sns>span{
+    display:block;
+}
+input[type="checkbox"]{
+    margin:0 10px 0 30px;
+}
 
 /*하단 버튼 영역*/
 .section03{
