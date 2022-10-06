@@ -32,7 +32,6 @@ input:focus{
     color: #444;
     text-align: center;
 }
-.section1{width:75%; margin:50px auto 80px;}
 .section1>h1{
     font-weight:700;
     font-size:30px;
