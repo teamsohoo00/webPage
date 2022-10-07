@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <title>회원정보</title>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <title>new</title>
     <link href="./css/m1_style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -102,8 +102,12 @@
             </li>
         </ul>
         <div id="sns">            
-            <span>SNS □동의</span><br/>
-            <span>E-mail □동의</span>
+            <span>SNS &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="check_sns">
+                <label for="check_sns">동의</label>
+            </span>
+            <span>E-mail&nbsp;&nbsp;<input type="checkbox" id="check_email">
+                <label for="check_email">동의</label>
+            </span>
         </div>
 
 
@@ -116,7 +120,11 @@
     </div>
     <script>
         $(".withdrawal").click(function(){
-            alert("정말로 회원탈퇴를 진행 하시겠습니까?");
+            if(confirm("정말로 탈퇴하시겠습니까?")==true){
+                alert("탈퇴되었습니다.");
+            }else{
+                alert("취소되었습니다.");
+            }
         });
     </script>
     <footer>

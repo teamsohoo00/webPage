@@ -126,12 +126,6 @@ input,select,option,button{font-family:'Pretendard-Regular';}
     margin:30px 5%;
     border:1px solid #c4c4c4;
 }
-#product img{
-    transform:scale(3);
-    margin-top:30px;
-    width:30%;
-    margin-left:34%;
-}
 #product>p{
     font-size:1.3vw;
     font-weight:500;
@@ -142,9 +136,6 @@ input,select,option,button{font-family:'Pretendard-Regular';}
     box-sizing:border-box;
 }
 #product>ul{height:140px;}
-#product>ul>li{
-    transform:scale(1.1);
-}
 #product>ul>li,
 #productDetail>li{float:left;}
 #product>ul::after,
@@ -156,11 +147,14 @@ input,select,option,button{font-family:'Pretendard-Regular';}
 	visibility:hidden;
 }
 #product>ul>li:first-child{
-    height:95px;
     margin:2% 5%;
     border:1px solid #ddd;
     padding:1% 0;
     box-sizing:border-box;
+}
+#product>ul>li>img{
+    width:30%;
+    margin-left:34%;
 }
 #product>ul>li:last-child{
     font-size:1.1vw;

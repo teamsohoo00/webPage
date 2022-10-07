@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/typing.js"></script>
     <title>활명수</title>
     <link href="./css/h1_style.css" rel="stylesheet" type="text/css" />
     <link href="./css/animate.css" rel="stylesheet" type="text/css" />
+    <script>
+        var timer = setTimeout(function(){
+            $(".v_logo").fadeIn(2000);
+            },3500);
+    </script>
 </head>
 <body>
     <header>
@@ -62,12 +68,30 @@
         </div>
     </header>
 
-
-
     <section id="wrap">
-        <div class="section1 wow fadeIn"><!--section1 시작(비주얼)-->
-            <img id="visual_img" src="./img/h1_images/visual_img.png" alt="visual_banner" />
+        <div class="section1"><!--section1 시작(비주얼)-->
+            <div class="visual">
+                <video src="./img/h1_images/visual.mp4" width="100%" height="50%" loop="loop" autoplay="" muted="">
+                </video>
+            </div>
+            <div class="visual_pic wow wobble">
+                <img src="./img/h1_images/visual_whal.png" alt="visual_whal" />
+            </div>
+            <div class="typing-txt"> 
+                <ul>
+                    <li>125년</li>
+                    <li>당신 곁에</li>
+                </ul>
+            </div> 
+                <div class="typing">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div> 
+            <div class="visual_logo"><img class="v_logo" src="./img/h1_images/visual_logo.png" alt/></div>
         </div><!--section1 끝(비주얼)-->
+
         <div class="section2"><!--section2 시작-->
             <div>
                 <div class="contents_txt">
@@ -77,14 +101,18 @@
                     <p class="contents_txt2">과식으로 인한 소화 불량!<br/>
                         <span class="color1">활명수</span>로 한번에 <span class="color2">해결</span>하세요!<br/></p>
                 </div>
-                <div class="wow tada">
-                    <img src="./img/h1_images/content.png" alt="contents"/>
-                </div>
-                <div class="content_txt3">
-                    <img src="./img/h1_images/rotate.png" class="rotating_img" alt="content_txt3" />
-                </div>
+                <div class="section2_img">&nbsp;</div><!-- 수정 (이미지 추가) -->
+                <p class="section2_txt1 textEffect">소화불량</p>
+                <p class="section2_txt2 textEffect">식욕감퇴</p>
+                <p class="section2_txt3 textEffect">구토</p>
+                <p class="section2_txt4 textEffect">위부팽만감</p>
+                <p class="section2_txt5 textEffect">과식</p>
+                <p class="section2_txt6 textEffect">구역</p>
+                <p class="section2_icon textEffect">&nbsp;</p>
+                <!-- 수정 (위 이미지 삭제) -->
             </div>
         </div><!--section2 끝-->
+
         <div class="section3"><!--section3 시작-->
             <div>
                 <p>소비자의 선택, <span class="color1">활명수</span></p>
@@ -118,7 +146,9 @@
                 <img src="./img/h1_images/collaboration3.png" alt="PLEATSMAMA_whalMyungsoo" />
                 <img src="./img/h1_images/collaboration4.png" alt="fila_whalMyungsoo" />
                 <img src="./img/h1_images/collaboration5.png" alt="kakao_whalMyungsoo" />
-                <img src="./img/h1_images/collaboration6.jpg" alt="monami_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration6.png" alt="monami_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration7.png" alt="monami_whalMyungsoo" />
+                <img src="./img/h1_images/collaboration8.png" alt="monami_whalMyungsoo" />
             </figure>
         </div><!--section4 끝-->
     </section>
@@ -178,11 +208,6 @@
     }
     );
     wow.init();
-</script>
-<script>
-    $(document).ready(function() {
-    $('#visual_img').fadeIn(2500);
-    });
 </script>
 </body>
 </html>
