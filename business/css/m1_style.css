@@ -197,13 +197,18 @@ footer{margin-top:30px;}
         font-weight: 400;
     }
     #sns{
-        width: 70%;
+        display:flex;
+        width:70%;
         font-weight: 400;
         font-size: 1.1rem;
         left: 20%;
+        
     }
     .section02 div span{
-       margin: 50px;
+        margin-left:75px;
+    }
+    input[type="checkbox"]{
+        margin:0;
     }
 
 

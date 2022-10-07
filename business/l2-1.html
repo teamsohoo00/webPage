@@ -125,19 +125,6 @@
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
                         <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
                     </li>
-                    <li>
-                        <a href="./b-1.html">장바구니</a>
-                    </li>
-                    <li>
-                        <a href="./s.html">
-                            제품판매약국찾기
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./l.html">
-                            로그인/회원가입
-                        </a>
-                    </li>
                 </ul>
                 <div id="m_btn">
                     <span></span>
@@ -147,66 +134,69 @@
             </nav>
         </div>
     </header>
+    <div class="wrap">
+        <section class="section1">
+            <h1>JOIN US</h1>
+            <div class="sign">
+                <div class="id">
+                    <input type="text" id="id" placeholder=" 아이디" name="" />
+                </div>
+                <div class="password">
+                    <input type="password" id="password" placeholder=" 비밀번호 (4~12자리의 영문 대소문자와 숫자로만 입력)" name="" />
 
-    <section class="section1">
-        <h1>JOIN US</h1>
-        <div class="id">
-            <input type="text" id="id" placeholder=" 아이디" name="" />
-        </div>
-        <div class="password">
-            <input type="password" id="password" placeholder=" 비밀번호 (4~12자리의 영문 대소문자와 숫자로만 입력)" name="" />
-
-        </div>
-        <div class="password">
-            <input type="password" id="password_chk" placeholder=" 비밀번호 확인" name="" />
-        </div>
-        <div class="name">
-            <input type="name" id="name" placeholder=" 이름" name="" />
-        </div>
-        <div class="tel">
-            <h6>휴대폰번호</h6>
-            <input type="tel" id="tel" placeholder="" name="" />
-            <button class="btn">전송</button>
-        </div>
-        <div class="sms">
-            <h6>SMS 인증번호</h6>
-            <input type="number" id="number" placeholder="" name="" />
-            <button class="btn">확인</button>
-        </div>
-        <div class="check">
-            <h6>약관동의</h6>
-            <div>
-                <p>
-                    <input type="checkbox" id="allChk" class="checkbox">
-                    <label for="allChk">전체 약관에 모두 동의 합니다.</label>
-                </p>
+                </div>
+                <div class="password">
+                    <input type="password" id="password_chk" placeholder=" 비밀번호 확인" name="" />
+                </div>
+                <div class="name">
+                    <input type="name" id="name" placeholder=" 이름" name="" />
+                </div>
+                <div class="tel">
+                    <h6>휴대폰번호</h6>
+                    <input type="tel" id="tel" placeholder="" name="" />
+                    <button class="btn">전송</button>
+                </div>
+                <div class="sms">
+                    <h6>SMS 인증번호</h6>
+                    <input type="number" id="number" placeholder="" name="" />
+                    <button class="btn">확인</button>
+                </div>
+                <div class="check">
+                    <h6>약관동의</h6>
+                    <div>
+                        <p>
+                            <input type="checkbox" id="allChk" class="checkbox">
+                            <label for="allChk">전체 약관에 모두 동의 합니다.</label>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" id="essential1" class="checkbox">
+                            <label for="essential1">이용약관 <span class="color">(필수)</span></label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="essential2" class="checkbox">
+                            <label for="essential2">개인정보 수집 및 이용 안내 <span class="color">(필수)</span></label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="essential3" class="checkbox">
+                            <label for="essential3">만 14세 이상입니다. <span class="color">(필수)</span></label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="market" class="checkbox">
+                            <label for="market">마케팅 수신동의 <span class="margin">(선택)</span></label>
+                            <input type="checkbox" id="email" class="size checkbox">
+                            <label for="email">이메일</label>
+                            <input type="checkbox" id="sns" class="size checkbox">
+                            <label for="sns">SMS,카카오톡</label>
+                        </p>
+                    </div>
+                    <div class="clear"><button type="button" onClick="checkz()">가입완료</button></div>
+                    <div class="reset"><button type="button" onClick="location.href='./h1_main.html';">돌아가기</button></div>
+                </div>
             </div>
-            <div>
-                <p>
-                    <input type="checkbox" id="essential1" class="checkbox">
-                    <label for="essential1">이용약관 <span class="color">(필수)</span></label>
-                </p>
-                <p>
-                    <input type="checkbox" id="essential2" class="checkbox">
-                    <label for="essential2">개인정보 수집 및 이용 안내 <span class="color">(필수)</span></label>
-                </p>
-                <p>
-                    <input type="checkbox" id="essential3" class="checkbox">
-                    <label for="essential3">만 14세 이상입니다. <span class="color">(필수)</span></label>
-                </p>
-                <p>
-                    <input type="checkbox" id="market" class="checkbox">
-                    <label for="market">마케팅 수신동의 <span class="margin">(선택)</span></label>
-                    <input type="checkbox" id="email" class="size checkbox">
-                    <label for="email">이메일</label>
-                    <input type="checkbox" id="sns" class="size checkbox">
-                    <label for="sns">SMS,카카오톡</label>
-                </p>
-            </div>
-            <div class="clear"><button type="button" onClick="checkz()">가입완료</button></div>
-            <div class="reset"><button type="button" onClick="location.href='./h1_main.html';">돌아가기</button></div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
 
