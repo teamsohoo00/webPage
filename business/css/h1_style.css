@@ -12,6 +12,7 @@
 }
 /* section1 */
 .section1{position: relative;}
+.visual>video{vertical-align: top;}
 .visual_pic{
   position: absolute;
   top:35%;
