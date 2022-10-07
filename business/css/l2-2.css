@@ -28,23 +28,17 @@ font-family: 'SEBANG_Gothic_Bold';
     background:#fff;
     border:1px solid #37594B;
     width:180px; height:5vh;
-    font-size:15px;
+    font-size:20px;
     font-weight:600;
     margin-top:40px;
     cursor: pointer;
+    display:inline-block;
+    line-height:2.5;
 }
-.section1>.reset{
-    margin-right:15px;
-    border:1px solid #37594B;
-    color:#37594B;
-    background:#fff;
-}
-.section1>.reset:hover{background:#37594B; color:#fff;}
-.section1>.login{
-    background:#37594B;
-    color:#fff;
-}
-.section1>.login:hover{background:#fff; color:#37594B;}
+.section1>.reset:hover,
+.section1>.login:hover{background:#37594B; color:#fff;}
+
+
 
 
 @media all and (max-width:1024px){ /* 모바일 */

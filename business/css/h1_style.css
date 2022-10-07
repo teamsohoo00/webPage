@@ -11,14 +11,6 @@
 	visibility:hidden;
 }
 /* section1 */
-.clear::after{
-	content:'';
-	width:0; height:0;
-	display:block;
-	clear:both;
-	visibility:hidden;
-}
-
 .section1{position: relative;}
 .visual_pic{
   position: absolute;
