@@ -27,30 +27,29 @@
             <ul class="util_menu">
                 <li><a href="">일반고객</a></li>
                 <ul class="util_submenu">
-                    <li><a href="">-제품정보</a></li>
-                    <li><a href="">-회사소개</a></li>
-                    <li><a href="">-사회공헌</a></li>
-                    <li><a href="">-오시는 길</a></li>
+                    <li><a href="">- 제품정보</a></li>
+                    <li><a href="">- 회사소개</a></li>
+                    <li><a href="">- 사회공헌</a></li>
+                    <li><a href="">- 오시는 길</a></li>
                 </ul>
                 <li><a href="">기업고객</a></li>
                 <ul class="util_submenu">
-                    <li><a href="">-IR 자료실</a></li>
-                    <li><a href="">-조직 및 업무</a></li>
-                    <li><a href="">-연구 성과</a></li>
-                    <li><a href="">-사업보고서</a></li>
+                    <li><a href="">- IR 자료실</a></li>
+                    <li><a href="">- 조직 및 업무</a></li>
+                    <li><a href="">- 연구 성과</a></li>
+                    <li><a href="">- 사업보고서</a></li>
                 </ul>
                 <li><a href="">인재채용</a></li>
                 <ul class="util_submenu">
-                    <li><a href="">-채용안내</a></li>
-                    <li><a href="">-복리후생</a></li>
-                    <li><a href="">-지원결과확인</a></li>
-                    <li><a href="">-자주하는 질문</a></li>
-                    <li><a href="">-채용 Q&A</a></li>
+                    <li><a href="">- 채용안내</a></li>
+                    <li><a href="">- 복리후생</a></li>
+                    <li><a href="">- 지원결과확인</a></li>
+                    <li><a href="">- 채용 Q&A</a></li>
                 </ul>
             </ul>
         </div>  <!--quick영역-->
         <div id="gnb">
-            <h1 id="logo"><a href="#"></a></h1>
+            <h1 id="logo"><a href="#first"></a></h1>
             <h1 id="btn"><a href="#"></a></h1>
             <span></span>
             <span></span>
@@ -243,30 +242,34 @@
                 <hr class="m_line"/>
             <li  class="menu"><a href="#">일반고객</a>
                 <ul class="sub">
-                    <li><a href="#">대표이사메시지</a>
-                    <li><a href="#">윤리강령</a>
-                    <li><a href="#">자율준수(CP)</a>
+                    <li><a href="">제품정보</a></li>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">사회공헌</a></li>
+                    <li><a href="">오시는 길</a></li>
                 </ul>
             </li>
             <li  class="menu"><a href="#">기업고객</a>
                 <ul class="sub">
-                    <li><a href="#">대표이사메시지</a>
-                    <li><a href="#">윤리강령</a>
-                    <li><a href="#">자율준수(CP)</a>
+                    <li><a href="">IR 자료실</a></li>
+                    <li><a href="">조직 및 업무</a></li>
+                    <li><a href="">연구 성과</a></li>
+                    <li><a href="">사업보고서</a></li>
                 </ul>
             </li>
             <li  class="menu"><a href="#">인재채용</a>
                 <ul class="sub">
-                    <li><a href="#">대표이사메시지</a>
-                    <li><a href="#">윤리강령</a>
-                    <li><a href="#">자율준수(CP)</a>
+                    <li><a href="">채용안내</a></li>
+                    <li><a href="">복리후생</a></li>
+                    <li><a href="">지원결과확인</a></li>
+                    <li><a href="">자주하는 질문</a></li>
+                    <li><a href="">채용 Q&A</a></li>
                 </ul>
             </li>
             <li  class="menu"><a href="#">고객센터</a>
                 <ul class="sub">
-                    <li><a href="#">대표이사메시지</a>
-                    <li><a href="#">윤리강령</a>
-                    <li><a href="#">자율준수(CP)</a>
+                    <li><a href="#">온라인상담</a>
+                    <li><a href="#">뉴스 및 공지</a>
+                    <li><a href="#">자주 묻는 질문</a>
                 </ul>
             </li>
         </ul>
@@ -421,8 +424,8 @@
             <hr class="board_line"/>
         </ul>
         <div class="icon">
-        <a href="#"><p class="icon_facebook"></p></a>
-        <a href="#"><p class="icon_insta"></p></a>
+        <a href="https://m.facebook.com/profile.php?id=1415250338690777" target='_blank'><p class="icon_facebook"></p></a>
+        <a href="https://www.instagram.com/dongwha_pharm/?hl=ko" target='_blank'><p class="icon_insta"></p></a>
     </div>
     </div><!--게시판 영역 끝-->
 
@@ -518,10 +521,12 @@
         <div class="sns">
             <ul id="icon">
                 <li>
-                    <a href="#">
+                    <a href="https://m.facebook.com/profile.php?id=1415250338690777"
+                    target='_blank' >
                         <img src="./images/icon_f.png" alt="facebook"/>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/dongwha_pharm/?hl=ko"
+                    target='_blank'>
                         <img src="./images/icon_i.png" alt="insta"/>
                     </a>
                 </li>
@@ -555,6 +560,7 @@
         onLeave: function (origin, destination, direction) {
          if (origin.index == 0 && direction == 'down') {//첫번째 페이지에서 -> 두번째 페이지 아래로 넘어갈 때
             $("header").addClass("sticky");
+            $("header nav").css("height","140px");
             $(".gnb,#util").mouseover(function(){
                     var a =$(this).attr("id");
                     $(".submenu").show();

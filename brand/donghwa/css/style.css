@@ -613,6 +613,11 @@ hr{
     width: 100%;
 }
 
+.brand #hwal a img{
+    width: 60%;
+    margin: 60px auto;
+}
+
 
 footer{
     width: 100%;

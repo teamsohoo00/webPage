@@ -11,7 +11,8 @@ font-family: 'SebangGothic';
 
 *{margin:0; padding:0; list-style:none;}
 a:hover, a:active, a:link, a:visited{text-decoration:none; color:#333;}
-html{ font-family: 'Pretendard'; }
+html{ font-family: 'Pretendard'; overflow-x: hidden}
+
 * h2{
 	display:none;
 	visibility:hidden;
@@ -19,6 +20,7 @@ html{ font-family: 'Pretendard'; }
 	overflow:hidden;
 	text-indent:-9999px;
 }
+.wrap{max-width:1440px;}
 /*비주얼 배너 영역*/
 .section1{
     background:#f3f3f3;
@@ -40,7 +42,7 @@ html{ font-family: 'Pretendard'; }
 }
 .section1>div>h3.sec1_t01{
     color:#495912;
-    top:22%; left:24%;
+    top:22%; left:23.5%;
 }
 .section1>div>h3.sec1_t02{
     top:30%; left:27%;
@@ -76,6 +78,7 @@ html{ font-family: 'Pretendard'; }
     width:100%; height:900px;
     background:#f4f4f4;
 }
+
 .section2>div{
     width:100%; height:100%;
     background:url('../img/g1_img/sec02_img.png') no-repeat center;
@@ -83,12 +86,12 @@ html{ font-family: 'Pretendard'; }
 }
 .section2>div>h3{
     text-align:center;
-    font-size:2.2rem;
-    font-weight:900;
+    font-size:2rem;
+    font-weight:800;
     color:#402000;
     line-height:1.2;
     position:absolute;
-    top:40%; left:44.1%;
+    top:40%; left:44.7%;
 }
 .section2 .m_name{
     text-align:center;
@@ -96,8 +99,9 @@ html{ font-family: 'Pretendard'; }
     font-weight:700;
 }
 .section2 .m_effect{
-    font-size:1.1rem;
+    font-size:1rem;
     font-weight:600;
+    color:#333;
 }
 .m_img01:hover, .m_img02:hover,
 .m_img03:hover, .m_img04:hover,
@@ -284,10 +288,10 @@ html{ font-family: 'Pretendard'; }
 }
 .section3>h3{
     text-align:center;
-    font-size:2.3rem;
+    font-size:2.1rem;
     font-weight:700;
     line-height:1.2;
-    margin-top:70px;
+    margin-top:100px;
 }
 .section3>h3>.color2{color:#37594b;}
 .section3>.h_01{
@@ -363,18 +367,18 @@ html{ font-family: 'Pretendard'; }
     text-align:center;
 }
 .section4{
-    width:100%; height:600px;
+    width:100%; height:700px;
     background:#fff7e6;
 }
 .section4 h3{
     text-align:center;
     font-size:1.7rem;
     font-weight:700;
-    padding-top:50px;
+    padding-top:90px;
 }
 .section4 h3>span{color:#dcd242}
 .section4 h4{
-    margin-bottom:60px;
+    margin-bottom:30px;
     text-align:center;
     font-size:1.2rem;
     font-weight:400;
@@ -394,6 +398,7 @@ html{ font-family: 'Pretendard'; }
     height:350px;
     width:20%;
 }
+.controller{margin-top:20px;}
 
 @media all and (min-width:1025px){
     #m_01, #m_02, #m_03, #m_04, #m_05,
@@ -408,14 +413,6 @@ html{ font-family: 'Pretendard'; }
 
 
 
-
-
-
-
-
-
-
-
 /*중간 사이즈 이미지 어긋남 방지용*/
 @media all and (max-width:1919px){
     .section1, .section2, .section3, .section4{width:1920px;}
@@ -425,18 +422,19 @@ html{ font-family: 'Pretendard'; }
 
 /*모바일*/
 @media all and (max-width:1024px){
-    .section1, .section2, .section3{width:1024px;}
+    .section1, .section2, .section3{max-width:1024px;}
 .section1{height:500px; overflow:hidden;}
 .section1>div{
     background-size:100%;
     background-position:0 120px;
 }
-.section1>div>h3.sec1_t01{top:21%; left:15%;}
-.section1>div>h3.sec1_t02{top:32%; left:22%;}
+.section1>div>h3{font-size:2.5vh;}
+.section1>div>h3.sec1_t01{top:23%; left:17%;}
+.section1>div>h3.sec1_t02{top:33%; left:20%;}
 .section1>div>h3.sec1_t03{top:43%; left:18%;}
 .section1>div>img.bottle{
-    transform:scale(70%);
-    top:8%; right:22%;
+    top:14%; right:19%;
+    width:9.5vw;
 }
 .section1>div>p{display:none;}
 .section1>div>.line01{
