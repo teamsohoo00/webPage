@@ -15,3 +15,11 @@ $(function(){
 		$("#gnb").fadeToggle();
 	});
 });
+
+$(window).resize(function(){ 
+	if (window.innerWidth <= 1024){ 
+		$('#gnb').css("display","none");
+	} else{
+		$('#gnb').css("display","block");
+	}
+}).resize();
