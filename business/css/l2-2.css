@@ -34,6 +34,7 @@ font-family: 'SEBANG_Gothic_Bold';
     cursor: pointer;
     display:inline-block;
     line-height:2.5;
+    color:#37594B;
 }
 .section1>.reset:hover,
 .section1>.login:hover{background:#37594B; color:#fff;}
