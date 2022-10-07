@@ -466,9 +466,13 @@ width:170%;
 
   .section3_text1{width:110px; top:25%; left:50%; text-align: center;}
   .section3_text1>p{font-size:10px;}
+  .section3_text1>p:nth-child(2){
+    font-size:10px;
+  }
   .section3_text1>p:last-child{display:none;}
-  .section3_text1>p:nth-child(2){font-size:30px;}
+  .section3_text1>p:nth-child(2){font-size:2rem;}
   .section3_text2>p>span.font1{display:none;}
+  .section3_text3>p{line-height:1.2;}
   .section3_text3>p>span.font3{display:none;}
 
   
@@ -496,6 +500,9 @@ width:170%;
 
 }
 @media all and (max-width:768px){
+  .section3_text1{
+    top:20%;
+  }
   #visual_img1 {
     width: 8.9999vw;
     height: 7.5555vh;
