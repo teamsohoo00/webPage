@@ -560,6 +560,7 @@
         onLeave: function (origin, destination, direction) {
          if (origin.index == 0 && direction == 'down') {//첫번째 페이지에서 -> 두번째 페이지 아래로 넘어갈 때
             $("header").addClass("sticky");
+            $("header nav").css("height","140px");
             $(".gnb,#util").mouseover(function(){
                     var a =$(this).attr("id");
                     $(".submenu").show();
