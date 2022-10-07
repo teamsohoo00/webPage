@@ -3,6 +3,8 @@
 @import "common.css";
 
 /*현재 페이지 영역*/
+
+#header{z-index: 99999;}
 .section01{
     text-align:center;
     width:100%;
@@ -368,7 +370,7 @@ footer{margin-top:50px;}
     border: 1px solid #37594B;
     color: #37594B;
     font-size: 1vw;
-    z-index: 9999;
+    z-index: 100;
 }
 #product{
     border: 0;

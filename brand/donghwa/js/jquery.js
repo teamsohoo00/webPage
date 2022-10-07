@@ -4,8 +4,6 @@
 
 /*헤더*/
 /*product 캐러셀*/
-
-
 var n =0;
 $("#carousel a").eq(n).children("img").attr("src","./images/btn_banner_ov.png");
 
@@ -29,7 +27,6 @@ function slideView(n){
     $("#slideImg2 img").animate({"opacity":"0"},time-500);
     $("#slideImg2 img").eq(n).stop().addClass("topImg").css("opacity",0).animate({"opacity":"1"},time-500);
 }
-
 
 
 

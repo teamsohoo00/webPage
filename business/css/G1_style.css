@@ -66,6 +66,9 @@ html{ font-family: 'Pretendard'; }
 .section1>div>.line01{
     position:absolute;
     top:53%; left:31%;
+    /*추가한 부분*/
+    transform:scale(70%);
+    opacity:0;
 }
 
 /*첨가 생약 효능 영역*/
@@ -413,9 +416,16 @@ html{ font-family: 'Pretendard'; }
 
 
 
+/*중간 사이즈 이미지 어긋남 방지용*/
+@media all and (max-width:1919px){
+    .section1, .section2, .section3, .section4{width:1920px;}
+}
+
+
+
 /*모바일*/
 @media all and (max-width:1024px){
-
+    .section1, .section2, .section3{width:100%;}
 .section1{height:500px; overflow:hidden;}
 .section1>div{
     background-size:100%;

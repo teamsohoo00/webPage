@@ -263,7 +263,7 @@ header #gnb>.gnb>li{
 
 .util_submenu li a{
     color: #000000;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-left: 10px;
 }
@@ -613,6 +613,11 @@ hr{
     width: 100%;
 }
 
+.brand #hwal a img{
+    width: 60%;
+    margin: 60px auto;
+}
+
 
 footer{
     width: 100%;
@@ -660,7 +665,7 @@ footer>.wrap>.sns>#icon>li>a{
         height: 10px;
     }
     
-    .myslide{height: 940px;}
+    .myslide{height: 930px;}
     /*헤더 햄버거버튼 영역*/
     #btn{
         width:200px; height: 200px;
