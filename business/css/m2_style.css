@@ -339,69 +339,63 @@ footer{margin-top:50px;}
     }
     .list01>div.impo,.list02>div.impo{
         border-right:none; 
-}
+    }
 
-#impo_first{
-    position: absolute;
-    left: -90%;
-}
-#impo_second{width: 200px;}
-#impo_third{
-    position: absolute;
-    top:30%;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 20px;
-}
+    #impo_first{
+        position: absolute;
+        left: -90%;
+    }
+    #impo_second{width: 200px;}
+    #impo_third{
+        position: absolute;
+        top:30%;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 20px;
+    }
 
-.list01>div.impo>.botton,
-.list02>div.impo>.botton{
-    position: absolute;
-    top:10%;
-    left: 100%;
-    width: 100%;
-}
+    .list01>div.impo>.botton,
+    .list02>div.impo>.botton{
+        position: absolute;
+        top:10%;
+        left: 100%;
+        width: 100%;
+    }
+    .list01>div.impo>div.botton>a,
+    .list02>div.impo>div.botton>a{
+        width: 100px;
+        font-weight: bold;
+        border: 1px solid #37594B;
+        color: #37594B;
+        font-size: 1vw;
+        z-index: 9999;
+        cursor:pointer;
+    }
+    #product:hover{color: #222; font-weight: bold;}
 
+    .list01>div.impo>.botton>a:hover{
+        list-style: none;
+    }
 
-.list01>div.impo>.botton>a,
-.list02>div.impo>.botton>a{
-    width: 100px;
-    font-weight: bold;
-    border: 1px solid #37594B;
-    color: #37594B;
-    font-size: 1vw;
-    z-index: 9999;
-}
-#product{
-    border: 0;
-    color: #666;
-    font-weight: 400;
-}
-#product:hover{color: #222; font-weight: bold;}
-
-.list01>div.impo>.botton>a:hover{
-    list-style: none;
-}
-
-#botton1{
-    position: absolute;
-    top:60%;
-    right: 150%;
-}
-#botton2{
-    position: absolute;
-    top:60%;
-    right: 20%;
-}
-#botton3{
-    position: absolute;
-    top:85%;
-    right: 20%;
-    width: 230%;
-}
-.list01>div.botton02>a,
-.list02>div.botton02>a{
-    font-size: 1rem;
-}
-.section04>div{ width: 100%;}
+    #botton1{
+        position: absolute;
+        top:60%;
+        right: 150%;
+    }
+    #botton2{
+        position: absolute;
+        top:60%;
+        right: 20%;
+    }
+    #botton3{
+        position: absolute;
+        top:85%;
+        right: 20%;
+        width: 230%;
+    }
+    .list01>div.botton02>a,
+    .list02>div.botton02>a{
+        font-size: 1rem;
+    }
+    .section04>div{ width: 100%;}
 }
