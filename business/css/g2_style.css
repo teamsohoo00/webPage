@@ -3,7 +3,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
 
 /*font-family: 'Pretendard';*/
-
 /*PC 버전*/
 *{margin:0; padding:0; box-sizing:border-box; text-decoration: none; list-style: none;}
 
@@ -16,8 +15,6 @@ section h2{
 	overflow:hidden;
 	text-indent:-9999px;
 }
-img{vertical-align:top;}
-
 
 /*section1*/
 .section1{

@@ -1,7 +1,7 @@
 @charset  "utf-8";
 @import "common.css";
 .wrap{
-    width:1440px; 
+    max-width:1440px; 
     margin:0 auto;
     padding:10% 0;
     color:#444;
@@ -17,12 +17,22 @@ h2{
 /*활명수 제품사진*/
 #section01{padding-left:10%;}
 #section01>img{display:block;}
-#section01 p{
-    width:125px; 
-    height:125px;
-    border:2px solid #ddd;
+
+#section01>div>img{
+    width:115px; 
+    height:105px;
+    border:2px solid #eee;
     margin-right:2%;
-    background:url('') no-repeat center/90%;
+    cursor:pointer;
+}
+#section01>div>img.photo1{
+    padding:10px;
+    box-sizing:border-box;
+    background-color:#f6f6f6;
+}
+#section01>div>img:hover{
+    border:2px solid #ddd;
+    transform:scale(1.03); transition:all .4s;
 }
 #section01>div::after{
 	content:'';
@@ -32,13 +42,11 @@ h2{
 	visibility:hidden;
 }
 #section01>div{padding-top:2%;}
-#section01>div>p{float:left;}
-#section01>div>p:first-of-type{background-image:url('../img/g3_img/img02.jpg');}
-#section01>div>p:last-of-type{background-image:url('../img/g3_img/img03.jpg');}
+#section01>div>img{float:left;}
 
 /*활명수 제목 및 금액*/
 #section02{padding-left:5%; box-sizing:border-box;}
-#section02>ul>li:first-child{font-size:2rem; font-weight:800;}
+#section02>ul>li:first-child{color:#555; font-size:2rem; font-weight:700;}
 #section02>ul>li:nth-child(2){
     width:470px; 
     border-top:1px solid #ddd;
@@ -47,7 +55,7 @@ h2{
 
 /*배송비*/
 #section02>ul>li:nth-child(3){font-size:1.2rem;}
-#section02>ul>li:nth-child(3)>span{font-size:2.2rem; font-weight:900; padding-right:10px;}
+#section02>ul>li:nth-child(3)>span{font-size:2.2rem; font-weight:700; padding-right:10px; color:#555;}
 
 #section02>ul>li:nth-child(4){
     padding:3% 0 10%; 
@@ -87,7 +95,7 @@ h2{
 #section02>ul>li>#select03{ 
     margin-top:10px; 
     padding:10px 15px;
-    background:#eaeaea;
+    background:#eee;
     box-sizing:border-box;
     display:none;
 }
@@ -170,6 +178,7 @@ h2{
         height:auto;
     }
     #section01>img{margin-left:25%; width:50%; height:50%;}
+    #section01>div{display: none;}
     #section01 p{display:none;}
     #section02{
         width:50%;
@@ -177,20 +186,26 @@ h2{
         margin-left:25%;
     }
     #section02>ul>li:nth-child(2){display:none;}
-    #section02>ul>li:nth-child(1){font-size:1.5rem; font-weight:500;}
+    #section02>ul>li:nth-child(1){font-size:3vw; font-weight:500;}
     #section02>ul>li:nth-child(3){
-        font-size:0.9rem;
+        font-size:2vw;
         padding-top:20px;
     }
     #section02>ul>li:nth-child(3)>span{
-        font-size:1.8rem;
+        font-size:3vw;
         padding-right:5px;
     }
     #section02>ul>li:nth-child(4){
-        font-size:0.8rem;
+        font-size:1.5vw;
         padding:10px 0 60px;
     }
+    #product,#product01,#product02{font-size:1.5vw;}
+    #select02>li,#select03>li{font-size:1.8vw;}
+    #total{font-size:2vw;}
+    #section02>ul>#total>span{font-size:3vw;}
+    #section02>div>p{font-size:1.8vw;}
 
+    #section02>div>p:last-of-type{margin-right:0;}
+    #section02>div>p:first-of-type{margin-left:1.5%;}
 }
-
 

@@ -8,19 +8,19 @@
 </head>
 <body>
     <header>
-        <div>
+        <div id="header">
             <ul class="flex" id="util">
                 <li><a href="./l.html">로그인</a></li>
                 <li><a href="./l2-1.html">회원가입</a></li>
                 <li><a href="./s.html">제품판매약국 찾기</a></li>
             </ul>
             <nav class="flex"> 
-                <h1>
+                <h1 id="logo">
                     <a href="./h1_main.html">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
                 </h1>
-                <ul class="flex" id="gnb">
+                <ul id="gnb">
                     <li>
                         <a href="./g1.html">브랜드 스토리</a>
                     </li>
@@ -31,11 +31,27 @@
                         <a href="./g3.html">상품구매</a>
                     </li>
                     <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                        <a href="./b-2.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-2.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
                     </li>
                 </ul>
-                <div class="M_menu" id="menu_btn">
+                <div id="m_btn">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -53,56 +69,57 @@
         </div>
     </div>
     <div id="title">
-    <h4>회원정보</h4>
+    <h4>구매내역</h4>
     </div>
     <div class="section02">
-        <p>기간 : <input type="date" /></p>
+        <p><input type="date" /></p>
         <p>~</p>
         <p><input type="date" /></p>
+        <a href="#">조회</a>
     </div>
     <div class="section03">
         <div class="list01">
             <a href="#">
-                <img src="./img/g3_img/img02.jpg" alt="구매목록01" />
+                <img src="./img/m2_img/img02.jpg" height="auto" alt="구매목록01"/>
             </a>
             <div class="impo">
-                <p>2022년 08월 12일 주문</p>
-                <p>
-                    <span class="color">배송완료.</span> 08/14 도착
+                <p id="impo_first">2022.08.10</p>
+                <p id="impo_second">
+                    <span class="color">배송완료 ·</span> 08/14 도착
                 </p>
-                <p>활명수액 75ml 10병.</p>
-                <p>12,000원.</p>
+                <p id="impo_third">까스활액 75ml 10병</p>
+                <p id="impo_last">12,000원 · 1개</p>
                 <div class="botton">
-                    <a href="#">상품 상세</a>
-                    <a href="#">장바구니에 담기</a>
+                    <a id="product" href="./g3.html">제품 구매 페이지</a>
+                    <a id="cart" href="./b-1.html">장바구니에 담기</a>
                 </div>
             </div>
             <div class="botton02">
-                <a href="#">배송조회</a>
-                <a href="#">교환/반품 신청</a>
-                <a href="#">리뷰 작성</a>
+                <a href="#" id="botton1">배송조회</a>
+                <a href="#" id="botton2">교환/반품 신청</a>
+                <a href="#" id="botton3">리뷰 작성</a>
             </div>
         </div>
         <div class="list02">
             <a href="#">
-                <img src="./img/g3_img/img03.jpg" alt="구매목록02" />
+                <img src="./img/m2_img/img03.jpg" alt="구매목록02" />
             </a>
             <div class="impo">
-                <p>2022년 08월 12일 주문</p>
-                <p>
-                    <span class="color">배송완료.</span> 08/14 도착
+                <p id="impo_first">2022.08.10</p>
+                <p id="impo_second">
+                    <span class="color">배송완료 ·</span> 08/14 도착
                 </p>
-                <p>미인활액 75ml 10병.</p>
-                <p>12,000원.</p>
+                <p id="impo_third">미인활액 75ml 10병</p>
+                <p id="impo_last">12,000원 · 1개</p>
                 <div class="botton">
-                    <a href="#">상품 상세</a>
-                    <a href="#">장바구니에 담기</a>
+                    <a id="product" href="./g3.html">제품 구매 페이지</a>
+                    <a id="cart" href="./b-1.html">장바구니에 담기</a>
                 </div>
             </div>
             <div class="botton02">
-                <a href="#">배송조회</a>
-                <a href="#">교환/반품 신청</a>
-                <a href="#">리뷰 작성</a>
+                <a href="#" id="botton1">배송조회</a>
+                <a href="#" id="botton2">교환/반품 신청</a>
+                <a href="#" id="botton3">리뷰 작성</a>
             </div>
         </div>
     </div>
@@ -176,5 +193,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/common.js"></script>
 </body>
 </html>

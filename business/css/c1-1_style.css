@@ -48,17 +48,18 @@
     margin-right:10px;
 }
 
+.seldatecss .ui-widget-header {
+    border: 1px solid #dddddd;
+    background: #37594b; 
+    color: #333333;
+    font-weight: bold;}
 
+/*.ui-state-default ui-state-highlight ui-state-active ui-state-hover{    
+    border: 1px solid #dad55e;
+    background: #37594b;
+    color: #777620;
+} 호버시 backgrouond 변경*/ 
 
-.ui-datepicker-calendar a.ui-state-hover{
-    border: 1px solid #37594b;
-    background: #37594b;
-    color: #fff;
-}
-.ui-datepicker-calendar a.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
-    border: 1px solid #37594b;
-    background: #37594b;
-    color: #fff;}
 
 .select option {
     background: #37594b;
@@ -67,11 +68,10 @@
   }
   .member[type=text] {
     height:30px;
-    width:150px;
+    width:240px;
     border: 0;
     outline: none;
     background-color:#eaeaea;
-    margin-right:10px;
 }
 .date[type=date]{
     height:30px;

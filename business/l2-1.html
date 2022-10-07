@@ -89,7 +89,7 @@
             return;
             }
             else{
-                location.href="http://127.0.0.1:5501/business/l2-2.html";
+                location.href="./l2-2.html";
             }
         }
     </script>
@@ -123,7 +123,20 @@
                     </li>
                     <li>
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                        <a href="./b-2.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-2.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
                     </li>
                 </ul>
                 <div id="m_btn">
@@ -139,26 +152,26 @@
             <h1>JOIN US</h1>
             <div class="sign">
                 <div class="id">
-                    <input type="text" id="id" placeholder=" 아이디" name="" />
+                    <input type="text" id="id" placeholder="아이디" name="user_id" />
                 </div>
                 <div class="password">
-                    <input type="password" id="password" placeholder=" 비밀번호 (4~12자리의 영문 대소문자와 숫자로만 입력)" name="" />
+                    <input type="password" id="password" placeholder=" 비밀번호 (4~12자리의 영문 대소문자와 숫자로만 입력)" name="user_psw" />
 
                 </div>
                 <div class="password">
-                    <input type="password" id="password_chk" placeholder=" 비밀번호 확인" name="" />
+                    <input type="password" id="password_chk" placeholder=" 비밀번호 확인" name="user_psw" />
                 </div>
                 <div class="name">
-                    <input type="name" id="name" placeholder=" 이름" name="" />
+                    <input type="text" id="name" placeholder=" 이름" name="user_name" />
                 </div>
                 <div class="tel">
                     <h6>휴대폰번호</h6>
-                    <input type="tel" id="tel" placeholder="" name="" />
+                    <input type="tel" id="tel" placeholder="" name="user_tel" />
                     <button class="btn">전송</button>
                 </div>
                 <div class="sms">
                     <h6>SMS 인증번호</h6>
-                    <input type="number" id="number" placeholder="" name="" />
+                    <input type="number" id="number" placeholder="" name="user_sns" />
                     <button class="btn">확인</button>
                 </div>
                 <div class="check">

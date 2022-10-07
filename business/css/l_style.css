@@ -13,10 +13,15 @@
     color:#444;
     text-align: center;
 }
-img{vertical-align:top;}
-
+h2{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
 /*section LOGIN 영역*/
-.section1 h2{
+.section1 h3{
     font-size:30px; font-weight:700; 
     border-bottom:1px solid #37594b;
     padding-bottom: 20px;

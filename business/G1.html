@@ -19,8 +19,6 @@
             $(".sec1_t03").fadeIn(2000);
             },2100);
     </script>
-
-    <!--추가한 부분-->
     <script>
         $(document).ready(function() {
 
@@ -41,19 +39,19 @@
     </script>
 <body>
     <header>
-        <div>
+        <div id="header">
             <ul class="flex" id="util">
                 <li><a href="./l.html">로그인</a></li>
                 <li><a href="./l2-1.html">회원가입</a></li>
                 <li><a href="./s.html">제품판매약국 찾기</a></li>
             </ul>
             <nav class="flex"> 
-                <h1>
+                <h1 id="logo">
                     <a href="./h1_main.html">
                         <img src="./img/icon/logo.png" alt="logo" />
                     </a>
                 </h1>
-                <ul class="flex" id="gnb">
+                <ul id="gnb">
                     <li>
                         <a href="./g1.html">브랜드 스토리</a>
                     </li>
@@ -64,11 +62,27 @@
                         <a href="./g3.html">상품구매</a>
                     </li>
                     <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
                         <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
-                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                        <a href="./b-2.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-2.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
                     </li>
                 </ul>
-                <div class="M_menu" id="menu_btn">
+                <div id="m_btn">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -335,61 +349,61 @@
         $(".m_img01").click(function(){
             $("#m_01").css("display","block");
         });
-        $(".m_img").click(function(){
+        $("#m_01").click(function(){
             $("#m_01").css("display","none");
         });
         $(".m_img02").click(function(){
             $("#m_02").css("display","block");
         });
-        $(".m_img").click(function(){
+        $("#m_02").click(function(){
             $("#m_02").css("display","none");
         });
         $(".m_img03").click(function(){
             $("#m_03").css("display","block");
         });
-        $(".m_img").click(function(){
+        $("#m_03").click(function(){
             $("#m_03").css("display","none");
         });
         $(".m_img04").click(function(){
             $("#m_04").css("display","block");
         });
-        $(".m_img").click(function(){
+        $("#m_04").click(function(){
             $("#m_04").css("display","none");
         });
         $(".m_img05").click(function(){
             $("#m_05").css("display","block");
         });
-        $(".m_img").click(function(){
+        $("#m_05").click(function(){
             $("#m_05").css("display","none");
         });
         $(".m_img06").click(function(){
             $("#m_06").css("display","block");
         });
-        $(".m_img").click(function(){
+        $("#m_06").click(function(){
             $("#m_06").css("display","none");
         });
         $(".m_img07").click(function(){
             $("#m_07").css("display","block");
         });
-        $(".m_img").click(function(){
+        $("#m_07").click(function(){
             $("#m_07").css("display","none");
         });
         $(".m_img08").click(function(){
             $("#m_08").css("display","block");
         });
-        $(".m_img").click(function(){
+        $("#m_08").click(function(){
             $("#m_08").css("display","none");
         });
         $(".m_img09").click(function(){
             $("#m_09").css("display","block");
         });
-        $(".m_img").click(function(){
+        $("#m_09").click(function(){
             $("#m_09").css("display","none");
         });
         $(".m_img10").click(function(){
             $("#m_10").css("display","block");
         });
-        $(".m_img").click(function(){
+        $("#m_10").click(function(){
             $("#m_10").css("display","none");
         });
         </script>
@@ -486,27 +500,27 @@
         <div id="#container" class="slide-inner">
             <ul class="slide-area">
                 <li>
-                    <video controls poster="./img/g1_img/logo.png" width="580" height="330">
+                    <video controls poster="./img/g1_img/01.png" width="580" height="350">
                         <source src="./img/video/01.mp4" type="video/mp4">
                     </video>
                 </li>
                 <li>
-                    <video controls poster="./img/g1_img/logo.png" width="580" height="330">
+                    <video controls poster="./img/g1_img/02.png" width="580" height="350">
                         <source src="./img/video/02.mp4" type="video/mp4">
                     </video>
                 </li>
                 <li>
-                    <video controls poster="./img/g1_img/logo.png" width="580" height="330">
+                    <video controls poster="./img/g1_img/03.png" width="580" height="350">
                         <source src="./img/video/03.mp4" type="video/mp4">
                     </video>
                 </li>
                 <li>
-                    <video controls poster="./img/g1_img/logo.png" width="580" height="330">
+                    <video controls poster="./img/g1_img/04.png" width="580" height="350">
                         <source src="./img/video/04.mp4" type="video/mp4">
                     </video>
                 </li>
                 <li>
-                    <video controls poster="./img/g1_img/logo.png" width="580" height="330">
+                    <video controls poster="./img/g1_img/05.png" width="580" height="350">
                         <source src="./img/video/05.mp4" type="video/mp4">
                     </video>
                 </li>
@@ -575,6 +589,7 @@
 <script src="./js/wow.js"></script>
 <script src="./js/jquery.js"></script>
 <script src="./js/jquery.jdSlider-latest.min.js"></script>
+<script src="./js/common.js"></script>
 <script>
     wow = new WOW(
        {
