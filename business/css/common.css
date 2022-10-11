@@ -93,7 +93,7 @@ footer{background:#36594c; padding:30px 0;}
 #footer_under{justify-content: space-between; align-items: center;}
 #footer_under li,#footer_under li a{color:#fff;}
 #footer_under p,#footer_under li{font-size:0.8vw;}
-
+#footer_under li:last-child{margin-top:20px;}
 
 
 
