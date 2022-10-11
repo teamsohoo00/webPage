@@ -13,7 +13,7 @@
             $(".sec1_t01").fadeIn(2000);
             },700);
         var timer = setTimeout(function(){
-            $(".sec1_t02").fadeIn(2000); 
+            $(".sec1_t02").fadeIn(2000);
             },1400);
         var timer = setTimeout(function(){
             $(".sec1_t03").fadeIn(2000);
@@ -32,7 +32,79 @@
 
                 if( bottom_of_window > bottom_of_object/2 ){
 
+                $(this).animate({'opacity':'1'},500);
+                }}); 
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll( function(){
+
+                $('.line02').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object/2 ){
+
+                $(this).animate({'opacity':'1'},1000);
+                }}); 
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll( function(){
+
+                $('.line03').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object/2 ){
+
                 $(this).animate({'opacity':'1'},1500);
+                }}); 
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll( function(){
+
+                $('.line04').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object/2 ){
+
+                $(this).animate({'opacity':'1'},2000);
+                }}); 
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll( function(){
+
+                $('.line05').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object/2 ){
+
+                $(this).animate({'opacity':'1'},2500);
                 }}); 
             });
         });
@@ -106,6 +178,14 @@
                 효과빠른 소화제, '활명수'를 만나보세요.
             </p>
             <img class="line01" src="./img/g1_img/sec01_line.png" alt="01_line" />
+            </p>
+            <img class="line02" src="./img/g1_img/sec01_line.png" alt="02_line" />
+            </p>
+            <img class="line03" src="./img/g1_img/sec01_line.png" alt="03_line" />
+            </p>
+            <img class="line04" src="./img/g1_img/sec01_line.png" alt="04_line" />
+            </p>
+            <img class="line05" src="./img/g1_img/sec01_line.png" alt="05_line" />
         </div>
     </div>
     <div class="section2"><!--section2 (첨가된 생약)-->
@@ -262,7 +342,7 @@
                 </div>
                 <div>
                     <p class="m_effect">
-                        혈액순환을 좋게하여 시운을 다스림.<br/>강한 진통효과, 구토/설사에 효과적.
+                        혈액순환을 좋게하여 기운을 다스림.<br/>강한 진통효과, 구토/설사에 효과적.
                     </p>
                 </div>
             </div>
@@ -328,7 +408,7 @@
                 </div>
                 <div>
                     <p class="m_effect">
-                        위를 따뜻하게 하여 구역, 구토<br/>위의 통주으 복통을 치료.
+                        위를 따뜻하게 하여 구역, 구토<br/> 복통을 치료.
                     </p>
                 </div>
             </div>

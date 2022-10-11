@@ -20,7 +20,7 @@ html{ font-family: 'Pretendard'; overflow-x: hidden}
 	overflow:hidden;
 	text-indent:-9999px;
 }
-
+.wrap{max-width:1440px;}
 /*비주얼 배너 영역*/
 .section1{
     background:#f3f3f3;
@@ -66,14 +66,19 @@ html{ font-family: 'Pretendard'; overflow-x: hidden}
     position:absolute;
     right:20%; bottom:15%;
 }
-.section1>div>.line01{
+.section1>div>.line01, .section1>div>.line02,
+.section1>div>.line03, .section1>div>.line04,
+.section1>div>.line05{
     position:absolute;
-    top:53%; left:31%;
+    top:58%; left:31%;
     /*추가한 부분*/
-    transform:scale(70%);
+    height:8%;
     opacity:0;
 }
-
+.section1>div>.line02{top:66%;}
+.section1>div>.line03{top:74%;}
+.section1>div>.line04{top:82%;}
+.section1>div>.line05{top:90%;}
 /*첨가 생약 효능 영역*/
 .section2{
     width:100%; height:900px;
@@ -438,9 +443,9 @@ html{ font-family: 'Pretendard'; overflow-x: hidden}
     width:9.5vw;
 }
 .section1>div>p{display:none;}
-.section1>div>.line01{
-    transform:scale(60%);
-    top:52%; left:29%;
+.section1>div>.line01, .section1>div>.line02,
+.section1>div>.line03, .section1>div>.line04,
+.section1>div>.line05{
     display:none;
 }
 
