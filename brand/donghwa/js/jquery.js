@@ -93,10 +93,6 @@ $(document).ready(function(){
         $(".brand > #hwal > a > img").attr("src","./images/hover_brand02.png");
         $(".brand > #mall > a > img").attr("src","./images/hover_brand03.png");
         $(".brand > #pharm > a > img").attr("src","./images/hover_brand04.png");
-        $(".brand > #it > a > img").off("mouseout");
-        $(".brand > #hwal > a > img").off("mouseout");
-        $(".brand > #mall > a > img").off("mouseout");
-        $(".brand > #pharm > a > img").off("mouseout");
     }
 });
 
