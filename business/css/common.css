@@ -198,6 +198,7 @@ footer{background:#36594c; padding:30px 0;}
     #footer_under img{margin:0 auto; display:block;}
     #footer_under>ul:nth-child(2){margin:2% 0;}
     #footer_under>ul:nth-child(5){text-align:center;}
+    #footer_under li:last-child{margin-top:20px;}
 }
 
 @media(max-width:375px){
