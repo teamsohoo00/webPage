@@ -15,8 +15,8 @@ h2{
 }
 
 /*활명수 제품사진*/
-#section01{padding-left:10%;}
-#section01>img{display:block;}
+#section01{padding-left:11%; width:40%;}
+#section01>img{display:block; width:90%;}
 
 #section01>div>img{
     width:115px; 
@@ -46,7 +46,7 @@ h2{
 
 /*활명수 제목 및 금액*/
 #section02{padding-left:5%; box-sizing:border-box;}
-#section02>ul>li:first-child{font-size:2rem; font-weight:800;}
+#section02>ul>li:first-child{font-size:2rem; font-weight:700;color:#555;}
 #section02>ul>li:nth-child(2){
     width:470px; 
     border-top:1px solid #ddd;
@@ -55,7 +55,7 @@ h2{
 
 /*배송비*/
 #section02>ul>li:nth-child(3){font-size:1.2rem;}
-#section02>ul>li:nth-child(3)>span{font-size:2.2rem; font-weight:900; padding-right:10px;}
+#section02>ul>li:nth-child(3)>span{font-size:2.2rem; font-weight:800; padding-right:10px;}
 
 #section02>ul>li:nth-child(4){
     padding:3% 0 10%; 
@@ -180,8 +180,10 @@ h2{
     #section01{
         padding:0;
         height:auto;
+        width:100%;
+        margin:0 auto;
     }
-    #section01>img{margin-left:25%; width:50%; height:50%;}
+    #section01>img{ width:50%; height:50%; margin:0 auto;}
     #section01>div>img{display:none;}
     #section02{
         width:50%;
