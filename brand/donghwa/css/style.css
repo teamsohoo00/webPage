@@ -656,10 +656,10 @@ footer>.wrap>.sns>#icon>li>a{
 /*모바일*/
 @media all and (max-width:1024px){
     nav{position: relative;}
-    .wrap{width: 100%; margin: 0 auto;}
+    .wrap{width: 90%; margin: 0 auto;}
     #util{display: none; }
     .gnb{display: none; }
-    #logo{padding-top :20px; position: absolute; left: 5%;} 
+    #logo{padding-top :20px;} 
     #gnb>span{
         background: #fff;
         width: 10px;
