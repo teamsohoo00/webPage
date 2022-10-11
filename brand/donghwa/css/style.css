@@ -659,7 +659,7 @@ footer>.wrap>.sns>#icon>li>a{
     .wrap{width: 90%; margin: 0 auto;}
     #util{display: none; }
     .gnb{display: none; }
-    #logo{padding: 20px;}
+    #logo{padding-top :20px;} 
     #gnb>span{
         background: #fff;
         width: 10px;
@@ -671,7 +671,7 @@ footer>.wrap>.sns>#icon>li>a{
     #btn{
         width:50px; height: 100px;
         position: absolute;
-        right: 0;
+        right: 5%;
         top: 0;
         margin-top: 30px;
     }
