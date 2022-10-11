@@ -24,6 +24,7 @@ header{border-bottom:1px solid #d3d3d3; font-family: 'Pretendard-Regular';}
 .header_top>ul>li>a{font-size:0.85555vw; color:#606060;}
 .header_top>ul>li:last-child{margin:0;}
 .header_top>ul>li>a>img{width:20px;}
+.header_top>div{font-size:0.85555vw; margin-top:5px;}
 
 
 .header_under{height:50%; margin:0 3%;}
