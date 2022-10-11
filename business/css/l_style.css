@@ -91,3 +91,19 @@ input[id="saveChk"]{
 @media all and (max-width:1024px){
     .wrap{padding:18% 0;}
 }
+
+@media(max-width:375px){
+.wrap{width:375px;}
+.idpw {
+    margin-top: 20px;
+    padding: 10px 0;
+}
+.idpw p {
+    margin-bottom: 20px;
+    padding-left: 33px;
+    background: url(../img/g2_img/login_circle.png) no-repeat 10px;
+    background-size: 6%;
+    font-size: 20px;
+}
+.section1 .button a{width:335px;}
+}

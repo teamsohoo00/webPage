@@ -312,16 +312,19 @@ section h2{
 }
  
 @media(max-width:375px){ 
+    
     .section1{margin-top:0;}
-    .img1 img {width: 100px;}
-    .product_img .img:before{
-        width:250px;
-        height:250px;
-    }
+    .section2 {padding: 0 30px;}
+    .img1 img {width: 88px;}
+    .img2 img {width: 245px; bottom: 32px;}
+    .product_img .img {bottom: 65px;width: 100%; }
+    .product_img .img:before{width:250px;height:250px; }
+    .product .button img {width: 38vw;}
     .product .inner > ul {height: 540px;}
     .product{padding-right: 0;}
     .product .text {margin-top: 50px;}
     .carousel{margin-top:0;}
+    .character{padding:0 35px;}
     .character h3 {font-size: 2.7777777vw;}
     .detail>ul{margin-top:30px;}
     .character dl {display: flex; padding: 25px 13px; }
@@ -330,11 +333,11 @@ section h2{
     .ac .question > a{
          padding-left: 75px;
          padding-bottom:0;
-         line-height:20px;
+         line-height:13px;
          background-size: 16px 16px;
-         background-position: 34px 27px;
+         background-position: 34px 23px;
         }
-    .ac .question.active > a{ background-size: 17px 3px; background-position: 40px 35px;}
+    .ac .question.active > a{ background-size: 16px 3px; background-position: 35px 33px;}
     .faq h3 {margin-bottom: 30px; }
     .answer li{padding-left:85px;}
     .answer li::before{height:105%; left:75px;}

@@ -121,3 +121,6 @@ input[type=checkbox]{width:1vw; height:1.5vh; margin:0 1% 0 0; vertical-align: m
         font-size:20px;
     }
 }
+@media(max-width:375px){
+    .wrap{width:350px;}
+}
