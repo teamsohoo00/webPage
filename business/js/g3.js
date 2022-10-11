@@ -1,55 +1,5 @@
 
 $(function(){
-    $("#product01").click(function(){
-        $("#select02").css("display","block");
-		$("#number_cnt").text(1);
-		var n1 = $("#number_cnt").text();
-		var n2 = $("#number_cnt2").text();
-		var numTotal = 12000
-		var p1 = numTotal*n1;
-		var p2 = numTotal*n2;
-		var total =parseInt(p1) + parseInt(p2);
-		$("#totalPrice").text(total);
-    });
-    $("#product02").click(function(){
-        $("#select03").css("display","block");
-		$("#number_cnt2").text(1);
-		var n1 = $("#number_cnt").text();
-		var n2 = $("#number_cnt2").text();
-		var numTotal = 12000
-		var p1 = numTotal*n1;
-		var p2 = numTotal*n2;
-		var total =parseInt(p1) + parseInt(p2);
-		$("#totalPrice").text(total);
-    });
-    $(".cancel").click(function(){
-        $("#select02").css("display","none");
-		$("#active>li#product").text('상품을 선택하세요');
-		$("#number_cnt").val(parseInt($("#number_cnt").text(0)));
-		var n1 = $("#number_cnt").text();
-		var n2 = $("#number_cnt2").text();
-		var numTotal = 12000
-		var p1 = numTotal*n1;
-		var p2 = numTotal*n2;
-		var total =parseInt(p1) + parseInt(p2);
-		$("#totalPrice").text(total);
-    });
-    $(".cancel2").click(function(){
-        $("#select03").css("display","none");
-		$("#active>li#product").text('상품을 선택하세요');
-		$("#number_cnt2").val(parseInt($("#number_cnt2").text(1)));
-		var n1 = $("#number_cnt").text();
-		var n2 = $("#number_cnt2").text();
-		var numTotal = 12000
-		var p1 = numTotal*n1;
-		var p2 = numTotal*n2;
-		var total =parseInt(p1) + parseInt(p2);
-		$("#totalPrice").text(total);
-    });
-});
-
-
-$(function(){
 	$(".minus").click(function(){
 		var num = parseInt($("#number_cnt").text());
 		if(num>1){
@@ -57,7 +7,7 @@ $(function(){
 		};
 		var n1 = $("#number_cnt").text();
 		var n2 = $("#number_cnt2").text();
-		var numTotal = 12000
+		var numTotal = 12000;
 		var p1 = numTotal*n1;
 		var p2 = numTotal*n2;
 		var total =parseInt(p1) + parseInt(p2);
@@ -67,7 +17,7 @@ $(function(){
 		$("#number_cnt").text(parseInt($("#number_cnt").text()) + 1);
 		var n1 = parseInt($("#number_cnt").text());
 		var n2 = parseInt($("#number_cnt2").text());
-		var numTotal = 12000
+		var numTotal = 12000;
 		var p1 = numTotal*n1;
 		var p2 = numTotal*n2;
 		var total =parseInt(p1) + parseInt(p2);
@@ -80,7 +30,7 @@ $(function(){
 		};
 		var n1 = parseInt($("#number_cnt").text());
 		var n2 = parseInt($("#number_cnt2").text());
-		var numTotal = 12000
+		var numTotal = 12000;
 		var p1 = numTotal*n1;
 		var p2 = numTotal*n2;
 		var total =parseInt(p1) + parseInt(p2);
@@ -90,7 +40,7 @@ $(function(){
 		$("#number_cnt2").text(parseInt($("#number_cnt2").text()) + 1);
 		var n1 = parseInt($("#number_cnt").text());
 		var n2 = parseInt($("#number_cnt2").text());
-		var numTotal = 12000
+		var numTotal = 12000;
 		var p1 = numTotal*n1;
 		var p2 = numTotal*n2;
 		var total =parseInt(p1) + parseInt(p2);
@@ -99,6 +49,48 @@ $(function(){
 });
 
 
+$(function(){
+    $("#product01").click(function(){
+        $("#select02").css("display","block");
+		$("#number_cnt").text(1);
+		var n1 = $("#number_cnt").text();
+		var n2 = $("#number_cnt2").text();
+		var numTotal = 12000;
+		var p1 = numTotal*n1;
+		var p2 = numTotal*n2;
+		var total =parseInt(p1) + parseInt(p2);
+		$("#totalPrice").text(total);
+    });
+    $("#product02").click(function(){
+        $("#select03").css("display","block");
+		$("#number_cnt2").text(1);
+		var n1 = $("#number_cnt").text();
+		var n2 = $("#number_cnt2").text();
+		var numTotal = 12000;
+		var p1 = numTotal*n1;
+		var p2 = numTotal*n2;
+		var total =parseInt(p1) + parseInt(p2);
+		$("#totalPrice").text(total);
+    });
+    $(".cancel").click(function(){
+        $("#select02").css("display","none");
+		$("#active>li#product").text('상품을 선택하세요');
+		$("#number_cnt").text(0);
+		var n2 = parseInt($("#number_cnt2").text());
+		var numTotal = 12000;
+		var p2 = numTotal*n2;
+		$("#totalPrice").text(parseInt(p2));
+    });
+    $(".cancel2").click(function(){
+        $("#select03").css("display","none");
+		$("#active>li#product").text('상품을 선택하세요');
+		$("#number_cnt2").text(0);
+		var n1 = parseInt($("#number_cnt").text());
+		var numTotal = 12000;
+		var p1 = numTotal*n1;
+		$("#totalPrice").text(parseInt(p1));
+    });
+});
 
 $(function(){
 	$("#active").hover(function(){
