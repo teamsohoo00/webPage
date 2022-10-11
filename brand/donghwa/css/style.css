@@ -655,10 +655,11 @@ footer>.wrap>.sns>#icon>li>a{
 
 /*모바일*/
 @media all and (max-width:1024px){
+    nav{position: relative;}
     .wrap{width: 90%; margin: 0 auto;}
-    #util{display: none;}
-    .gnb{display: none;}
-    #logo{padding: 20px; position: relative;}
+    #util{display: none; }
+    .gnb{display: none; }
+    #logo{padding: 20px;}
     #gnb>span{
         background: #fff;
         width: 10px;
@@ -668,9 +669,9 @@ footer>.wrap>.sns>#icon>li>a{
     .myslide{height: 930px;}
     /*헤더 햄버거버튼 영역*/
     #btn{
-        width:200px; height: 200px;
+        width:50px; height: 100px;
         position: absolute;
-        right: -15%;
+        right: 0;
         top: 0;
         margin-top: 30px;
     }
@@ -747,42 +748,70 @@ footer>.wrap>.sns>#icon>li>a{
 .sub{display: none;}
 
     /*비주얼배너*/
+    .prev{
+        left: 0;
+    }
+    .next{
+        right: 0;
+    }
     .txt{
         top:50%;
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
+        width: 70%;
     }
-    #section2 .wrap{padding-top: 50px;}
-    #section2 #slideImg2{
-        height: 20%;
+    .section2 .wrap{padding-top: 80px;}
+    .section2>.wrap>h3{padding: 0;}
+    .section2>.wrap{margin: 0 }
+    .sub_txt{
+        margin: 20px 0 20px 0;
     }
-    #section2>.wrap>h3{padding: 0;}
-    #section2>.wrap{margin: 0 }
     #family,#family_txt{display: none;}
     #esg{width: 40%; left: 60%;  overflow: hidden;}
+    #esg p{
+        font-size: 5vw;
+        right: 25%;
+    }
+    #vision>h4{
+        padding:30px;
+    }
+    #vision>p{
+        font-size: 1.2rem;
+        padding: 0 20px;
+    }
     #vision,#business{
-        width: 40%;
-        left: 70px;
+        width: 50%;
         overflow: hidden;
+        position: relative;
+    }
+    #business img{
+        position: absolute;
+        left: 0;
+    }
+    #business h4{
+        font-size: 25px;    }
+    #business p{
+        position: absolute;
+        font-size: 0.8rem;
     }
 
-    #section3{margin-top: 100px;}
-    #section4{padding: 0;}
+    .section3 h3{padding-top:150px ;}
     #news{display: none;}
+    #board p{padding-top: 120px;}
     #board{
         position: absolute;
         transform: translate(-50%,-50%);
         top:50%;
         width: 80%;
     }
-    .icon{display: flex; position: absolute; right: 0;}
+    .icon{display: flex; position: absolute; right: 0; top:90%;}
     .icon_facebook{
-        background: url(../images/icon_facebook02.png) center/cover;
+        background: url(../images/icon_facebook02.png) no-repeat center/contain;
         width: 50px; height: 50px;
     }
     .icon_insta{
-        background: url(../images/icon_insta02.png) center/cover;
+        background: url(../images/icon_insta02.png) no-repeat center/contain;
         width: 50px; height: 50px;
     }
     #section5{padding: 0;}
@@ -797,12 +826,15 @@ footer>.wrap>.sns>#icon>li>a{
         height: 220px;
     }
     #recruitment{width: 98%; height: 220px;}
+    #commt p{font-size: 1rem;}
     .section5 h3{padding: 0px 0 20px 0;}
     .section5{width: 100%;}
     .brand>div{
-        width:20%;
+        border: 0;
+        width: 30%;
     }
     footer{width: 100%; height: auto;}
     #icon{display: none;}
+    #info{font-size: 2vw; margin-left: 20px;}
 
 }/*모바일 끝

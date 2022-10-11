@@ -87,6 +87,19 @@ $(document).ready(function(){
 
 });
 
+$(document).ready(function(){
+    if($(window).width()<1024){
+        $(".brand > #it > a > img").attr("src","./images/hover_brand01.png");
+        $(".brand > #hwal > a > img").attr("src","./images/hover_brand02.png");
+        $(".brand > #mall > a > img").attr("src","./images/hover_brand03.png");
+        $(".brand > #pharm > a > img").attr("src","./images/hover_brand04.png");
+        $(".brand > #it > a > img").off("mouseout");
+        $(".brand > #hwal > a > img").off("mouseout");
+        $(".brand > #mall > a > img").off("mouseout");
+        $(".brand > #pharm > a > img").off("mouseout");
+    }
+});
+
 
 /*모바일 햄버거 버튼*/
 $(document).ready(function(){
