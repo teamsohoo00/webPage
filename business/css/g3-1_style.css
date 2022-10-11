@@ -240,7 +240,7 @@ input,select,option,button{font-family:'Pretendard-Regular';}
     cursor:pointer;
 }
 .checkBox:checked + .checkList{
-    background:url('../img/g3-1_img/check.png') no-repeat center/18px #36594c;
+    background:url('../img/b_img/check.png') no-repeat center/18px #36594c;
 }
 .checkText{font-size:1vw;}
 #sectionBottom>li:last-child{padding:20px 8%;}

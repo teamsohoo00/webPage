@@ -17,9 +17,9 @@ $(function(){
 });
 
 $(window).resize(function(){ 
-	if (window.innerWidth <= 1024){ 
+	if (window.innerWidth <= 1024) { 
 		$('#gnb').css("display","none");
-	} else{
+	} else {
 		$('#gnb').css("display","block");
 	}
 }).resize();

@@ -230,6 +230,8 @@ hr{
 #goorder>a{
     color: #fff;
     font-size:1.5rem;
+    display:block;
+    
 }
 
 #sum_p_price1{
