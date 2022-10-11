@@ -771,13 +771,13 @@ footer>.wrap>.sns>#icon>li>a{
     #esg{width: 40%; left: 60%;  overflow: hidden;}
     #esg p{
         font-size: 5vw;
-        right: 25%;
+        right: 23%;
     }
     #vision>h4{
-        padding:30px;
+        padding:20px;
     }
     #vision>p{
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 0 20px;
     }
     #vision,#business{
@@ -789,8 +789,7 @@ footer>.wrap>.sns>#icon>li>a{
         position: absolute;
         left: 0;
     }
-    #business h4{
-        font-size: 25px;    }
+    #business h4{font-size: 25px;}
     #business p{
         position: absolute;
         font-size: 0.8rem;
